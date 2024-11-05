@@ -1,0 +1,9 @@
+source;share/jiwon/hook/pythonpath.ps1
+source;share/jiwon/hook/pythonpath.dsv
+source;share/jiwon/hook/pythonpath.sh
+source;share/jiwon/hook/ament_prefix_path.ps1
+source;share/jiwon/hook/ament_prefix_path.dsv
+source;share/jiwon/hook/ament_prefix_path.sh
+source;../../build/jiwon/share/jiwon/hook/pythonpath_develop.ps1
+source;../../build/jiwon/share/jiwon/hook/pythonpath_develop.dsv
+source;../../build/jiwon/share/jiwon/hook/pythonpath_develop.sh

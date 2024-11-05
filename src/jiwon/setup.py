@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "pub_topic = jiwon.pub_topic:main",
+            "sub_topic = jiwon.sub_topic:main",
         ],
     },
 )

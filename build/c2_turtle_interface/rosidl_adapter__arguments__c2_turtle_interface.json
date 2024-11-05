@@ -1,0 +1,7 @@
+{
+  "package_name": "c2_turtle_interface",
+  "non_idl_tuples": [
+    "/home/g1/rokey_c2_ws/src/c2_turtle_interface:srv/Order.srv",
+    "/home/g1/rokey_c2_ws/src/c2_turtle_interface:srv/GetTotalSales.srv"
+  ]
+}

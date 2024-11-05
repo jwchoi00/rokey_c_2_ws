@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating jiwon.egg-info
+writing jiwon.egg-info/PKG-INFO
+writing dependency_links to jiwon.egg-info/dependency_links.txt
+writing entry points to jiwon.egg-info/entry_points.txt
+writing requirements to jiwon.egg-info/requires.txt
+writing top-level names to jiwon.egg-info/top_level.txt
+writing manifest file 'jiwon.egg-info/SOURCES.txt'
+reading manifest file 'jiwon.egg-info/SOURCES.txt'
+writing manifest file 'jiwon.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/g1/rokey_c2_ws/install/jiwon/lib/python3.10/site-packages/jiwon.egg-link (link to .)
+Installing pub_topic script to /home/g1/rokey_c2_ws/install/jiwon/lib/jiwon
+Installing sub_topic script to /home/g1/rokey_c2_ws/install/jiwon/lib/jiwon
+
+Installed /home/g1/rokey_c2_ws/build/jiwon
+running symlink_data
+creating /home/g1/rokey_c2_ws/install/jiwon/share/ament_index
+creating /home/g1/rokey_c2_ws/install/jiwon/share/ament_index/resource_index
+creating /home/g1/rokey_c2_ws/install/jiwon/share/ament_index/resource_index/packages
+symbolically linking /home/g1/rokey_c2_ws/build/jiwon/resource/jiwon -> /home/g1/rokey_c2_ws/install/jiwon/share/ament_index/resource_index/packages
+symbolically linking /home/g1/rokey_c2_ws/build/jiwon/package.xml -> /home/g1/rokey_c2_ws/install/jiwon/share/jiwon

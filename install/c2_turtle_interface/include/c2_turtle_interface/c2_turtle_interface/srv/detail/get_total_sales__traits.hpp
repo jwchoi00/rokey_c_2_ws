@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_cpp/c2_turtle_interface/srv/detail/get_total_sales__traits.hpp

@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from c2_turtle_interface/srv/Order.srv
+// generated code does not contain a copyright notice
+
+
+module c2_turtle_interface {
+  module srv {
+    @verbatim (language="comment", text=
+      "Order.srv")
+    struct Order_Request {
+      int32 table_number;
+
+      string menu_item;
+
+      int32 quantity;
+
+      double total_price;
+    };
+    struct Order_Response {
+      boolean success;
+    };
+  };
+};

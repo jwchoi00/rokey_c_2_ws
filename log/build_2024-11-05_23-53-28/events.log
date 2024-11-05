@@ -1,0 +1,59 @@
+[0.000000] (-) TimerEvent: {}
+[0.000328] (c2_turtle_interface) JobQueued: {'identifier': 'c2_turtle_interface', 'dependencies': OrderedDict()}
+[0.000356] (c2_turtle_order_package) JobQueued: {'identifier': 'c2_turtle_order_package', 'dependencies': OrderedDict()}
+[0.000375] (jiwon) JobQueued: {'identifier': 'jiwon', 'dependencies': OrderedDict()}
+[0.000391] (c2_turtle_interface) JobStarted: {'identifier': 'c2_turtle_interface'}
+[0.005024] (c2_turtle_order_package) JobStarted: {'identifier': 'c2_turtle_order_package'}
+[0.009926] (jiwon) JobStarted: {'identifier': 'jiwon'}
+[0.015953] (c2_turtle_interface) JobProgress: {'identifier': 'c2_turtle_interface', 'progress': 'cmake'}
+[0.016164] (c2_turtle_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/g1/rokey_c2_ws/src/c2_turtle_interface', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/g1/rokey_c2_ws/install/c2_turtle_interface'], 'cwd': '/home/g1/rokey_c2_ws/build/c2_turtle_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g1'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g1'), ('OLDPWD', '/home/g1/rokey_c2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1783'), ('SYSTEMD_EXEC_PID', '1964'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4602'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/g1/rokey_c2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g1'), ('JOURNAL_STREAM', '8:11101'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/g1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/g1:@/tmp/.ICE-unix/1936,unix/g1:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', '2545a86f1ba54465997847a142a1dfce'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0DUXW2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/rokey_c2_ws/install/c2_turtle_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:63d1ca57-bd51-4f5f-8654-e51340ee1211'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g1/rokey_c2_ws/build/c2_turtle_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/g1/rokey_c2_ws/build/jiwon:/home/g1/rokey_c2_ws/install/jiwon/lib/python3.10/site-packages:/home/g1/rokey_c2_ws/build/c2_turtle_order_package:/home/g1/rokey_c2_ws/install/c2_turtle_order_package/lib/python3.10/site-packages:/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/g1/rokey_c2_ws/install/c2_turtle_interface:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/opt/ros/humble')]), 'shell': False}
+[0.099532] (-) TimerEvent: {}
+[0.199773] (-) TimerEvent: {}
+[0.300033] (-) TimerEvent: {}
+[0.365909] (c2_turtle_interface) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:12:\n'}
+[0.366146] (c2_turtle_interface) StderrLine: {'line': b'  Syntax Warning in cmake code at column 18\n'}
+[0.366239] (c2_turtle_interface) StderrLine: {'line': b'\n'}
+[0.366321] (c2_turtle_interface) StderrLine: {'line': b'  Argument not separated from preceding token by whitespace.\n'}
+[0.366400] (c2_turtle_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.366477] (c2_turtle_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[0.366554] (c2_turtle_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.367099] (c2_turtle_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.367206] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.367269] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.367327] (c2_turtle_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.367383] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.367439] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.367495] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.367550] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.367619] (c2_turtle_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.367687] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.367745] (c2_turtle_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.367800] (c2_turtle_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400127] (-) TimerEvent: {}
+[0.415893] (c2_turtle_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.474351] (c2_turtle_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.497948] (c2_turtle_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.500186] (-) TimerEvent: {}
+[0.500748] (c2_turtle_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.506582] (c2_turtle_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.543891] (c2_turtle_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.574233] (c2_turtle_interface) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):\n'}
+[0.574365] (c2_turtle_interface) StderrLine: {'line': b"  rosidl_generate_interfaces() the passed file ',' doesn't exist relative to\n"}
+[0.574427] (c2_turtle_interface) StderrLine: {'line': b"  the CMAKE_CURRENT_SOURCE_DIR '/home/g1/rokey_c2_ws/src/c2_turtle_interface'\n"}
+[0.574483] (c2_turtle_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.574539] (c2_turtle_interface) StderrLine: {'line': b'  CMakeLists.txt:11 (rosidl_generate_interfaces)\n'}
+[0.574592] (c2_turtle_interface) StderrLine: {'line': b'\n'}
+[0.574687] (c2_turtle_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[0.574738] (c2_turtle_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.574793] (c2_turtle_interface) StdoutLine: {'line': b'See also "/home/g1/rokey_c2_ws/build/c2_turtle_interface/CMakeFiles/CMakeOutput.log".\n'}
+[0.600281] (-) TimerEvent: {}
+[0.671524] (c2_turtle_interface) CommandEnded: {'returncode': 1}
+[0.691887] (c2_turtle_interface) JobEnded: {'identifier': 'c2_turtle_interface', 'rc': 1}
+[0.700366] (-) TimerEvent: {}
+[0.800574] (-) TimerEvent: {}
+[0.900785] (-) TimerEvent: {}
+[1.000993] (-) TimerEvent: {}
+[1.074766] (c2_turtle_order_package) JobEnded: {'identifier': 'c2_turtle_order_package', 'rc': 'SIGINT'}
+[1.101090] (-) TimerEvent: {}
+[1.105128] (jiwon) JobEnded: {'identifier': 'jiwon', 'rc': 'SIGINT'}
+[1.115587] (-) EventReactorShutdown: {}

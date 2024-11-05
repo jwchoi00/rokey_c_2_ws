@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

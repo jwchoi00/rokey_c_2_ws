@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/c2_turtle_interface/ament_cmake_python/c2_turtle_interface/c2_turtle_interface.egg-info/dependency_links.txt

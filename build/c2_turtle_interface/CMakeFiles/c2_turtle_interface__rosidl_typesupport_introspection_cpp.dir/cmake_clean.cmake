@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/get_total_sales__type_support.cpp.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/get_total_sales__type_support.cpp.o.d"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/order__type_support.cpp.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/order__type_support.cpp.o.d"
+  "libc2_turtle_interface__rosidl_typesupport_introspection_cpp.pdb"
+  "libc2_turtle_interface__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/get_total_sales__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/get_total_sales__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/order__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/order__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
