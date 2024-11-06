@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>table_order</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Table order package for ROS 2 interface with PyQt5.</description>
   <maintainer email="soobgg773@gmail.com">psb</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache-2.0</license>
 
-  <depend>rclpy</depend>
-  <depend>PyQt5</depend>
-  <depend>rosidl_default_generators</depend>
-  <depend>table_order_interface</depend>
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>PyQt5</exec_depend>
+  <exec_depend>table_order_interface</exec_depend>
 
+  <!-- Testing dependencies -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

@@ -1,8 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from mysql.connector import connect, Error
-from c2_turtle_interface.srv import Order, GetTotalSales  # 추가된 서비스 임포트
-from c2_turtle_interface.msg import OrderItem
+from table_order_interface.srv import SetOrder  # 추가된 서비스 임포트
 from datetime import datetime
 
 class OrderSaver(Node):
@@ -10,16 +9,16 @@ class OrderSaver(Node):
         super().__init__('order_saver')
         self.connection = self.create_connection()
         # 주문 서비스 설정
-        self.srv = self.create_service(Order, 'order_service', self.handle_order)
+        self.srv = self.create_service(SetOrder, 'SetOrder', self.handle_order)
 
         # 총 매출 서비스 설정
-        self.sales_srv = self.create_service(GetTotalSales, 'get_total_sales', self.handle_get_total_sales)
+        #self.sales_srv = self.create_service(GetTotalSales, 'get_total_sales', self.handle_get_total_sales)
 
     def create_connection(self):
         """MySQL 데이터베이스와 연결을 생성하는 메서드"""
         try:
             connection = connect(
-                host='192.168.123.45',  # MySQL 서버 IP
+                host='192.168.0.40 ',  # MySQL 서버 IP
                 user='jwchoi0017',    # MySQL 사용자
                 password='1234',      # MySQL 비밀번호
                 database='orders_db'  # 데이터베이스 이름
@@ -34,18 +33,24 @@ class OrderSaver(Node):
     def handle_order(self, request, response):
         """주문 요청을 처리하는 메서드"""
         table_number = request.table_number
-        items = request.items
-        total_price = request.total_price
+        items = request.menu
+        quantities = request.menu_number
+        total_price = request.price
+
+        self.get_logger().info(f"주문 접수됨: 테이블 {table_number}, 총 가격 {total_price}")
+        self.get_logger().info(f"주문 항목: {list(zip(items, quantities))}")  # 메뉴 항목과 수량 출력
+
+        # 주문 정보를 DB에 저장
         order_id = self.save_order_to_db(table_number, total_price)
-        
         if order_id:
-            for item in items:
-                self.save_item_to_db(order_id, item.menu_item, item.quantity, item.quantity * item.price)
+            # 메뉴 항목과 수량을 DB에 저장
+            for item, quantity in zip(items, quantities):
+                # 가격은 각 항목의 가격 * 수량으로 처리해야 할 수 있습니다.
+                self.save_item_to_db(order_id, item, quantity)  # 여기에 'total_price'를 항목 가격에 맞게 처리
 
             response.success = True
         else:
             response.success = False
-            
         return response
 
     def save_order_to_db(self, table_number, total_price):
@@ -67,28 +72,28 @@ class OrderSaver(Node):
         finally:
             cursor.close()
 
-    def save_item_to_db(self, order_id, menu_item, quantity, price):
+    def save_item_to_db(self, order_id, menu_item, quantity):
         """주문 항목 정보를 MySQL 데이터베이스에 저장하는 메서드"""
         try:
             cursor = self.connection.cursor()
-            query = "INSERT INTO order_items (order_id, menu_item, quantity, price) VALUES (%s, %s, %s, %s)"
-            cursor.execute(query, (order_id, menu_item, quantity, price))
+            query = "INSERT INTO order_items (order_id, menu_item, quantity) VALUES (%s, %s, %s)"
+            cursor.execute(query, (order_id, menu_item, quantity))
             self.connection.commit()
-            self.get_logger().info(f"항목 저장됨: 주문 ID {order_id}, 메뉴 {menu_item}, 수량 {quantity}, 가격 {price}")
+            self.get_logger().info(f"항목 저장됨: 주문 ID {order_id}, 메뉴 {menu_item}, 수량 {quantity}")
         except Error as e:
             self.get_logger().error(f"항목 저장 오류: {e}")
         finally:
             cursor.close()
 
-
+    """
     def handle_get_total_sales(self, request, response):
-        """특정 날짜의 총 매출을 가져오는 메서드"""
+        #특정 날짜의 총 매출을 가져오는 메서드
         total_sales = self.get_total_sales_from_db(request.date)
         response.total_sales = float(total_sales)
         return response
 
     def get_total_sales_from_db(self, date):
-        """특정 날짜의 총 매출을 MySQL에서 조회하는 메서드"""
+        #특정 날짜의 총 매출을 MySQL에서 조회하는 메서드
         try:
             cursor = self.connection.cursor()
             query = "SELECT SUM(total_price) AS total_sales FROM orders WHERE DATE(order_time) = %s"
@@ -100,7 +105,8 @@ class OrderSaver(Node):
             return 0.0
         finally:
             cursor.close()
-
+    """
+    
 def main(args=None):
     rclpy.init(args=args)
     order_saver = OrderSaver()

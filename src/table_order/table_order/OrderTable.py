@@ -8,23 +8,33 @@ class tableOrderClient(Node):
     def __init__(self):
         #테이블 노드 초기화. 클라이언트로 생성하는 부분
         super().__init__('tableOrderClient')
-        self.client = self.create_client(SetOrder,'SetOrder')
-        '''while not self.client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('table order not available, waiting...')'''
+        self.client = self.create_client(SetOrder, 'SetOrder')
 
-    def sendTableOrderClient(self, date, tableNumber, menu, menuNumber):
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('table order not available, waiting...')
+
+    def sendTableOrderClient(self, tableNumber, menu, menuNumber,totalPrice):
         #테이블의 주문을 관제로 보내는 함수
         #여기 수정하세요!!!!!!
-        '''request = SetOrder.Request()
+        """
+        request = SetOrder.Request()
         request.date = date
         request.tableNumber = tableNumber
         request.menu = menu
         request.menuNumber = menuNumber
 
         future = self.client.call_async(request)
-        future.add_done_callback(self.callback)'''
+        future.add_done_callback(self.callback)
         # 수정필요
+        """
+        request = SetOrder.Request()
+        request.table_number = tableNumber
+        request.menu = list(menu)
+        request.menu_number = list(menuNumber)
+        request.price = totalPrice
 
+        future = self.client.call_async(request)
+        future.add_done_callback(self.callback)
     def callback(self, future):
         try:
             response = future.result()
@@ -168,22 +178,21 @@ class MainWindow(QWidget):
 
             # DB에 값을 보내는 부분 
 
-
-
             # 관제에 값을 보내는 부분
+            #print(f"Seding table order : {tableNumber}, {prideChickenNumber}, {sourcedChickenNumber}, {soiSourcedChickenNumber}")
+            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
 
-
-
-
-            '''print(f"Seding table order : {tableNumber}, {prideChickenNumberBox}, {sourcedChickenNumberBox}, {soiSourcedChickenNumberBox}")
-            self.client.sendTableOrderClient(tableNumber, prideChickenNumberBox, sourcedChickenNumberBox, soiSourcedChickenNumberBox)
-            '''
-        else : 
+        else :
             msg = QMessageBox()
             msg.setWindowTitle("주문")
             msg.setText("주문 내역이 없습니다.")
             msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
             msg.exec_()
+
+    def exec_event_loop(self):
+        while rclpy.ok():  # ROS2 이벤트 루프
+            rclpy.spin_once(self.client)  # ROS2 노드의 이벤트 처리
+            QApplication.processEvents()  # PyQt5 이벤트 처리
 
 def main():
     rclpy.init()

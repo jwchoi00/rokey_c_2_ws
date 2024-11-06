@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'c2_turtle_order_package'
+package_name = 'database'
 
 setup(
     name=package_name,
@@ -20,9 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'order_saver = c2_turtle_order_package.order_saver:main',
-            'order_client = c2_turtle_order_package.order_client:main',
-            'total_sales_client = c2_turtle_order_package.total_sales_client:main'
+            'database_server = database.database_server:main',
+            'test_database_server = database.test_table_server:main'
         ],
     },
 )
