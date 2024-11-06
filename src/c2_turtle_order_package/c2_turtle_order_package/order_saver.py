@@ -7,7 +7,6 @@ class OrderSaver(Node):
     def __init__(self):
         super().__init__('order_saver')
         self.connection = self.create_connection()
-        
         # 주문 서비스 설정
         self.srv = self.create_service(Order, 'order_service', self.handle_order)
 
@@ -18,7 +17,7 @@ class OrderSaver(Node):
         """MySQL 데이터베이스와 연결을 생성하는 메서드"""
         try:
             connection = connect(
-                host='192.168.0.40',  # MySQL 서버 IP
+                host='192.168.123.45',  # MySQL 서버 IP
                 user='jwchoi0017',    # MySQL 사용자
                 password='1234',      # MySQL 비밀번호
                 database='orders_db'  # 데이터베이스 이름

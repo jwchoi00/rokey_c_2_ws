@@ -3,7 +3,6 @@ setup.cfg
 setup.py
 c2_turtle_order_package/__init__.py
 c2_turtle_order_package/order_client.py
-c2_turtle_order_package/order_publish.py
 c2_turtle_order_package/order_saver.py
 c2_turtle_order_package/total_sales_client.py
 c2_turtle_order_package.egg-info/PKG-INFO
