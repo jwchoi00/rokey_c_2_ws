@@ -11,8 +11,8 @@
 #include "rcutils/allocator.h"
 
 // Include directives for member types
-// Member `menu_item`
-#include "rosidl_runtime_c/string_functions.h"
+// Member `items`
+#include "c2_turtle_interface/msg/detail/order_item__functions.h"
 
 bool
 c2_turtle_interface__srv__Order_Request__init(c2_turtle_interface__srv__Order_Request * msg)
@@ -21,12 +21,11 @@ c2_turtle_interface__srv__Order_Request__init(c2_turtle_interface__srv__Order_Re
     return false;
   }
   // table_number
-  // menu_item
-  if (!rosidl_runtime_c__String__init(&msg->menu_item)) {
+  // items
+  if (!c2_turtle_interface__msg__OrderItem__Sequence__init(&msg->items, 0)) {
     c2_turtle_interface__srv__Order_Request__fini(msg);
     return false;
   }
-  // quantity
   // total_price
   return true;
 }
@@ -38,9 +37,8 @@ c2_turtle_interface__srv__Order_Request__fini(c2_turtle_interface__srv__Order_Re
     return;
   }
   // table_number
-  // menu_item
-  rosidl_runtime_c__String__fini(&msg->menu_item);
-  // quantity
+  // items
+  c2_turtle_interface__msg__OrderItem__Sequence__fini(&msg->items);
   // total_price
 }
 
@@ -54,14 +52,10 @@ c2_turtle_interface__srv__Order_Request__are_equal(const c2_turtle_interface__sr
   if (lhs->table_number != rhs->table_number) {
     return false;
   }
-  // menu_item
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->menu_item), &(rhs->menu_item)))
+  // items
+  if (!c2_turtle_interface__msg__OrderItem__Sequence__are_equal(
+      &(lhs->items), &(rhs->items)))
   {
-    return false;
-  }
-  // quantity
-  if (lhs->quantity != rhs->quantity) {
     return false;
   }
   // total_price
@@ -81,14 +75,12 @@ c2_turtle_interface__srv__Order_Request__copy(
   }
   // table_number
   output->table_number = input->table_number;
-  // menu_item
-  if (!rosidl_runtime_c__String__copy(
-      &(input->menu_item), &(output->menu_item)))
+  // items
+  if (!c2_turtle_interface__msg__OrderItem__Sequence__copy(
+      &(input->items), &(output->items)))
   {
     return false;
   }
-  // quantity
-  output->quantity = input->quantity;
   // total_price
   output->total_price = input->total_price;
   return true;

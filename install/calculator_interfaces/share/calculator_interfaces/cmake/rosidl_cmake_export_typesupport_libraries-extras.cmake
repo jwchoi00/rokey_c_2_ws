@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/calculator_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

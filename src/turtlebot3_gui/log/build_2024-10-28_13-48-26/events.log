@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000938] (turtlebot3_gui) JobQueued: {'identifier': 'turtlebot3_gui', 'dependencies': OrderedDict()}
+[0.001201] (turtlebot3_gui) JobStarted: {'identifier': 'turtlebot3_gui'}
+[0.094633] (-) TimerEvent: {}
+[0.195709] (-) TimerEvent: {}
+[0.297117] (-) TimerEvent: {}
+[0.401400] (-) TimerEvent: {}
+[0.502309] (-) TimerEvent: {}
+[0.603114] (-) TimerEvent: {}
+[0.703757] (-) TimerEvent: {}
+[0.804726] (-) TimerEvent: {}
+[0.909984] (-) TimerEvent: {}
+[1.010642] (-) TimerEvent: {}
+[1.111341] (-) TimerEvent: {}
+[1.211910] (-) TimerEvent: {}
+[1.313358] (-) TimerEvent: {}
+[1.414506] (-) TimerEvent: {}
+[1.515474] (-) TimerEvent: {}
+[1.616180] (-) TimerEvent: {}
+[1.716832] (-) TimerEvent: {}
+[1.817374] (-) TimerEvent: {}
+[1.917994] (-) TimerEvent: {}
+[2.018905] (-) TimerEvent: {}
+[2.119893] (-) TimerEvent: {}
+[2.220422] (-) TimerEvent: {}
+[2.321028] (-) TimerEvent: {}
+[2.421784] (-) TimerEvent: {}
+[2.523051] (-) TimerEvent: {}
+[2.623804] (-) TimerEvent: {}
+[2.726613] (-) TimerEvent: {}
+[2.827256] (-) TimerEvent: {}
+[2.927853] (-) TimerEvent: {}
+[3.028950] (-) TimerEvent: {}
+[3.129575] (-) TimerEvent: {}
+[3.230251] (-) TimerEvent: {}
+[3.331014] (-) TimerEvent: {}
+[3.431616] (-) TimerEvent: {}
+[3.538690] (-) TimerEvent: {}
+[3.644797] (-) TimerEvent: {}
+[3.745521] (-) TimerEvent: {}
+[3.846664] (-) TimerEvent: {}
+[3.948198] (-) TimerEvent: {}
+[4.048940] (-) TimerEvent: {}
+[4.149520] (-) TimerEvent: {}
+[4.257771] (-) TimerEvent: {}
+[4.358593] (-) TimerEvent: {}
+[4.459360] (-) TimerEvent: {}
+[4.560446] (-) TimerEvent: {}
+[4.661251] (-) TimerEvent: {}
+[4.761898] (-) TimerEvent: {}
+[4.862553] (-) TimerEvent: {}
+[4.963388] (-) TimerEvent: {}
+[5.064014] (-) TimerEvent: {}
+[5.164574] (-) TimerEvent: {}
+[5.265973] (-) TimerEvent: {}
+[5.367336] (-) TimerEvent: {}
+[5.467979] (-) TimerEvent: {}
+[5.568738] (-) TimerEvent: {}
+[5.606470] (turtlebot3_gui) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/love/turtlebot3_gui/build/turtlebot3_gui/build', '--no-deps', 'symlink_data'], 'cwd': '/home/love/turtlebot3_gui/build/turtlebot3_gui', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'love', 'GIT_ASKPASS': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/love', 'TERM_PROGRAM_VERSION': '1.94.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-e0532c22-e52d-4f89-8bd4-21638420033f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'love', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/1294_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.5.10018.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/kimru/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kimru/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4fbc092659.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/love/turtlebot3_gui/build/turtlebot3_gui', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}, 'shell': False}
+[5.668901] (-) TimerEvent: {}
+[5.769518] (-) TimerEvent: {}
+[5.870144] (-) TimerEvent: {}
+[5.973840] (-) TimerEvent: {}
+[6.074482] (-) TimerEvent: {}
+[6.175367] (-) TimerEvent: {}
+[6.277398] (-) TimerEvent: {}
+[6.385989] (-) TimerEvent: {}
+[6.486591] (-) TimerEvent: {}
+[6.587256] (-) TimerEvent: {}
+[6.687999] (-) TimerEvent: {}
+[6.792369] (-) TimerEvent: {}
+[6.893182] (-) TimerEvent: {}
+[6.994112] (-) TimerEvent: {}
+[7.094889] (-) TimerEvent: {}
+[7.199217] (-) TimerEvent: {}
+[7.300335] (-) TimerEvent: {}
+[7.365549] (turtlebot3_gui) StdoutLine: {'line': b'running develop\n'}
+[7.369990] (turtlebot3_gui) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.370492] (turtlebot3_gui) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.409688] (-) TimerEvent: {}
+[7.511409] (-) TimerEvent: {}
+[7.612193] (-) TimerEvent: {}
+[7.713227] (-) TimerEvent: {}
+[7.813948] (-) TimerEvent: {}
+[7.914613] (-) TimerEvent: {}
+[8.015286] (-) TimerEvent: {}
+[8.115836] (-) TimerEvent: {}
+[8.216368] (-) TimerEvent: {}
+[8.304962] (turtlebot3_gui) StdoutLine: {'line': b'running egg_info\n'}
+[8.305592] (turtlebot3_gui) StdoutLine: {'line': b'creating turtlebot3_gui.egg-info\n'}
+[8.305903] (turtlebot3_gui) StdoutLine: {'line': b'writing turtlebot3_gui.egg-info/PKG-INFO\n'}
+[8.306458] (turtlebot3_gui) StdoutLine: {'line': b'writing dependency_links to turtlebot3_gui.egg-info/dependency_links.txt\n'}
+[8.306794] (turtlebot3_gui) StdoutLine: {'line': b'writing entry points to turtlebot3_gui.egg-info/entry_points.txt\n'}
+[8.307010] (turtlebot3_gui) StdoutLine: {'line': b'writing requirements to turtlebot3_gui.egg-info/requires.txt\n'}
+[8.307166] (turtlebot3_gui) StdoutLine: {'line': b'writing top-level names to turtlebot3_gui.egg-info/top_level.txt\n'}
+[8.310335] (turtlebot3_gui) StdoutLine: {'line': b"writing manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'\n"}
+[8.316541] (-) TimerEvent: {}
+[8.321320] (turtlebot3_gui) StdoutLine: {'line': b"reading manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'\n"}
+[8.322325] (turtlebot3_gui) StdoutLine: {'line': b"writing manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'\n"}
+[8.332906] (turtlebot3_gui) StdoutLine: {'line': b'running build_ext\n'}
+[8.333696] (turtlebot3_gui) StdoutLine: {'line': b'Creating /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3-gui.egg-link (link to .)\n'}
+[8.336433] (turtlebot3_gui) StdoutLine: {'line': b'Installing turtlebot3_gui script to /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/turtlebot3_gui\n'}
+[8.344529] (turtlebot3_gui) StdoutLine: {'line': b'\n'}
+[8.345434] (turtlebot3_gui) StdoutLine: {'line': b'Installed /home/love/turtlebot3_gui/build/turtlebot3_gui\n'}
+[8.349870] (turtlebot3_gui) StdoutLine: {'line': b'running symlink_data\n'}
+[8.350369] (turtlebot3_gui) StdoutLine: {'line': b'creating /home/love/turtlebot3_gui/install/turtlebot3_gui/share/ament_index\n'}
+[8.350731] (turtlebot3_gui) StdoutLine: {'line': b'creating /home/love/turtlebot3_gui/install/turtlebot3_gui/share/ament_index/resource_index\n'}
+[8.351069] (turtlebot3_gui) StdoutLine: {'line': b'creating /home/love/turtlebot3_gui/install/turtlebot3_gui/share/ament_index/resource_index/packages\n'}
+[8.351844] (turtlebot3_gui) StdoutLine: {'line': b'symbolically linking /home/love/turtlebot3_gui/build/turtlebot3_gui/resource/turtlebot3_gui -> /home/love/turtlebot3_gui/install/turtlebot3_gui/share/ament_index/resource_index/packages\n'}
+[8.352165] (turtlebot3_gui) StdoutLine: {'line': b'symbolically linking /home/love/turtlebot3_gui/build/turtlebot3_gui/package.xml -> /home/love/turtlebot3_gui/install/turtlebot3_gui/share/turtlebot3_gui\n'}
+[8.416717] (-) TimerEvent: {}
+[8.490476] (turtlebot3_gui) CommandEnded: {'returncode': 0}
+[8.516927] (-) TimerEvent: {}
+[8.621857] (-) TimerEvent: {}
+[8.731412] (-) TimerEvent: {}
+[8.794180] (turtlebot3_gui) JobEnded: {'identifier': 'turtlebot3_gui', 'rc': 0}
+[8.797823] (-) EventReactorShutdown: {}

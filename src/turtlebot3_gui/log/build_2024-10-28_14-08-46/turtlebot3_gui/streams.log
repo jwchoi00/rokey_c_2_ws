@@ -1,0 +1,21 @@
+[1.190s] Invoking command in '/home/love/turtlebot3_gui/build/turtlebot3_gui': PYTHONPATH=/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/love/turtlebot3_gui/build/turtlebot3_gui/build --no-deps symlink_data --force
+[1.657s] running develop
+[1.660s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.660s]   warnings.warn(
+[1.940s] running egg_info
+[1.941s] writing turtlebot3_gui.egg-info/PKG-INFO
+[1.942s] writing dependency_links to turtlebot3_gui.egg-info/dependency_links.txt
+[1.943s] writing entry points to turtlebot3_gui.egg-info/entry_points.txt
+[1.944s] writing requirements to turtlebot3_gui.egg-info/requires.txt
+[1.945s] writing top-level names to turtlebot3_gui.egg-info/top_level.txt
+[1.950s] reading manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'
+[1.952s] writing manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'
+[1.955s] running build_ext
+[1.956s] Creating /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3-gui.egg-link (link to .)
+[1.959s] Installing turtlebot3_gui script to /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/turtlebot3_gui
+[1.959s] 
+[1.959s] Installed /home/love/turtlebot3_gui/build/turtlebot3_gui
+[1.960s] running symlink_data
+[1.960s] symbolically linking /home/love/turtlebot3_gui/build/turtlebot3_gui/resource/turtlebot3_gui -> /home/love/turtlebot3_gui/install/turtlebot3_gui/share/ament_index/resource_index/packages
+[1.960s] symbolically linking /home/love/turtlebot3_gui/build/turtlebot3_gui/package.xml -> /home/love/turtlebot3_gui/install/turtlebot3_gui/share/turtlebot3_gui
+[1.998s] Invoked command in '/home/love/turtlebot3_gui/build/turtlebot3_gui' returned '0': PYTHONPATH=/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/love/turtlebot3_gui/build/turtlebot3_gui/build --no-deps symlink_data --force

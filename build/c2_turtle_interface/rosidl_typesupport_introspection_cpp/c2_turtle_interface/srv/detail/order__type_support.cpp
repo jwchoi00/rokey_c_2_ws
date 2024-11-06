@@ -37,7 +37,52 @@ void Order_Request_fini_function(void * message_memory)
   typed_message->~Order_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Order_Request_message_member_array[4] = {
+size_t size_function__Order_Request__items(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<c2_turtle_interface::msg::OrderItem> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Order_Request__items(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<c2_turtle_interface::msg::OrderItem> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Order_Request__items(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<c2_turtle_interface::msg::OrderItem> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Order_Request__items(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const c2_turtle_interface::msg::OrderItem *>(
+    get_const_function__Order_Request__items(untyped_member, index));
+  auto & value = *reinterpret_cast<c2_turtle_interface::msg::OrderItem *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Order_Request__items(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<c2_turtle_interface::msg::OrderItem *>(
+    get_function__Order_Request__items(untyped_member, index));
+  const auto & value = *reinterpret_cast<const c2_turtle_interface::msg::OrderItem *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Order_Request__items(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<c2_turtle_interface::msg::OrderItem> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Order_Request_message_member_array[3] = {
   {
     "table_number",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -56,42 +101,25 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Order_Request
     nullptr  // resize(index) function pointer
   },
   {
-    "menu_item",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    "items",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<c2_turtle_interface::msg::OrderItem>(),  // members of sub message
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(c2_turtle_interface::srv::Order_Request, menu_item),  // bytes offset in struct
+    offsetof(c2_turtle_interface::srv::Order_Request, items),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "quantity",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(c2_turtle_interface::srv::Order_Request, quantity),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
+    size_function__Order_Request__items,  // size() function pointer
+    get_const_function__Order_Request__items,  // get_const(index) function pointer
+    get_function__Order_Request__items,  // get(index) function pointer
+    fetch_function__Order_Request__items,  // fetch(index, &value) function pointer
+    assign_function__Order_Request__items,  // assign(index, value) function pointer
+    resize_function__Order_Request__items  // resize(index) function pointer
   },
   {
     "total_price",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -111,7 +139,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Order_Request
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Order_Request_message_members = {
   "c2_turtle_interface::srv",  // message namespace
   "Order_Request",  // message name
-  4,  // number of fields
+  3,  // number of fields
   sizeof(c2_turtle_interface::srv::Order_Request),
   Order_Request_message_member_array,  // message members
   Order_Request_init_function,  // function to initialize message memory (memory has to be allocated)

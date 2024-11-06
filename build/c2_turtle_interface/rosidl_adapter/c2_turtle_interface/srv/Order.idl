@@ -2,6 +2,7 @@
 // with input from c2_turtle_interface/srv/Order.srv
 // generated code does not contain a copyright notice
 
+#include "c2_turtle_interface/msg/OrderItem.idl"
 
 module c2_turtle_interface {
   module srv {
@@ -10,11 +11,9 @@ module c2_turtle_interface {
     struct Order_Request {
       int32 table_number;
 
-      string menu_item;
+      sequence<c2_turtle_interface::msg::OrderItem> items;
 
-      int32 quantity;
-
-      double total_price;
+      int32 total_price;
     };
     struct Order_Response {
       boolean success;

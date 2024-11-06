@@ -37,32 +37,16 @@ private:
   ::c2_turtle_interface::srv::Order_Request msg_;
 };
 
-class Init_Order_Request_quantity
+class Init_Order_Request_items
 {
 public:
-  explicit Init_Order_Request_quantity(::c2_turtle_interface::srv::Order_Request & msg)
+  explicit Init_Order_Request_items(::c2_turtle_interface::srv::Order_Request & msg)
   : msg_(msg)
   {}
-  Init_Order_Request_total_price quantity(::c2_turtle_interface::srv::Order_Request::_quantity_type arg)
+  Init_Order_Request_total_price items(::c2_turtle_interface::srv::Order_Request::_items_type arg)
   {
-    msg_.quantity = std::move(arg);
+    msg_.items = std::move(arg);
     return Init_Order_Request_total_price(msg_);
-  }
-
-private:
-  ::c2_turtle_interface::srv::Order_Request msg_;
-};
-
-class Init_Order_Request_menu_item
-{
-public:
-  explicit Init_Order_Request_menu_item(::c2_turtle_interface::srv::Order_Request & msg)
-  : msg_(msg)
-  {}
-  Init_Order_Request_quantity menu_item(::c2_turtle_interface::srv::Order_Request::_menu_item_type arg)
-  {
-    msg_.menu_item = std::move(arg);
-    return Init_Order_Request_quantity(msg_);
   }
 
 private:
@@ -75,10 +59,10 @@ public:
   Init_Order_Request_table_number()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Order_Request_menu_item table_number(::c2_turtle_interface::srv::Order_Request::_table_number_type arg)
+  Init_Order_Request_items table_number(::c2_turtle_interface::srv::Order_Request::_table_number_type arg)
   {
     msg_.table_number = std::move(arg);
-    return Init_Order_Request_menu_item(msg_);
+    return Init_Order_Request_items(msg_);
   }
 
 private:

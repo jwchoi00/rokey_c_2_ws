@@ -15,6 +15,10 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'items'
+#include "c2_turtle_interface/msg/detail/order_item__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__c2_turtle_interface__srv__Order_Request __attribute__((deprecated))
 #else
@@ -39,22 +43,18 @@ struct Order_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->table_number = 0l;
-      this->menu_item = "";
-      this->quantity = 0l;
-      this->total_price = 0.0;
+      this->total_price = 0l;
     }
   }
 
   explicit Order_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : menu_item(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->table_number = 0l;
-      this->menu_item = "";
-      this->quantity = 0l;
-      this->total_price = 0.0;
+      this->total_price = 0l;
     }
   }
 
@@ -62,14 +62,11 @@ struct Order_Request_
   using _table_number_type =
     int32_t;
   _table_number_type table_number;
-  using _menu_item_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _menu_item_type menu_item;
-  using _quantity_type =
-    int32_t;
-  _quantity_type quantity;
+  using _items_type =
+    std::vector<c2_turtle_interface::msg::OrderItem_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<c2_turtle_interface::msg::OrderItem_<ContainerAllocator>>>;
+  _items_type items;
   using _total_price_type =
-    double;
+    int32_t;
   _total_price_type total_price;
 
   // setters for named parameter idiom
@@ -79,20 +76,14 @@ struct Order_Request_
     this->table_number = _arg;
     return *this;
   }
-  Type & set__menu_item(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  Type & set__items(
+    const std::vector<c2_turtle_interface::msg::OrderItem_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<c2_turtle_interface::msg::OrderItem_<ContainerAllocator>>> & _arg)
   {
-    this->menu_item = _arg;
-    return *this;
-  }
-  Type & set__quantity(
-    const int32_t & _arg)
-  {
-    this->quantity = _arg;
+    this->items = _arg;
     return *this;
   }
   Type & set__total_price(
-    const double & _arg)
+    const int32_t & _arg)
   {
     this->total_price = _arg;
     return *this;
@@ -143,10 +134,7 @@ struct Order_Request_
     if (this->table_number != other.table_number) {
       return false;
     }
-    if (this->menu_item != other.menu_item) {
-      return false;
-    }
-    if (this->quantity != other.quantity) {
+    if (this->items != other.items) {
       return false;
     }
     if (this->total_price != other.total_price) {

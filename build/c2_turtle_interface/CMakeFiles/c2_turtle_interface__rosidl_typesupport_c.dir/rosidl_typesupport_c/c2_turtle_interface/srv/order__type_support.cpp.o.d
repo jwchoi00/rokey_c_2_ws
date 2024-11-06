@@ -25,6 +25,7 @@ CMakeFiles/c2_turtle_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/c2
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/srv/detail/order__type_support.h \

@@ -13,8 +13,10 @@
 
 
 // Include directives for member types
-// Member `menu_item`
-#include "rosidl_runtime_c/string_functions.h"
+// Member `items`
+#include "c2_turtle_interface/msg/order_item.h"
+// Member `items`
+#include "c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -35,7 +37,62 @@ void c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c
   c2_turtle_interface__srv__Order_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_member_array[4] = {
+size_t c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__size_function__Order_Request__items(
+  const void * untyped_member)
+{
+  const c2_turtle_interface__msg__OrderItem__Sequence * member =
+    (const c2_turtle_interface__msg__OrderItem__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__get_const_function__Order_Request__items(
+  const void * untyped_member, size_t index)
+{
+  const c2_turtle_interface__msg__OrderItem__Sequence * member =
+    (const c2_turtle_interface__msg__OrderItem__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__get_function__Order_Request__items(
+  void * untyped_member, size_t index)
+{
+  c2_turtle_interface__msg__OrderItem__Sequence * member =
+    (c2_turtle_interface__msg__OrderItem__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__fetch_function__Order_Request__items(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const c2_turtle_interface__msg__OrderItem * item =
+    ((const c2_turtle_interface__msg__OrderItem *)
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__get_const_function__Order_Request__items(untyped_member, index));
+  c2_turtle_interface__msg__OrderItem * value =
+    (c2_turtle_interface__msg__OrderItem *)(untyped_value);
+  *value = *item;
+}
+
+void c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__assign_function__Order_Request__items(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  c2_turtle_interface__msg__OrderItem * item =
+    ((c2_turtle_interface__msg__OrderItem *)
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__get_function__Order_Request__items(untyped_member, index));
+  const c2_turtle_interface__msg__OrderItem * value =
+    (const c2_turtle_interface__msg__OrderItem *)(untyped_value);
+  *item = *value;
+}
+
+bool c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__resize_function__Order_Request__items(
+  void * untyped_member, size_t size)
+{
+  c2_turtle_interface__msg__OrderItem__Sequence * member =
+    (c2_turtle_interface__msg__OrderItem__Sequence *)(untyped_member);
+  c2_turtle_interface__msg__OrderItem__Sequence__fini(member);
+  return c2_turtle_interface__msg__OrderItem__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_member_array[3] = {
   {
     "table_number",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -54,42 +111,25 @@ static rosidl_typesupport_introspection_c__MessageMember c2_turtle_interface__sr
     NULL  // resize(index) function pointer
   },
   {
-    "menu_item",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "items",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
+    NULL,  // members of sub message (initialized later)
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(c2_turtle_interface__srv__Order_Request, menu_item),  // bytes offset in struct
+    offsetof(c2_turtle_interface__srv__Order_Request, items),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "quantity",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(c2_turtle_interface__srv__Order_Request, quantity),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__size_function__Order_Request__items,  // size() function pointer
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__get_const_function__Order_Request__items,  // get_const(index) function pointer
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__get_function__Order_Request__items,  // get(index) function pointer
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__fetch_function__Order_Request__items,  // fetch(index, &value) function pointer
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__assign_function__Order_Request__items,  // assign(index, value) function pointer
+    c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__resize_function__Order_Request__items  // resize(index) function pointer
   },
   {
     "total_price",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -109,7 +149,7 @@ static rosidl_typesupport_introspection_c__MessageMember c2_turtle_interface__sr
 static const rosidl_typesupport_introspection_c__MessageMembers c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_members = {
   "c2_turtle_interface__srv",  // message namespace
   "Order_Request",  // message name
-  4,  // number of fields
+  3,  // number of fields
   sizeof(c2_turtle_interface__srv__Order_Request),
   c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_member_array,  // message members
   c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -127,6 +167,8 @@ static rosidl_message_type_support_t c2_turtle_interface__srv__Order_Request__ro
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_c2_turtle_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, c2_turtle_interface, srv, Order_Request)() {
+  c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, c2_turtle_interface, msg, OrderItem)();
   if (!c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_type_support_handle.typesupport_identifier) {
     c2_turtle_interface__srv__Order_Request__rosidl_typesupport_introspection_c__Order_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

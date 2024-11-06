@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/calculator_interfaces/rosidl_generator_py/calculator_interfaces/srv/_calculate_s.c

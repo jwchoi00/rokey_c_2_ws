@@ -1,0 +1,9 @@
+[console_scripts]
+client = turtlebot3_gui.service_client:main
+pub_topic = turtlebot3_gui.pub_topic:main
+send_goal = turtlebot3_gui.send_goal:main
+server = turtlebot3_gui.service_server:main
+sub_topic = turtlebot3_gui.sub_topic:main
+turtlebot3_gui = turtlebot3_gui.turtlebot3_gui:main
+turtlebot3_gui2 = turtlebot3_gui.turtlebot3_gui2:main
+

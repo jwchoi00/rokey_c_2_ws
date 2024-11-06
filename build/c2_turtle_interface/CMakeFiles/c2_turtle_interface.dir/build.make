@@ -72,6 +72,7 @@ CMakeFiles/c2_turtle_interface: rosidl_cmake/srv/Order_Response.msg
 CMakeFiles/c2_turtle_interface: /home/g1/rokey_c2_ws/src/c2_turtle_interface/srv/GetTotalSales.srv
 CMakeFiles/c2_turtle_interface: rosidl_cmake/srv/GetTotalSales_Request.msg
 CMakeFiles/c2_turtle_interface: rosidl_cmake/srv/GetTotalSales_Response.msg
+CMakeFiles/c2_turtle_interface: /home/g1/rokey_c2_ws/src/c2_turtle_interface/msg/OrderItem.msg
 
 c2_turtle_interface: CMakeFiles/c2_turtle_interface
 c2_turtle_interface: CMakeFiles/c2_turtle_interface.dir/build.make

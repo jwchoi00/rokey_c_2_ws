@@ -1,0 +1,38 @@
+[3.563s] Invoking command in '/home/love/turtlebot3_gui/build/turtlebot3_gui': PYTHONPATH=/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/love/turtlebot3_gui/build/turtlebot3_gui/build
+[5.559s] running develop
+[5.562s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.563s]   warnings.warn(
+[6.704s] Removing /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3-gui.egg-link (link to .)
+[6.894s] Invoked command in '/home/love/turtlebot3_gui/build/turtlebot3_gui' returned '0': PYTHONPATH=/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/love/turtlebot3_gui/build/turtlebot3_gui/build
+[6.896s] Invoking command in '/home/love/turtlebot3_gui/src/turtlebot3_gui': PYTHONPATH=/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_gui build --build-base /home/love/turtlebot3_gui/build/turtlebot3_gui/build install --record /home/love/turtlebot3_gui/build/turtlebot3_gui/install.log --single-version-externally-managed install_data --force
+[8.555s] running egg_info
+[8.569s] writing ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/PKG-INFO
+[8.570s] writing dependency_links to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/dependency_links.txt
+[8.570s] writing entry points to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/entry_points.txt
+[8.570s] writing requirements to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/requires.txt
+[8.570s] writing top-level names to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/top_level.txt
+[8.586s] reading manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+[8.587s] writing manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+[8.587s] running build
+[8.587s] running build_py
+[8.588s] creating /home/love/turtlebot3_gui/build/turtlebot3_gui/build
+[8.589s] creating /home/love/turtlebot3_gui/build/turtlebot3_gui/build/lib
+[8.589s] creating /home/love/turtlebot3_gui/build/turtlebot3_gui/build/lib/turtlebot3_gui
+[8.589s] copying turtlebot3_gui/__init__.py -> /home/love/turtlebot3_gui/build/turtlebot3_gui/build/lib/turtlebot3_gui
+[8.590s] copying turtlebot3_gui/turtlebot3_gui.py -> /home/love/turtlebot3_gui/build/turtlebot3_gui/build/lib/turtlebot3_gui
+[8.599s] running install
+[8.601s] running install_lib
+[8.606s] creating /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+[8.607s] copying /home/love/turtlebot3_gui/build/turtlebot3_gui/build/lib/turtlebot3_gui/__init__.py -> /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+[8.615s] copying /home/love/turtlebot3_gui/build/turtlebot3_gui/build/lib/turtlebot3_gui/turtlebot3_gui.py -> /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+[8.620s] byte-compiling /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/__init__.py to __init__.cpython-310.pyc
+[8.622s] byte-compiling /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_gui.py to turtlebot3_gui.cpython-310.pyc
+[8.623s] running install_data
+[8.627s] copying resource/turtlebot3_gui -> /home/love/turtlebot3_gui/install/turtlebot3_gui/share/ament_index/resource_index/packages
+[8.631s] copying package.xml -> /home/love/turtlebot3_gui/install/turtlebot3_gui/share/turtlebot3_gui
+[8.631s] running install_egg_info
+[8.649s] Copying ../../build/turtlebot3_gui/turtlebot3_gui.egg-info to /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui-0.0.0-py3.10.egg-info
+[8.652s] running install_scripts
+[8.821s] Installing turtlebot3_gui script to /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/turtlebot3_gui
+[8.829s] writing list of installed files to '/home/love/turtlebot3_gui/build/turtlebot3_gui/install.log'
+[9.060s] Invoked command in '/home/love/turtlebot3_gui/src/turtlebot3_gui' returned '0': PYTHONPATH=/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_gui build --build-base /home/love/turtlebot3_gui/build/turtlebot3_gui/build install --record /home/love/turtlebot3_gui/build/turtlebot3_gui/install.log --single-version-externally-managed install_data --force

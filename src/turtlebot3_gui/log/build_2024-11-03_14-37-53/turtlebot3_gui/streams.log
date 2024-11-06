@@ -1,0 +1,20 @@
+[0.402s] Invoking command in '/home/robot/turtlebot3_gui/build/turtlebot3_gui': PYTHONPATH=/home/robot/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robot/turtlebot3_gui/build/turtlebot3_gui/build --no-deps symlink_data
+[0.571s] running develop
+[0.571s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.571s]   warnings.warn(
+[0.668s] running egg_info
+[0.668s] writing turtlebot3_gui.egg-info/PKG-INFO
+[0.668s] writing dependency_links to turtlebot3_gui.egg-info/dependency_links.txt
+[0.669s] writing entry points to turtlebot3_gui.egg-info/entry_points.txt
+[0.669s] writing requirements to turtlebot3_gui.egg-info/requires.txt
+[0.669s] writing top-level names to turtlebot3_gui.egg-info/top_level.txt
+[0.670s] reading manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'
+[0.670s] writing manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'
+[0.671s] running build_ext
+[0.671s] Creating /home/robot/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3-gui.egg-link (link to .)
+[0.672s] Installing turtlebot3_gui script to /home/robot/turtlebot3_gui/install/turtlebot3_gui/lib/turtlebot3_gui
+[0.672s] Installing turtlebot3_gui2 script to /home/robot/turtlebot3_gui/install/turtlebot3_gui/lib/turtlebot3_gui
+[0.672s] 
+[0.672s] Installed /home/robot/turtlebot3_gui/build/turtlebot3_gui
+[0.672s] running symlink_data
+[0.690s] Invoked command in '/home/robot/turtlebot3_gui/build/turtlebot3_gui' returned '0': PYTHONPATH=/home/robot/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robot/turtlebot3_gui/build/turtlebot3_gui/build --no-deps symlink_data

@@ -14,6 +14,10 @@
 #include "c2_turtle_interface/srv/detail/order__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'items'
+#include "c2_turtle_interface/msg/detail/order_item__traits.hpp"
+
 namespace c2_turtle_interface
 {
 
@@ -32,17 +36,21 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: menu_item
+  // member: items
   {
-    out << "menu_item: ";
-    rosidl_generator_traits::value_to_yaml(msg.menu_item, out);
-    out << ", ";
-  }
-
-  // member: quantity
-  {
-    out << "quantity: ";
-    rosidl_generator_traits::value_to_yaml(msg.quantity, out);
+    if (msg.items.size() == 0) {
+      out << "items: []";
+    } else {
+      out << "items: [";
+      size_t pending_items = msg.items.size();
+      for (auto item : msg.items) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
     out << ", ";
   }
 
@@ -68,24 +76,23 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: menu_item
+  // member: items
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "menu_item: ";
-    rosidl_generator_traits::value_to_yaml(msg.menu_item, out);
-    out << "\n";
-  }
-
-  // member: quantity
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
+    if (msg.items.size() == 0) {
+      out << "items: []\n";
+    } else {
+      out << "items:\n";
+      for (auto item : msg.items) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
     }
-    out << "quantity: ";
-    rosidl_generator_traits::value_to_yaml(msg.quantity, out);
-    out << "\n";
   }
 
   // member: total_price

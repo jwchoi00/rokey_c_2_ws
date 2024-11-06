@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/c2_turtle_interface__cpp"
+  "rosidl_generator_cpp/c2_turtle_interface/msg/detail/order_item__builder.hpp"
+  "rosidl_generator_cpp/c2_turtle_interface/msg/detail/order_item__struct.hpp"
+  "rosidl_generator_cpp/c2_turtle_interface/msg/detail/order_item__traits.hpp"
+  "rosidl_generator_cpp/c2_turtle_interface/msg/order_item.hpp"
   "rosidl_generator_cpp/c2_turtle_interface/srv/detail/get_total_sales__builder.hpp"
   "rosidl_generator_cpp/c2_turtle_interface/srv/detail/get_total_sales__struct.hpp"
   "rosidl_generator_cpp/c2_turtle_interface/srv/detail/get_total_sales__traits.hpp"

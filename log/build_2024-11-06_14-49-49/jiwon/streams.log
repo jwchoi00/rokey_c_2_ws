@@ -1,0 +1,25 @@
+[1.702s] Invoking command in '/home/g1/rokey_c2_ws/build/jiwon': PYTHONPATH=/home/g1/rokey_c2_ws/build/jiwon/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c2_ws/install/jiwon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c2_ws/build/jiwon/build --no-deps symlink_data
+[2.057s] running develop
+[2.495s] running egg_info
+[2.495s] creating jiwon.egg-info
+[2.495s] writing jiwon.egg-info/PKG-INFO
+[2.495s] writing dependency_links to jiwon.egg-info/dependency_links.txt
+[2.496s] writing entry points to jiwon.egg-info/entry_points.txt
+[2.496s] writing requirements to jiwon.egg-info/requires.txt
+[2.496s] writing top-level names to jiwon.egg-info/top_level.txt
+[2.498s] writing manifest file 'jiwon.egg-info/SOURCES.txt'
+[2.499s] reading manifest file 'jiwon.egg-info/SOURCES.txt'
+[2.501s] writing manifest file 'jiwon.egg-info/SOURCES.txt'
+[2.502s] running build_ext
+[2.503s] Creating /home/g1/rokey_c2_ws/install/jiwon/lib/python3.10/site-packages/jiwon.egg-link (link to .)
+[2.506s] Installing pub_topic script to /home/g1/rokey_c2_ws/install/jiwon/lib/jiwon
+[2.506s] Installing sub_topic script to /home/g1/rokey_c2_ws/install/jiwon/lib/jiwon
+[2.506s] 
+[2.506s] Installed /home/g1/rokey_c2_ws/build/jiwon
+[2.507s] running symlink_data
+[2.507s] creating /home/g1/rokey_c2_ws/install/jiwon/share/ament_index
+[2.507s] creating /home/g1/rokey_c2_ws/install/jiwon/share/ament_index/resource_index
+[2.507s] creating /home/g1/rokey_c2_ws/install/jiwon/share/ament_index/resource_index/packages
+[2.507s] symbolically linking /home/g1/rokey_c2_ws/build/jiwon/resource/jiwon -> /home/g1/rokey_c2_ws/install/jiwon/share/ament_index/resource_index/packages
+[2.507s] symbolically linking /home/g1/rokey_c2_ws/build/jiwon/package.xml -> /home/g1/rokey_c2_ws/install/jiwon/share/jiwon
+[2.595s] Invoked command in '/home/g1/rokey_c2_ws/build/jiwon' returned '0': PYTHONPATH=/home/g1/rokey_c2_ws/build/jiwon/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c2_ws/install/jiwon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c2_ws/build/jiwon/build --no-deps symlink_data

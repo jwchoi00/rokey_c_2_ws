@@ -11,6 +11,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Order.srv"
   "srv/GetTotalSales.srv"
+  "msg/OrderItem.msg"
 )
 
 if(BUILD_TESTING)

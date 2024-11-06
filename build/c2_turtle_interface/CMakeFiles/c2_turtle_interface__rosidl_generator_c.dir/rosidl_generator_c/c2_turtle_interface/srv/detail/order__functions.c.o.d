@@ -48,6 +48,7 @@ CMakeFiles/c2_turtle_interface__rosidl_generator_c.dir/rosidl_generator_c/c2_tur
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /usr/include/assert.h /usr/include/string.h \
@@ -68,4 +69,4 @@ CMakeFiles/c2_turtle_interface__rosidl_generator_c.dir/rosidl_generator_c/c2_tur
  /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
  /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__functions.h

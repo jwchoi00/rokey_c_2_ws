@@ -1,3 +1,5 @@
+msg/OrderItem.idl
+msg/OrderItem.msg
 srv/GetTotalSales.idl
 srv/GetTotalSales.srv
 srv/GetTotalSales_Request.msg

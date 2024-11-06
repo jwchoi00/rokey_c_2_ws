@@ -2,6 +2,8 @@ import rclpy
 from rclpy.node import Node
 from mysql.connector import connect, Error
 from c2_turtle_interface.srv import Order, GetTotalSales  # 추가된 서비스 임포트
+from c2_turtle_interface.msg import OrderItem
+from datetime import datetime
 
 class OrderSaver(Node):
     def __init__(self):
@@ -32,26 +34,52 @@ class OrderSaver(Node):
     def handle_order(self, request, response):
         """주문 요청을 처리하는 메서드"""
         table_number = request.table_number
-        menu_item = request.menu_item
-        quantity = request.quantity
+        items = request.items
         total_price = request.total_price
+        order_id = self.save_order_to_db(table_number, total_price)
+        
+        if order_id:
+            for item in items:
+                self.save_item_to_db(order_id, item.menu_item, item.quantity, item.quantity * item.price)
 
-        self.save_order_to_db(table_number, menu_item, quantity, total_price)
-        response.success = True
+            response.success = True
+        else:
+            response.success = False
+            
         return response
 
-    def save_order_to_db(self, table_number, menu_item, quantity, total_price):
+    def save_order_to_db(self, table_number, total_price):
         """주문 정보를 MySQL 데이터베이스에 저장하는 메서드"""
         try:
             cursor = self.connection.cursor()
-            query = "INSERT INTO orders (table_number, menu_item, quantity, total_price) VALUES (%s, %s, %s, %s)"
-            cursor.execute(query, (table_number, menu_item, quantity, total_price))
+            # 1. orders 테이블에 주문 정보를 저장
+            query = "INSERT INTO orders (table_number, total_price) VALUES (%s, %s)"
+            cursor.execute(query, (table_number, total_price))  # total_price는 각 항목의 가격 합으로 설정
             self.connection.commit()
-            self.get_logger().info(f"주문이 저장되었습니다: {table_number}, {menu_item}, {quantity}, {total_price}")
+
+            # 2. 새로 저장된 주문의 ID 가져오기
+            order_id = cursor.lastrowid
+            self.get_logger().info(f"주문이 저장되었습니다: {table_number}, 총 가격 {total_price}")
+            return order_id
         except Error as e:
             self.get_logger().error(f"주문 저장 오류: {e}")
+            return None
         finally:
             cursor.close()
+
+    def save_item_to_db(self, order_id, menu_item, quantity, price):
+        """주문 항목 정보를 MySQL 데이터베이스에 저장하는 메서드"""
+        try:
+            cursor = self.connection.cursor()
+            query = "INSERT INTO order_items (order_id, menu_item, quantity, price) VALUES (%s, %s, %s, %s)"
+            cursor.execute(query, (order_id, menu_item, quantity, price))
+            self.connection.commit()
+            self.get_logger().info(f"항목 저장됨: 주문 ID {order_id}, 메뉴 {menu_item}, 수량 {quantity}, 가격 {price}")
+        except Error as e:
+            self.get_logger().error(f"항목 저장 오류: {e}")
+        finally:
+            cursor.close()
+
 
     def handle_get_total_sales(self, request, response):
         """특정 날짜의 총 매출을 가져오는 메서드"""

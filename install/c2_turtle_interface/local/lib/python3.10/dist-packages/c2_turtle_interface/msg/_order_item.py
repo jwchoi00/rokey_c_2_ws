@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_py/c2_turtle_interface/msg/_order_item.py

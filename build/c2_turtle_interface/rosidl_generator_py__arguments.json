@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
     "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface:srv/Order.idl",
-    "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface:srv/GetTotalSales.idl"
+    "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface:srv/GetTotalSales.idl",
+    "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface:msg/OrderItem.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -21,6 +22,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/srv/Order.idl",
-    "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/srv/GetTotalSales.idl"
+    "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/srv/GetTotalSales.idl",
+    "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/msg/OrderItem.idl"
   ]
 }

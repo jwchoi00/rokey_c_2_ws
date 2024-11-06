@@ -1,0 +1,256 @@
+[0.030s] Invoking command in '/home/g1/rokey_c2_ws/build/c2_turtle_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/turtlebot3_gui:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/g1/rokey_c2_ws/src/c2_turtle_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/rokey_c2_ws/install/c2_turtle_interface
+[0.730s] -- The C compiler identification is GNU 11.4.0
+[0.731s] -- The CXX compiler identification is GNU 11.4.0
+[0.731s] -- Detecting C compiler ABI info
+[0.731s] -- Detecting C compiler ABI info - done
+[0.731s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.731s] -- Detecting C compile features
+[0.731s] -- Detecting C compile features - done
+[0.731s] -- Detecting CXX compiler ABI info
+[0.732s] -- Detecting CXX compiler ABI info - done
+[0.732s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.732s] -- Detecting CXX compile features
+[0.733s] -- Detecting CXX compile features - done
+[0.733s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.733s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.733s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.733s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.733s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.733s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.733s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.016s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.288s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.705s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.748s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.752s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.796s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.796s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.796s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.797s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.832s] -- Found PythonExtra: .so  
+[1.895s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.934s] -- Added test 'lint_cmake' to check CMake code style
+[1.935s] -- Added test 'xmllint' to check XML markup files
+[1.941s] -- Configuring done
+[1.979s] -- Generating done
+[1.982s] -- Build files have been written to: /home/g1/rokey_c2_ws/build/c2_turtle_interface
+[1.991s] Invoked command in '/home/g1/rokey_c2_ws/build/c2_turtle_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/turtlebot3_gui:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/g1/rokey_c2_ws/src/c2_turtle_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/rokey_c2_ws/install/c2_turtle_interface
+[1.994s] Invoking command in '/home/g1/rokey_c2_ws/build/c2_turtle_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/turtlebot3_gui:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c2_ws/build/c2_turtle_interface -- -j8 -l8
+[2.046s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.061s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.068s] [  4%] Built target ament_cmake_python_symlink_c2_turtle_interface
+[2.641s] running egg_info
+[2.643s] creating c2_turtle_interface.egg-info
+[2.643s] writing c2_turtle_interface.egg-info/PKG-INFO
+[2.643s] writing dependency_links to c2_turtle_interface.egg-info/dependency_links.txt
+[2.643s] writing top-level names to c2_turtle_interface.egg-info/top_level.txt
+[2.644s] writing manifest file 'c2_turtle_interface.egg-info/SOURCES.txt'
+[2.652s] reading manifest file 'c2_turtle_interface.egg-info/SOURCES.txt'
+[2.652s] writing manifest file 'c2_turtle_interface.egg-info/SOURCES.txt'
+[2.724s] [  4%] Built target ament_cmake_python_build_c2_turtle_interface_egg
+[2.869s] [  4%] Built target c2_turtle_interface__cpp
+[2.889s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.902s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.910s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.929s] [ 12%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_generator_c.dir/rosidl_generator_c/c2_turtle_interface/srv/detail/get_total_sales__functions.c.o[0m
+[2.930s] [ 14%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_generator_c.dir/rosidl_generator_c/c2_turtle_interface/srv/detail/order__functions.c.o[0m
+[2.944s] [ 17%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_generator_c.dir/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__functions.c.o[0m
+[3.119s] [ 19%] [32m[1mLinking C shared library libc2_turtle_interface__rosidl_generator_c.so[0m
+[3.206s] [ 19%] Built target c2_turtle_interface__rosidl_generator_c
+[3.239s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.243s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.248s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.785s] [ 27%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/c2_turtle_interface/srv/order__type_support.cpp.o[0m
+[3.807s] [ 29%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/c2_turtle_interface/msg/order_item__type_support.cpp.o[0m
+[3.818s] [ 31%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/c2_turtle_interface/srv/get_total_sales__type_support.cpp.o[0m
+[4.160s] [ 34%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/order__type_support.cpp.o[0m
+[4.443s] [ 36%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/order__type_support.cpp.o[0m
+[4.479s] [ 38%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/get_total_sales__type_support.cpp.o[0m
+[4.523s] [ 40%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/srv/detail/get_total_sales__type_support.cpp.o[0m
+[4.788s] [ 42%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/c2_turtle_interface/srv/detail/order__type_support_c.cpp.o[0m
+[4.956s] [ 44%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/c2_turtle_interface/srv/order__type_support.cpp.o[0m
+[5.002s] [ 46%] [32m[1mLinking CXX shared library libc2_turtle_interface__rosidl_typesupport_cpp.so[0m
+[5.037s] [ 48%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/c2_turtle_interface/srv/get_total_sales__type_support.cpp.o[0m
+[5.112s] [ 51%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/c2_turtle_interface/msg/order_item__type_support.cpp.o[0m
+[5.113s] [ 51%] Built target c2_turtle_interface__rosidl_typesupport_cpp
+[5.143s] [ 53%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/msg/detail/dds_fastrtps/order_item__type_support.cpp.o[0m
+[5.186s] [ 55%] [32m[1mLinking CXX shared library libc2_turtle_interface__rosidl_typesupport_c.so[0m
+[5.300s] [ 55%] Built target c2_turtle_interface__rosidl_typesupport_c
+[5.333s] [ 57%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/c2_turtle_interface/msg/detail/order_item__type_support.cpp.o[0m
+[5.389s] [ 59%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/c2_turtle_interface/srv/detail/order__type_support.c.o[0m
+[5.504s] [ 63%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/c2_turtle_interface/srv/detail/get_total_sales__type_support_c.cpp.o[0m
+[5.507s] [ 63%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/c2_turtle_interface/srv/detail/get_total_sales__type_support.c.o[0m
+[5.536s] [ 65%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/c2_turtle_interface/msg/detail/order_item__type_support.c.o[0m
+[5.614s] [ 68%] [32mBuilding CXX object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/c2_turtle_interface/msg/detail/order_item__type_support_c.cpp.o[0m
+[5.644s] [ 70%] [32m[1mLinking C shared library libc2_turtle_interface__rosidl_typesupport_introspection_c.so[0m
+[5.717s] [ 70%] Built target c2_turtle_interface__rosidl_typesupport_introspection_c
+[6.085s] [ 72%] [32m[1mLinking CXX shared library libc2_turtle_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.160s] [ 74%] [32m[1mLinking CXX shared library libc2_turtle_interface__rosidl_typesupport_introspection_cpp.so[0m
+[6.166s] [ 74%] Built target c2_turtle_interface__rosidl_typesupport_fastrtps_cpp
+[6.235s] [ 76%] [32m[1mLinking CXX shared library libc2_turtle_interface__rosidl_typesupport_fastrtps_c.so[0m
+[6.236s] [ 76%] Built target c2_turtle_interface__rosidl_typesupport_introspection_cpp
+[6.303s] [ 76%] Built target c2_turtle_interface__rosidl_typesupport_fastrtps_c
+[6.320s] [ 76%] Built target c2_turtle_interface
+[6.337s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.975s] [ 78%] Built target c2_turtle_interface__py
+[6.994s] [ 82%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c.o[0m
+[6.994s] [ 82%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c.o[0m
+[6.996s] [ 85%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/srv/_order_s.c.o[0m
+[7.147s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/c2_turtle_interface/libc2_turtle_interface__rosidl_generator_py.so[0m
+[7.182s] [ 87%] Built target c2_turtle_interface__rosidl_generator_py
+[7.201s] [ 91%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.201s] [ 91%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[7.206s] [ 93%] [32mBuilding C object CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.303s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.344s] [ 95%] Built target c2_turtle_interface__rosidl_typesupport_introspection_c__pyext
+[7.351s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.354s] [100%] [32m[1mLinking C shared library rosidl_generator_py/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.397s] [100%] Built target c2_turtle_interface__rosidl_typesupport_c__pyext
+[7.403s] [100%] Built target c2_turtle_interface__rosidl_typesupport_fastrtps_c__pyext
+[7.420s] Invoked command in '/home/g1/rokey_c2_ws/build/c2_turtle_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/turtlebot3_gui:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c2_ws/build/c2_turtle_interface -- -j8 -l8
+[7.525s] Invoking command in '/home/g1/rokey_c2_ws/build/c2_turtle_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/turtlebot3_gui:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c2_ws/build/c2_turtle_interface
+[7.532s] -- Install configuration: ""
+[7.533s] -- Execute custom install script
+[7.533s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/ament_index/resource_index/rosidl_interfaces/c2_turtle_interface
+[7.542s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__functions.h
+[7.551s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__struct.h
+[7.559s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__type_support.h
+[7.568s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/order_item.h
+[7.577s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/rosidl_generator_c__visibility_control.h
+[7.586s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__functions.h
+[7.596s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__struct.h
+[7.606s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__type_support.h
+[7.613s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__functions.h
+[7.621s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__struct.h
+[7.629s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__type_support.h
+[7.638s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/get_total_sales.h
+[7.647s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/order.h
+[7.658s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/library_path.sh
+[7.668s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/library_path.dsv
+[7.677s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_fastrtps_c.h
+[7.686s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.696s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__rosidl_typesupport_fastrtps_c.h
+[7.709s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__rosidl_typesupport_fastrtps_c.h
+[7.719s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_introspection_c.h
+[7.729s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.739s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__rosidl_typesupport_introspection_c.h
+[7.748s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__rosidl_typesupport_introspection_c.h
+[7.758s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__builder.hpp
+[7.767s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__struct.hpp
+[7.777s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__traits.hpp
+[7.787s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/order_item.hpp
+[7.796s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__builder.hpp
+[7.805s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__struct.hpp
+[7.815s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__traits.hpp
+[7.824s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__builder.hpp
+[7.833s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__struct.hpp
+[7.842s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__traits.hpp
+[7.852s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/get_total_sales.hpp
+[7.861s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/order.hpp
+[7.871s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_fastrtps_cpp.hpp
+[7.880s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.890s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__rosidl_typesupport_fastrtps_cpp.hpp
+[7.900s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__rosidl_typesupport_fastrtps_cpp.hpp
+[7.911s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_introspection_cpp.hpp
+[7.925s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/get_total_sales__rosidl_typesupport_introspection_cpp.hpp
+[7.937s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/include/c2_turtle_interface/c2_turtle_interface/srv/detail/order__rosidl_typesupport_introspection_cpp.hpp
+[7.951s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/pythonpath.sh
+[7.963s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/pythonpath.dsv
+[7.975s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[7.987s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.000s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.013s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface-0.0.0-py3.10.egg-info/top_level.txt
+[8.025s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/__init__.py
+[8.037s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_c.c
+[8.047s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.059s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_introspection_c.c
+[8.070s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.083s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.094s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.105s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/libc2_turtle_interface__rosidl_generator_py.so
+[8.117s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/msg/__init__.py
+[8.127s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/msg/_order_item.py
+[8.137s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/msg/_order_item_s.c
+[8.147s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/__init__.py
+[8.159s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/_get_total_sales.py
+[8.172s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/_get_total_sales_s.c
+[8.183s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/_order.py
+[8.193s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/_order_s.c
+[8.205s] -- Up-to-date symlink: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.205s] -- Up-to-date symlink: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.205s] -- Up-to-date symlink: /home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/c2_turtle_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.206s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/Order.idl
+[8.217s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/GetTotalSales.idl
+[8.228s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/msg/OrderItem.idl
+[8.238s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/Order.srv
+[8.250s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/Order_Request.msg
+[8.260s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/Order_Response.msg
+[8.272s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/GetTotalSales.srv
+[8.283s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/GetTotalSales_Request.msg
+[8.294s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/srv/GetTotalSales_Response.msg
+[8.305s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/msg/OrderItem.msg
+[8.315s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/ament_index/resource_index/package_run_dependencies/c2_turtle_interface
+[8.328s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/ament_index/resource_index/parent_prefix_path/c2_turtle_interface
+[8.343s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/ament_prefix_path.sh
+[8.353s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/ament_prefix_path.dsv
+[8.365s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/path.sh
+[8.375s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/environment/path.dsv
+[8.387s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/local_setup.bash
+[8.398s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/local_setup.sh
+[8.409s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/local_setup.zsh
+[8.420s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/local_setup.dsv
+[8.431s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/package.dsv
+[8.443s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/ament_index/resource_index/packages/c2_turtle_interface
+[8.455s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/rosidl_cmake-extras.cmake
+[8.467s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.481s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[8.491s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/ament_cmake_export_targets-extras.cmake
+[8.501s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.510s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.518s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.526s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interfaceConfig.cmake
+[8.534s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interfaceConfig-version.cmake
+[8.542s] -- Symlinking: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/package.xml
+[8.549s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_generator_c.so
+[8.549s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_generator_c.so" to ""
+[8.550s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_fastrtps_c.so
+[8.550s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[8.550s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_introspection_c.so
+[8.550s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_introspection_c.so" to ""
+[8.550s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_c.so
+[8.551s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_c.so" to ""
+[8.551s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_fastrtps_cpp.so
+[8.551s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.551s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_introspection_cpp.so
+[8.552s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[8.552s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_cpp.so
+[8.552s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_typesupport_cpp.so" to ""
+[8.591s] Listing '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface'...
+[8.591s] Compiling '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/__init__.py'...
+[8.591s] Listing '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/msg'...
+[8.592s] Compiling '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/msg/__init__.py'...
+[8.592s] Compiling '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/msg/_order_item.py'...
+[8.592s] Listing '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv'...
+[8.592s] Compiling '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/__init__.py'...
+[8.592s] Compiling '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/_get_total_sales.py'...
+[8.592s] Compiling '/home/g1/rokey_c2_ws/install/c2_turtle_interface/local/lib/python3.10/dist-packages/c2_turtle_interface/srv/_order.py'...
+[8.596s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_generator_py.so
+[8.596s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/c2_turtle_interface/lib/libc2_turtle_interface__rosidl_generator_py.so" to ""
+[8.596s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_generator_cExport.cmake
+[8.596s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_generator_cExport-noconfig.cmake
+[8.596s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[8.596s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.597s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_introspection_cExport.cmake
+[8.597s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.597s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_cExport.cmake
+[8.597s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_cExport-noconfig.cmake
+[8.597s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_generator_cppExport.cmake
+[8.597s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.598s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.598s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_introspection_cppExport.cmake
+[8.598s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.598s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_cppExport.cmake
+[8.598s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/c2_turtle_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[8.598s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_generator_pyExport.cmake
+[8.599s] -- Installing: /home/g1/rokey_c2_ws/install/c2_turtle_interface/share/c2_turtle_interface/cmake/export_c2_turtle_interface__rosidl_generator_pyExport-noconfig.cmake
+[8.601s] Invoked command in '/home/g1/rokey_c2_ws/build/c2_turtle_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/turtlebot3_gui:/home/g1/rokey_c2_ws/install/jiwon:/home/g1/rokey_c2_ws/install/c2_turtle_order_package:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c2_ws/build/c2_turtle_interface

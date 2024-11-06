@@ -34,10 +34,20 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // menu_item
-#include "rosidl_runtime_c/string_functions.h"  // menu_item
+#include "c2_turtle_interface/msg/detail/order_item__functions.h"  // items
 
 // forward declare type support functions
+size_t get_serialized_size_c2_turtle_interface__msg__OrderItem(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_c2_turtle_interface__msg__OrderItem(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, c2_turtle_interface, msg, OrderItem)();
 
 
 using _Order_Request__ros_msg_type = c2_turtle_interface__srv__Order_Request;
@@ -56,23 +66,23 @@ static bool _Order_Request__cdr_serialize(
     cdr << ros_message->table_number;
   }
 
-  // Field name: menu_item
+  // Field name: items
   {
-    const rosidl_runtime_c__String * str = &ros_message->menu_item;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, c2_turtle_interface, msg, OrderItem
+      )()->data);
+    size_t size = ros_message->items.size;
+    auto array_ptr = ros_message->items.data;
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_serialize(
+          &array_ptr[i], cdr))
+      {
+        return false;
+      }
     }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
-  // Field name: quantity
-  {
-    cdr << ros_message->quantity;
   }
 
   // Field name: total_price
@@ -97,25 +107,31 @@ static bool _Order_Request__cdr_deserialize(
     cdr >> ros_message->table_number;
   }
 
-  // Field name: menu_item
+  // Field name: items
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->menu_item.data) {
-      rosidl_runtime_c__String__init(&ros_message->menu_item);
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, c2_turtle_interface, msg, OrderItem
+      )()->data);
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->items.data) {
+      c2_turtle_interface__msg__OrderItem__Sequence__fini(&ros_message->items);
     }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->menu_item,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'menu_item'\n");
+    if (!c2_turtle_interface__msg__OrderItem__Sequence__init(&ros_message->items, size)) {
+      fprintf(stderr, "failed to create array for field 'items'");
       return false;
     }
-  }
-
-  // Field name: quantity
-  {
-    cdr >> ros_message->quantity;
+    auto array_ptr = ros_message->items.data;
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_deserialize(
+          cdr, &array_ptr[i]))
+      {
+        return false;
+      }
+    }
   }
 
   // Field name: total_price
@@ -146,15 +162,17 @@ size_t get_serialized_size_c2_turtle_interface__srv__Order_Request(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name menu_item
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->menu_item.size + 1);
-  // field.name quantity
+  // field.name items
   {
-    size_t item_size = sizeof(ros_message->quantity);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+    size_t array_size = ros_message->items.size;
+    auto array_ptr = ros_message->items.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += get_serialized_size_c2_turtle_interface__msg__OrderItem(
+        &array_ptr[index], current_alignment);
+    }
   }
   // field.name total_price
   {
@@ -199,33 +217,36 @@ size_t max_serialized_size_c2_turtle_interface__srv__Order_Request(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: menu_item
+  // member: items
   {
-    size_t array_size = 1;
-
+    size_t array_size = 0;
     full_bounded = false;
     is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_c2_turtle_interface__msg__OrderItem(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
     }
   }
-  // member: quantity
+  // member: total_price
   {
     size_t array_size = 1;
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: total_price
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;

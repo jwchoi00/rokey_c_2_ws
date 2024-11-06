@@ -208,8 +208,10 @@ CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_t
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/srv/detail/order__struct.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/srv/detail/order__functions.h \
  /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__functions.h

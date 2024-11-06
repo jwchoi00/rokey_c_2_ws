@@ -1,0 +1,188 @@
+[0.012s] Invoking command in '/home/robot/turtlebot3_gui/build/calculator_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/project_ws/install/turtlebot:/home/robot/turtlebot3_ws/install/turtlebot3_teleop:/home/robot/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/robot/turtlebot3_gui/src/calculator_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robot/turtlebot3_gui/install/calculator_interfaces
+[0.021s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.116s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.121s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.123s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.125s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.355s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.517s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.715s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.737s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.738s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.764s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.764s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.764s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.764s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.788s] -- Found PythonExtra: .so  
+[0.821s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.836s] -- Added test 'lint_cmake' to check CMake code style
+[0.837s] -- Added test 'xmllint' to check XML markup files
+[0.839s] -- Configuring done
+[0.854s] -- Generating done
+[0.855s] -- Build files have been written to: /home/robot/turtlebot3_gui/build/calculator_interfaces
+[0.860s] Invoked command in '/home/robot/turtlebot3_gui/build/calculator_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/project_ws/install/turtlebot:/home/robot/turtlebot3_ws/install/turtlebot3_teleop:/home/robot/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/robot/turtlebot3_gui/src/calculator_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robot/turtlebot3_gui/install/calculator_interfaces
+[0.862s] Invoking command in '/home/robot/turtlebot3_gui/build/calculator_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/project_ws/install/turtlebot:/home/robot/turtlebot3_ws/install/turtlebot3_teleop:/home/robot/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/robot/turtlebot3_gui/build/calculator_interfaces -- -j16 -l16
+[0.911s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.919s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.923s] [  6%] Built target ament_cmake_python_symlink_calculator_interfaces
+[1.100s] running egg_info
+[1.101s] creating calculator_interfaces.egg-info
+[1.101s] writing calculator_interfaces.egg-info/PKG-INFO
+[1.101s] writing dependency_links to calculator_interfaces.egg-info/dependency_links.txt
+[1.101s] writing top-level names to calculator_interfaces.egg-info/top_level.txt
+[1.101s] writing manifest file 'calculator_interfaces.egg-info/SOURCES.txt'
+[1.103s] reading manifest file 'calculator_interfaces.egg-info/SOURCES.txt'
+[1.103s] writing manifest file 'calculator_interfaces.egg-info/SOURCES.txt'
+[1.119s] [  6%] Built target calculator_interfaces__cpp
+[1.124s] [  6%] Built target ament_cmake_python_build_calculator_interfaces_egg
+[1.128s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.131s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.131s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.135s] [ 19%] [32mBuilding C object CMakeFiles/calculator_interfaces__rosidl_generator_c.dir/rosidl_generator_c/calculator_interfaces/srv/detail/calculate__functions.c.o[0m
+[1.184s] [ 22%] [32m[1mLinking C shared library libcalculator_interfaces__rosidl_generator_c.so[0m
+[1.217s] [ 22%] Built target calculator_interfaces__rosidl_generator_c
+[1.226s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.227s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.227s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.309s] [ 35%] [32mBuilding CXX object CMakeFiles/calculator_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/calculator_interfaces/srv/calculate__type_support.cpp.o[0m
+[1.328s] [ 38%] [32mBuilding CXX object CMakeFiles/calculator_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/calculator_interfaces/srv/detail/calculate__type_support.cpp.o[0m
+[1.423s] [ 41%] [32mBuilding CXX object CMakeFiles/calculator_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/calculator_interfaces/srv/calculate__type_support.cpp.o[0m
+[1.447s] [ 45%] [32m[1mLinking CXX shared library libcalculator_interfaces__rosidl_typesupport_c.so[0m
+[1.467s] [ 48%] [32mBuilding C object CMakeFiles/calculator_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/calculator_interfaces/srv/detail/calculate__type_support.c.o[0m
+[1.473s] [ 51%] [32mBuilding CXX object CMakeFiles/calculator_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/calculator_interfaces/srv/detail/dds_fastrtps/calculate__type_support.cpp.o[0m
+[1.483s] [ 54%] [32m[1mLinking CXX shared library libcalculator_interfaces__rosidl_typesupport_cpp.so[0m
+[1.493s] [ 54%] Built target calculator_interfaces__rosidl_typesupport_c
+[1.498s] [ 58%] [32m[1mLinking C shared library libcalculator_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.515s] [ 58%] Built target calculator_interfaces__rosidl_typesupport_cpp
+[1.527s] [ 58%] Built target calculator_interfaces__rosidl_typesupport_introspection_c
+[1.560s] [ 61%] [32mBuilding CXX object CMakeFiles/calculator_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/calculator_interfaces/srv/detail/calculate__type_support_c.cpp.o[0m
+[1.704s] [ 64%] [32m[1mLinking CXX shared library libcalculator_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.752s] [ 64%] Built target calculator_interfaces__rosidl_typesupport_introspection_cpp
+[1.759s] [ 67%] [32m[1mLinking CXX shared library libcalculator_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.779s] [ 70%] [32m[1mLinking CXX shared library libcalculator_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.822s] [ 70%] Built target calculator_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.839s] [ 70%] Built target calculator_interfaces__rosidl_typesupport_fastrtps_c
+[1.859s] [ 70%] Built target calculator_interfaces
+[1.880s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.128s] [ 74%] Built target calculator_interfaces__py
+[2.147s] [ 77%] [32mBuilding C object CMakeFiles/calculator_interfaces__rosidl_generator_py.dir/rosidl_generator_py/calculator_interfaces/srv/_calculate_s.c.o[0m
+[2.245s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/calculator_interfaces/libcalculator_interfaces__rosidl_generator_py.so[0m
+[2.276s] [ 80%] Built target calculator_interfaces__rosidl_generator_py
+[2.295s] [ 83%] [32mBuilding C object CMakeFiles/calculator_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/calculator_interfaces/_calculator_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.298s] [ 87%] [32mBuilding C object CMakeFiles/calculator_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/calculator_interfaces/_calculator_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.298s] [ 90%] [32mBuilding C object CMakeFiles/calculator_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/calculator_interfaces/_calculator_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.363s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.365s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.366s] [100%] [32m[1mLinking C shared library rosidl_generator_py/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.388s] [100%] Built target calculator_interfaces__rosidl_typesupport_c__pyext
+[2.395s] [100%] Built target calculator_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.395s] [100%] Built target calculator_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.404s] Invoked command in '/home/robot/turtlebot3_gui/build/calculator_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/project_ws/install/turtlebot:/home/robot/turtlebot3_ws/install/turtlebot3_teleop:/home/robot/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/robot/turtlebot3_gui/build/calculator_interfaces -- -j16 -l16
+[2.498s] Invoking command in '/home/robot/turtlebot3_gui/build/calculator_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/project_ws/install/turtlebot:/home/robot/turtlebot3_ws/install/turtlebot3_teleop:/home/robot/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/robot/turtlebot3_gui/build/calculator_interfaces
+[2.508s] -- Install configuration: ""
+[2.508s] -- Execute custom install script
+[2.509s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/ament_index/resource_index/rosidl_interfaces/calculator_interfaces
+[2.522s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.531s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/calculate.h
+[2.544s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__functions.h
+[2.552s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__struct.h
+[2.560s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__type_support.h
+[2.568s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/library_path.sh
+[2.577s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/library_path.dsv
+[2.584s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.592s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__rosidl_typesupport_fastrtps_c.h
+[2.601s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.608s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__rosidl_typesupport_introspection_c.h
+[2.618s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/calculate.hpp
+[2.631s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__builder.hpp
+[2.639s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__struct.hpp
+[2.650s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__traits.hpp
+[2.659s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.667s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__rosidl_typesupport_fastrtps_cpp.hpp
+[2.675s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/include/calculator_interfaces/calculator_interfaces/srv/detail/calculate__rosidl_typesupport_introspection_cpp.hpp
+[2.686s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/pythonpath.sh
+[2.698s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/pythonpath.dsv
+[2.708s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.717s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.728s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.739s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.751s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/__init__.py
+[2.759s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/_calculator_interfaces_s.ep.rosidl_typesupport_c.c
+[2.769s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/_calculator_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.780s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/_calculator_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.792s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.803s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.814s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.821s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/libcalculator_interfaces__rosidl_generator_py.so
+[2.828s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/srv/__init__.py
+[2.835s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/srv/_calculate.py
+[2.848s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/srv/_calculate_s.c
+[2.860s] -- Up-to-date symlink: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.860s] -- Up-to-date symlink: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.861s] -- Up-to-date symlink: /home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/calculator_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.861s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/srv/Calculate.idl
+[2.872s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/srv/Calculate.srv
+[2.881s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/srv/Calculate_Request.msg
+[2.894s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/srv/Calculate_Response.msg
+[2.904s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/ament_index/resource_index/package_run_dependencies/calculator_interfaces
+[2.916s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/ament_index/resource_index/parent_prefix_path/calculator_interfaces
+[2.929s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/ament_prefix_path.sh
+[2.936s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/ament_prefix_path.dsv
+[2.947s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/path.sh
+[2.957s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/environment/path.dsv
+[2.965s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/local_setup.bash
+[2.972s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/local_setup.sh
+[2.980s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/local_setup.zsh
+[2.989s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/local_setup.dsv
+[3.005s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/package.dsv
+[3.016s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/ament_index/resource_index/packages/calculator_interfaces
+[3.027s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.039s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.052s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.062s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.072s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.081s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.089s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.096s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfacesConfig.cmake
+[3.106s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfacesConfig-version.cmake
+[3.115s] -- Symlinking: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/package.xml
+[3.123s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_generator_c.so
+[3.123s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_generator_c.so" to ""
+[3.123s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.123s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.124s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_introspection_c.so
+[3.124s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.124s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_c.so
+[3.124s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_c.so" to ""
+[3.124s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.124s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.124s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.124s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.124s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_cpp.so
+[3.124s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.150s] Listing '/home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces'...
+[3.150s] Compiling '/home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/__init__.py'...
+[3.150s] Listing '/home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/srv'...
+[3.150s] Compiling '/home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/srv/__init__.py'...
+[3.150s] Compiling '/home/robot/turtlebot3_gui/install/calculator_interfaces/local/lib/python3.10/dist-packages/calculator_interfaces/srv/_calculate.py'...
+[3.154s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_generator_py.so
+[3.154s] -- Set runtime path of "/home/robot/turtlebot3_gui/install/calculator_interfaces/lib/libcalculator_interfaces__rosidl_generator_py.so" to ""
+[3.154s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_generator_cExport.cmake
+[3.154s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.154s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_cExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_generator_cppExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_cppExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/calculator_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_generator_pyExport.cmake
+[3.155s] -- Installing: /home/robot/turtlebot3_gui/install/calculator_interfaces/share/calculator_interfaces/cmake/export_calculator_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.157s] Invoked command in '/home/robot/turtlebot3_gui/build/calculator_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/project_ws/install/turtlebot:/home/robot/turtlebot3_ws/install/turtlebot3_teleop:/home/robot/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/robot/turtlebot3_gui/build/calculator_interfaces

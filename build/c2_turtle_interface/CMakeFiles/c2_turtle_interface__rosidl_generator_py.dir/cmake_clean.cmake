@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c.o.d"
   "CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c.o"
   "CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c.o.d"
   "CMakeFiles/c2_turtle_interface__rosidl_generator_py.dir/rosidl_generator_py/c2_turtle_interface/srv/_order_s.c.o"

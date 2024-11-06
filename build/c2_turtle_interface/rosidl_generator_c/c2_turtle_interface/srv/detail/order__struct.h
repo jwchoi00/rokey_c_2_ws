@@ -18,16 +18,15 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'menu_item'
-#include "rosidl_runtime_c/string.h"
+// Member 'items'
+#include "c2_turtle_interface/msg/detail/order_item__struct.h"
 
 /// Struct defined in srv/Order in the package c2_turtle_interface.
 typedef struct c2_turtle_interface__srv__Order_Request
 {
   int32_t table_number;
-  rosidl_runtime_c__String menu_item;
-  int32_t quantity;
-  double total_price;
+  c2_turtle_interface__msg__OrderItem__Sequence items;
+  int32_t total_price;
 } c2_turtle_interface__srv__Order_Request;
 
 // Struct for a sequence of c2_turtle_interface__srv__Order_Request.

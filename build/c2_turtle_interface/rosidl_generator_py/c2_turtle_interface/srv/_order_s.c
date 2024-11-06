@@ -16,9 +16,14 @@
 #include "c2_turtle_interface/srv/detail/order__struct.h"
 #include "c2_turtle_interface/srv/detail/order__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
+#include "rosidl_runtime_c/primitives_sequence.h"
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
+// Nested array functions includes
+#include "c2_turtle_interface/msg/detail/order_item__functions.h"
+// end nested array functions include
+bool c2_turtle_interface__msg__order_item__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * c2_turtle_interface__msg__order_item__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool c2_turtle_interface__srv__order__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -62,28 +67,37 @@ bool c2_turtle_interface__srv__order__request__convert_from_py(PyObject * _pymsg
     ros_message->table_number = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
-  {  // menu_item
-    PyObject * field = PyObject_GetAttrString(_pymsg, "menu_item");
+  {  // items
+    PyObject * field = PyObject_GetAttrString(_pymsg, "items");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
+    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'items'");
+    if (!seq_field) {
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->menu_item, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
-  {  // quantity
-    PyObject * field = PyObject_GetAttrString(_pymsg, "quantity");
-    if (!field) {
+    Py_ssize_t size = PySequence_Size(field);
+    if (-1 == size) {
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->quantity = (int32_t)PyLong_AsLong(field);
+    if (!c2_turtle_interface__msg__OrderItem__Sequence__init(&(ros_message->items), size)) {
+      PyErr_SetString(PyExc_RuntimeError, "unable to create c2_turtle_interface__msg__OrderItem__Sequence ros_message");
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    c2_turtle_interface__msg__OrderItem * dest = ros_message->items.data;
+    for (Py_ssize_t i = 0; i < size; ++i) {
+      if (!c2_turtle_interface__msg__order_item__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+    }
+    Py_DECREF(seq_field);
     Py_DECREF(field);
   }
   {  // total_price
@@ -91,8 +105,8 @@ bool c2_turtle_interface__srv__order__request__convert_from_py(PyObject * _pymsg
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->total_price = PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->total_price = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -128,28 +142,28 @@ PyObject * c2_turtle_interface__srv__order__request__convert_to_py(void * raw_ro
       }
     }
   }
-  {  // menu_item
+  {  // items
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->menu_item.data,
-      strlen(ros_message->menu_item.data),
-      "replace");
+    size_t size = ros_message->items.size;
+    field = PyList_New(size);
     if (!field) {
       return NULL;
     }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "menu_item", field);
-      Py_DECREF(field);
-      if (rc) {
+    c2_turtle_interface__msg__OrderItem * item;
+    for (size_t i = 0; i < size; ++i) {
+      item = &(ros_message->items.data[i]);
+      PyObject * pyitem = c2_turtle_interface__msg__order_item__convert_to_py(item);
+      if (!pyitem) {
+        Py_DECREF(field);
         return NULL;
       }
+      int rc = PyList_SetItem(field, i, pyitem);
+      (void)rc;
+      assert(rc == 0);
     }
-  }
-  {  // quantity
-    PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->quantity);
+    assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "quantity", field);
+      int rc = PyObject_SetAttrString(_pymessage, "items", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -158,7 +172,7 @@ PyObject * c2_turtle_interface__srv__order__request__convert_to_py(void * raw_ro
   }
   {  // total_price
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->total_price);
+    field = PyLong_FromLong(ros_message->total_price);
     {
       int rc = PyObject_SetAttrString(_pymessage, "total_price", field);
       Py_DECREF(field);

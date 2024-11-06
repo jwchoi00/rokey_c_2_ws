@@ -16,6 +16,30 @@
 
 
 // forward declaration of message dependencies and their conversion functions
+namespace c2_turtle_interface
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const c2_turtle_interface::msg::OrderItem &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  c2_turtle_interface::msg::OrderItem &);
+size_t get_serialized_size(
+  const c2_turtle_interface::msg::OrderItem &,
+  size_t current_alignment);
+size_t
+max_serialized_size_OrderItem(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace c2_turtle_interface
+
 
 namespace c2_turtle_interface
 {
@@ -34,10 +58,16 @@ cdr_serialize(
 {
   // Member: table_number
   cdr << ros_message.table_number;
-  // Member: menu_item
-  cdr << ros_message.menu_item;
-  // Member: quantity
-  cdr << ros_message.quantity;
+  // Member: items
+  {
+    size_t size = ros_message.items.size();
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      c2_turtle_interface::msg::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.items[i],
+        cdr);
+    }
+  }
   // Member: total_price
   cdr << ros_message.total_price;
   return true;
@@ -52,11 +82,17 @@ cdr_deserialize(
   // Member: table_number
   cdr >> ros_message.table_number;
 
-  // Member: menu_item
-  cdr >> ros_message.menu_item;
-
-  // Member: quantity
-  cdr >> ros_message.quantity;
+  // Member: items
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    ros_message.items.resize(size);
+    for (size_t i = 0; i < size; i++) {
+      c2_turtle_interface::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.items[i]);
+    }
+  }
 
   // Member: total_price
   cdr >> ros_message.total_price;
@@ -83,15 +119,18 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: menu_item
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.menu_item.size() + 1);
-  // Member: quantity
+  // Member: items
   {
-    size_t item_size = sizeof(ros_message.quantity);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+    size_t array_size = ros_message.items.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        c2_turtle_interface::msg::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.items[index], current_alignment);
+    }
   }
   // Member: total_price
   {
@@ -132,35 +171,36 @@ max_serialized_size_Order_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: menu_item
+  // Member: items
   {
-    size_t array_size = 1;
-
+    size_t array_size = 0;
     full_bounded = false;
     is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        c2_turtle_interface::msg::typesupport_fastrtps_cpp::max_serialized_size_OrderItem(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
     }
-  }
-
-  // Member: quantity
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: total_price
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;

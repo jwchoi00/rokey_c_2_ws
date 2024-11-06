@@ -71,9 +71,12 @@ c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/
 c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_c.c
 c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/_order.py
 c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales.py
+c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/msg/_order_item.py
 c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/__init__.py
+c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/msg/__init__.py
 c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/_order_s.c
 c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c
+c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c
 
 rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +93,7 @@ rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesup
 rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/c2_turtle_interface/srv/Order.idl
 rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/c2_turtle_interface/srv/GetTotalSales.idl
+rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/c2_turtle_interface/msg/OrderItem.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/g1/rokey_c2_ws/build/c2_turtle_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/g1/rokey_c2_ws/build/c2_turtle_interface/c2_turtle_interface__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -105,8 +109,14 @@ rosidl_generator_py/c2_turtle_interface/srv/_order.py: rosidl_generator_py/c2_tu
 rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales.py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales.py
 
+rosidl_generator_py/c2_turtle_interface/msg/_order_item.py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/msg/_order_item.py
+
 rosidl_generator_py/c2_turtle_interface/srv/__init__.py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/srv/__init__.py
+
+rosidl_generator_py/c2_turtle_interface/msg/__init__.py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/msg/__init__.py
 
 rosidl_generator_py/c2_turtle_interface/srv/_order_s.c: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/srv/_order_s.c
@@ -114,10 +124,16 @@ rosidl_generator_py/c2_turtle_interface/srv/_order_s.c: rosidl_generator_py/c2_t
 rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c
 
+rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c
+
 c2_turtle_interface__py: c2_turtle_interface__py/CMakeFiles/c2_turtle_interface__py
 c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_c.c
 c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/_c2_turtle_interface_s.ep.rosidl_typesupport_introspection_c.c
+c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/msg/__init__.py
+c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/msg/_order_item.py
+c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/msg/_order_item_s.c
 c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/__init__.py
 c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales.py
 c2_turtle_interface__py: rosidl_generator_py/c2_turtle_interface/srv/_get_total_sales_s.c

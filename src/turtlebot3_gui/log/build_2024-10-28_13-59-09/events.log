@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.005894] (turtlebot3_gui) JobQueued: {'identifier': 'turtlebot3_gui', 'dependencies': OrderedDict()}
+[0.007131] (turtlebot3_gui) JobStarted: {'identifier': 'turtlebot3_gui'}
+[0.101372] (-) TimerEvent: {}
+[0.201941] (-) TimerEvent: {}
+[0.302603] (-) TimerEvent: {}
+[0.403122] (-) TimerEvent: {}
+[0.503709] (-) TimerEvent: {}
+[0.604404] (-) TimerEvent: {}
+[0.705056] (-) TimerEvent: {}
+[0.806294] (-) TimerEvent: {}
+[0.913535] (-) TimerEvent: {}
+[1.014112] (-) TimerEvent: {}
+[1.114703] (-) TimerEvent: {}
+[1.215259] (-) TimerEvent: {}
+[1.315786] (-) TimerEvent: {}
+[1.418295] (-) TimerEvent: {}
+[1.518943] (-) TimerEvent: {}
+[1.619627] (-) TimerEvent: {}
+[1.723131] (-) TimerEvent: {}
+[1.823686] (-) TimerEvent: {}
+[1.924353] (-) TimerEvent: {}
+[2.025225] (-) TimerEvent: {}
+[2.125839] (-) TimerEvent: {}
+[2.227303] (-) TimerEvent: {}
+[2.328170] (-) TimerEvent: {}
+[2.428806] (-) TimerEvent: {}
+[2.529465] (-) TimerEvent: {}
+[2.630259] (-) TimerEvent: {}
+[2.731014] (-) TimerEvent: {}
+[2.831957] (-) TimerEvent: {}
+[2.933256] (-) TimerEvent: {}
+[3.034440] (-) TimerEvent: {}
+[3.135061] (-) TimerEvent: {}
+[3.235832] (-) TimerEvent: {}
+[3.336392] (-) TimerEvent: {}
+[3.436994] (-) TimerEvent: {}
+[3.537651] (-) TimerEvent: {}
+[3.644502] (-) TimerEvent: {}
+[3.745171] (-) TimerEvent: {}
+[3.853609] (-) TimerEvent: {}
+[3.861775] (turtlebot3_gui) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtlebot3_gui', 'build', '--build-base', '/home/love/turtlebot3_gui/build/turtlebot3_gui/build', 'install', '--record', '/home/love/turtlebot3_gui/build/turtlebot3_gui/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/love/turtlebot3_gui/src/turtlebot3_gui', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'love', 'GIT_ASKPASS': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/love', 'TERM_PROGRAM_VERSION': '1.94.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-e0532c22-e52d-4f89-8bd4-21638420033f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/love/turtlebot3_gui/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'love', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/1294_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/love/.vscode-server/bin/384ff7382de624fb94dbaf6da11977bba1ecd427/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.5.10018.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/kimru/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kimru/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4fbc092659.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/love/turtlebot3_gui/install/turtlebot3_gui:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/love/turtlebot3_gui/build/turtlebot3_gui', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/love/turtlebot3_gui/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:/home/love/turtlebot3_gui/build/turtlebot3_gui:/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}, 'shell': False}
+[3.953865] (-) TimerEvent: {}
+[4.054438] (-) TimerEvent: {}
+[4.155042] (-) TimerEvent: {}
+[4.255627] (-) TimerEvent: {}
+[4.356266] (-) TimerEvent: {}
+[4.456907] (-) TimerEvent: {}
+[4.557512] (-) TimerEvent: {}
+[4.658231] (-) TimerEvent: {}
+[4.760976] (-) TimerEvent: {}
+[4.862971] (-) TimerEvent: {}
+[4.965646] (-) TimerEvent: {}
+[5.066665] (-) TimerEvent: {}
+[5.167256] (-) TimerEvent: {}
+[5.267802] (-) TimerEvent: {}
+[5.318746] (turtlebot3_gui) StdoutLine: {'line': b'running egg_info\n'}
+[5.322686] (turtlebot3_gui) StdoutLine: {'line': b'writing ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/PKG-INFO\n'}
+[5.325964] (turtlebot3_gui) StdoutLine: {'line': b'writing dependency_links to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/dependency_links.txt\n'}
+[5.333345] (turtlebot3_gui) StdoutLine: {'line': b'writing entry points to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/entry_points.txt\n'}
+[5.336288] (turtlebot3_gui) StdoutLine: {'line': b'writing requirements to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/requires.txt\n'}
+[5.337414] (turtlebot3_gui) StdoutLine: {'line': b'writing top-level names to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/top_level.txt\n'}
+[5.345162] (turtlebot3_gui) StdoutLine: {'line': b"reading manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'\n"}
+[5.348127] (turtlebot3_gui) StdoutLine: {'line': b"writing manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'\n"}
+[5.349265] (turtlebot3_gui) StdoutLine: {'line': b'running build\n'}
+[5.349558] (turtlebot3_gui) StdoutLine: {'line': b'running build_py\n'}
+[5.352184] (turtlebot3_gui) StdoutLine: {'line': b'running install\n'}
+[5.353656] (turtlebot3_gui) StdoutLine: {'line': b'running install_lib\n'}
+[5.361084] (turtlebot3_gui) StdoutLine: {'line': b'running install_data\n'}
+[5.363121] (turtlebot3_gui) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.367918] (-) TimerEvent: {}
+[5.371884] (turtlebot3_gui) StdoutLine: {'line': b"removing '/home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.374291] (turtlebot3_gui) StdoutLine: {'line': b'Copying ../../build/turtlebot3_gui/turtlebot3_gui.egg-info to /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui-0.0.0-py3.10.egg-info\n'}
+[5.377318] (turtlebot3_gui) StdoutLine: {'line': b'running install_scripts\n'}
+[5.468185] (-) TimerEvent: {}
+[5.471231] (turtlebot3_gui) StdoutLine: {'line': b'Installing turtlebot3_gui script to /home/love/turtlebot3_gui/install/turtlebot3_gui/lib/turtlebot3_gui\n'}
+[5.481060] (turtlebot3_gui) StdoutLine: {'line': b"writing list of installed files to '/home/love/turtlebot3_gui/build/turtlebot3_gui/install.log'\n"}
+[5.567068] (turtlebot3_gui) CommandEnded: {'returncode': 0}
+[5.568251] (-) TimerEvent: {}
+[5.629639] (turtlebot3_gui) JobEnded: {'identifier': 'turtlebot3_gui', 'rc': 0}
+[5.634396] (-) EventReactorShutdown: {}

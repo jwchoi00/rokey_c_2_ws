@@ -58,7 +58,11 @@ CMakeFiles/c2_turtle_interface__rosidl_typesupport_introspection_c.dir/rosidl_ty
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/rosidl_generator_c__visibility_control.h \
  /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/srv/detail/order__struct.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/order_item.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__functions.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_generator_c/c2_turtle_interface/msg/detail/order_item__type_support.h \
+ /home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_typesupport_introspection_c/c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_introspection_c.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h

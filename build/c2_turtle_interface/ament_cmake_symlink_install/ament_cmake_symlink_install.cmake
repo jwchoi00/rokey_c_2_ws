@@ -364,6 +364,9 @@ ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface"
 # install(FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/srv/GetTotalSales.idl" "DESTINATION" "share/c2_turtle_interface/srv")
 ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface" FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/srv/GetTotalSales.idl" "DESTINATION" "share/c2_turtle_interface/srv")
 
+# install(FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/msg/OrderItem.idl" "DESTINATION" "share/c2_turtle_interface/msg")
+ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface" FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_adapter/c2_turtle_interface/msg/OrderItem.idl" "DESTINATION" "share/c2_turtle_interface/msg")
+
 # install(FILES "/home/g1/rokey_c2_ws/src/c2_turtle_interface/srv/Order.srv" "DESTINATION" "share/c2_turtle_interface/srv")
 ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface" FILES "/home/g1/rokey_c2_ws/src/c2_turtle_interface/srv/Order.srv" "DESTINATION" "share/c2_turtle_interface/srv")
 
@@ -381,6 +384,9 @@ ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface"
 
 # install(FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_cmake/srv/GetTotalSales_Response.msg" "DESTINATION" "share/c2_turtle_interface/srv")
 ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface" FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/rosidl_cmake/srv/GetTotalSales_Response.msg" "DESTINATION" "share/c2_turtle_interface/srv")
+
+# install(FILES "/home/g1/rokey_c2_ws/src/c2_turtle_interface/msg/OrderItem.msg" "DESTINATION" "share/c2_turtle_interface/msg")
+ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface" FILES "/home/g1/rokey_c2_ws/src/c2_turtle_interface/msg/OrderItem.msg" "DESTINATION" "share/c2_turtle_interface/msg")
 
 # install(FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/c2_turtle_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/g1/rokey_c2_ws/src/c2_turtle_interface" FILES "/home/g1/rokey_c2_ws/build/c2_turtle_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/c2_turtle_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
