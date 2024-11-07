@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from serving_robot_msgs/msg/RobotState.msg
+// generated code does not contain a copyright notice
+
+
+module serving_robot_msgs {
+  module msg {
+    struct RobotState {
+      boolean state;
+    };
+  };
+};

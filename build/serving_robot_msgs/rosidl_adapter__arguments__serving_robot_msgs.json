@@ -1,0 +1,9 @@
+{
+  "package_name": "serving_robot_msgs",
+  "non_idl_tuples": [
+    "/home/g1/rokey_c2_ws/src/serving_robot_msgs:msg/RobotState.msg",
+    "/home/g1/rokey_c2_ws/src/serving_robot_msgs:msg/TotalPrice2C.msg",
+    "/home/g1/rokey_c2_ws/src/serving_robot_msgs:srv/T2C.srv",
+    "/home/g1/rokey_c2_ws/src/serving_robot_msgs:action/C2R.action"
+  ]
+}

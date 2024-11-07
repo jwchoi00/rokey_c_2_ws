@@ -1,35 +1,22 @@
 import sys
 import rclpy
 from rclpy.node import Node
-from PyQt5.QtWidgets import QFrame, QApplication, QWidget, QSpinBox, QPushButton, QVBoxLayout, QLabel,QHBoxLayout,QMessageBox
+from PyQt5.QtWidgets import QFrame, QApplication, QWidget, QSpinBox, QPushButton, QVBoxLayout, QLabel, QHBoxLayout, QMessageBox
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from table_order_interface.srv import SetOrder
-import threading #GUI와 ROS 이벤트 루트 동시 처리를 위해 추가
+from serving_robot_msgs.srv import T2C
+import threading  # GUI와 ROS 이벤트 루트 동시 처리를 위해 추가
 
 class tableOrderClient(Node):
     def __init__(self):
-        #테이블 노드 초기화. 클라이언트로 생성하는 부분
         super().__init__('tableOrderClient')
         self.client = self.create_client(SetOrder, 'SetOrder')
 
         while not self.client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('table order not available, waiting...')
+            self.get_logger().info('database not available, waiting...')
 
-    def sendTableOrderClient(self, tableNumber, menu, menuNumber,totalPrice):
-        #테이블의 주문을 관제로 보내는 함수
-        #여기 수정하세요!!!!!!
-        """
-        request = SetOrder.Request()
-        request.date = date
-        request.tableNumber = tableNumber
-        request.menu = menu
-        request.menuNumber = menuNumber
-
-        future = self.client.call_async(request)
-        future.add_done_callback(self.callback)
-        # 수정필요
-        """
+    def sendTableOrderClient(self, tableNumber, menu, menuNumber, totalPrice):
         request = SetOrder.Request()
         request.table_number = tableNumber
         request.menu = list(menu)
@@ -42,24 +29,54 @@ class tableOrderClient(Node):
     def callback(self, future):
         try:
             response = future.result()
-            if response.success:
-                print("Successfully sent")
+            if response.succeed:
+                print("Successfully sent to database")
             else:
-                print("Failed to send table order")
+                print("Failed to send database")
         except Exception as e:
-            print(f"Service call failed : {e}")
+            print(f"Service call failed: {e}")
 
     def exec_event_loop(self):
         while rclpy.ok():
             QApplication.processEvents()  # PyQt5 event processing
             rclpy.spin_once(self)  # Process ROS2 node events
 
+
+class T2CClient(Node):
+    def __init__(self):
+        super().__init__('T2CClient')
+        self.client = self.create_client(T2C, 'T2C')
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('T2C service not available, waiting...')
+    def sendTableInfo(self, tableNumber, menu, menuNumber, totalPrice):
+        request = T2C.Request()
+        request.table_number = tableNumber
+        request.menu = menu
+        request.menu_number = menuNumber
+        request.price = totalPrice
+        future = self.client.call_async(request)
+        future.add_done_callback(self.callback)
+
+    def callback(self, future):
+        try:
+            response = future.result()
+            print(f"Response from controller: {response.succeed}")
+            if response.succeed:
+                print("Successfully sent to controller")
+            else:
+                print("Failed to send table info to controller")
+        except Exception as e:
+            print(f"Service call failed: {e}")
+
+
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.totalPriceInt = 0
         self.client = tableOrderClient()
-        ########이미지 추가
+        self.T2CClient = T2CClient()
+
+        # 이미지 추가
         self.pixmap1 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/pride_chicken.jpeg')
         self.pixmap1 = self.pixmap1.scaled(200, 150, Qt.IgnoreAspectRatio)
         self.pixmap2 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/yangnum_chicken.jpeg')
@@ -73,12 +90,13 @@ class MainWindow(QWidget):
         self.sourcedChickenImg.setPixmap(self.pixmap2)
         self.soiSourcedChickenImg = QLabel()
         self.soiSourcedChickenImg.setPixmap(self.pixmap3)
-        ######이미지 추가
+
         self.setWindowTitle("테이블 오더")
         self.setGeometry(800, 400, 400, 300)
 
         self.layout = QVBoxLayout()
 
+        # Table number input
         self.tableLayout = QHBoxLayout()
         self.tableNumberLabel = QLabel("테이블 번호  ")
         self.tableLayout.addWidget(self.tableNumberLabel)
@@ -89,9 +107,9 @@ class MainWindow(QWidget):
         self.tableNumberBox.valueChanged.connect(self.tableChanged)
         self.layout.addLayout(self.tableLayout)
 
-
+        # Chicken menu inputs
         self.prideChickenLayout = QHBoxLayout()
-        self.prideChickenLayout.addWidget(self.prideChickenImg) #이미지 추가
+        self.prideChickenLayout.addWidget(self.prideChickenImg)
         self.prideChickenLabel = QLabel("후라이드 치킨 (20,000)")
         self.prideChickenLayout.addWidget(self.prideChickenLabel)
         self.prideChickenNumberBox = QSpinBox(self)
@@ -101,7 +119,7 @@ class MainWindow(QWidget):
         self.layout.addLayout(self.prideChickenLayout)
 
         self.sourcedChickenLayout = QHBoxLayout()
-        self.sourcedChickenLayout.addWidget(self.sourcedChickenImg) #이미지 추가
+        self.sourcedChickenLayout.addWidget(self.sourcedChickenImg)
         self.sourcedChickenLabel = QLabel("양념 치킨 (21,000)")
         self.sourcedChickenLayout.addWidget(self.sourcedChickenLabel)
         self.sourcedChickenNumberBox = QSpinBox(self)
@@ -110,9 +128,8 @@ class MainWindow(QWidget):
         self.sourcedChickenLayout.addWidget(self.sourcedChickenNumberBox)
         self.layout.addLayout(self.sourcedChickenLayout)
 
-
         self.soiSourcedChickenLayout = QHBoxLayout()
-        self.soiSourcedChickenLayout.addWidget(self.soiSourcedChickenImg) #이미지 추가
+        self.soiSourcedChickenLayout.addWidget(self.soiSourcedChickenImg)
         self.soiSourcedChickenLabel = QLabel("간장 치킨 (21,000)")
         self.soiSourcedChickenLayout.addWidget(self.soiSourcedChickenLabel)
         self.soiSourcedChickenNumberBox = QSpinBox(self)
@@ -121,74 +138,57 @@ class MainWindow(QWidget):
         self.soiSourcedChickenLayout.addWidget(self.soiSourcedChickenNumberBox)
         self.layout.addLayout(self.soiSourcedChickenLayout)
 
+        # Total price display
         self.totalPriceLayout = QHBoxLayout()
         self.totalPriceLabel = QLabel("총 금액 ")
         self.totalPriceLayout.addWidget(self.totalPriceLabel)
         self.totalPrice = QLabel("")
         self.totalPrice.setNum(self.totalPriceInt)
         self.totalPriceLayout.addWidget(self.totalPrice)
+
         frame = QFrame()
-        frame.setFrameShape(QFrame.StyledPanel)  # You can choose other shapes like QFrame.Box
-        frame.setFrameShadow(QFrame.Raised)  # Set shadow style for the frame (optional)
-
-        frame.setLayout(self.totalPriceLayout)  # Set the totalPriceLayout as the layout for the frame
-
-        # Add the frame to the main layout
+        frame.setFrameShape(QFrame.StyledPanel)
+        frame.setFrameShadow(QFrame.Raised)
+        frame.setLayout(self.totalPriceLayout)  # Add layout to frame
         self.layout.addWidget(frame)
-        self.layout.addLayout(self.totalPriceLayout)
 
+        # Bottom button layout
         self.bottomLayout = QHBoxLayout()
         self.initButton = QPushButton("초기화", self)
         self.initButton.setFixedWidth(130)
         self.initButton.clicked.connect(self.tableChanged)
         self.orderButton = QPushButton("주문", self)
-        self.orderButton.setFixedWidth(130) 
+        self.orderButton.setFixedWidth(130)
         self.orderButton.clicked.connect(self.sendTableOrder)
         self.bottomLayout.addWidget(self.initButton)
         self.bottomLayout.addWidget(self.orderButton)
-
         self.layout.addLayout(self.bottomLayout)
+
         self.setLayout(self.layout)
 
     def orderChanged(self):
-        totalPrice = 20000 * self.prideChickenNumberBox.value() + 21000 * self.sourcedChickenNumberBox.value() +  21000 * self.soiSourcedChickenNumberBox.value() 
+        totalPrice = 20000 * self.prideChickenNumberBox.value() + 21000 * self.sourcedChickenNumberBox.value() + 21000 * self.soiSourcedChickenNumberBox.value()
         self.totalPrice.setNum(totalPrice)
         self.totalPriceInt = totalPrice
 
-    def tableChanged(self):#초기화 버튼에서도 사용하는 함수
+    def tableChanged(self):
         self.prideChickenNumberBox.setValue(0)
         self.sourcedChickenNumberBox.setValue(0)
         self.soiSourcedChickenNumberBox.setValue(0)
 
     def sendTableOrder(self):
-        # 주문 버튼을 눌렀을때 호출되는 함수
-        # DB로 리퀘스트하는 부분. 관제로 리퀘스트하는 부분.  두 파트.
-        # 여기 수정하세요!!!!!!!!!!!!!
-        ''' 
-        서비스 인터페이스
-        # Request
-        # 날짜는 db에서 생성하여 입력
-        int32 table_number # 테이블 번호
-        string[] menu # 주문 메뉴
-        int32[] menu_number # 주문한 메뉴의 갯수
-        int32 price # 총 주문 가격
-        ---
-        # Response
-        bool success
-        '''
         if self.totalPriceInt > 0:
-            tableNumber = self.tableNumberBox.value()#테이블 번호
+            tableNumber = self.tableNumberBox.value()
 
-            listOrderMenu = []#메뉴 리스트
-            listOrderNumber = []#메뉴 갯수 리스트
+            listOrderMenu = []
+            listOrderNumber = []
 
             prideChickenNumber = self.prideChickenNumberBox.value()
             sourcedChickenNumber = self.sourcedChickenNumberBox.value()
             soiSourcedChickenNumber = self.soiSourcedChickenNumberBox.value()
 
-            totalPrice = self.totalPriceInt#총 가격
+            totalPrice = self.totalPriceInt
 
-            #리스트 생성
             if prideChickenNumber > 0:
                 listOrderMenu.append('후라이드')
                 listOrderNumber.append(prideChickenNumber)
@@ -201,26 +201,15 @@ class MainWindow(QWidget):
                 listOrderMenu.append('간장')
                 listOrderNumber.append(soiSourcedChickenNumber)
 
-            #보내는 값을 확인하는 print
             print(f"{tableNumber} / {listOrderMenu} / {listOrderNumber} / {totalPrice}")
 
-            # DB에 값을 보내는 부분
+            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
+            self.T2CClient.sendTableInfo(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
+        else:
+            QMessageBox.warning(self, "주문 오류", "주문 금액이 0원입니다. 메뉴를 추가해주세요.")
 
-            # 관제에 값을 보내는 부분
-            #print(f"Seding table order : {tableNumber}, {prideChickenNumber}, {sourcedChickenNumber}, {soiSourcedChickenNumber}")
-            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice) #G1 server로 전송할 데이터 변경함
-
-        else :
-            msg = QMessageBox()
-            msg.setWindowTitle("주문")
-            msg.setText("주문 내역이 없습니다.")
-            msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
-            msg.exec_()
-
-    def exec_event_loop(self):
-        while rclpy.ok():  # ROS2 이벤트 루프
-            QApplication.processEvents()  # PyQt5 이벤트 처리
-            rclpy.spin_once(self.client)  # ROS2 노드의 이벤트 처리
+    def closeEvent(self, event):
+        rclpy.shutdown()  # Close ROS before exiting
 
 
 def main():
@@ -228,11 +217,12 @@ def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    #이벤트 루프 스래드 처리
+
+    # Run ROS event loop in a separate thread to avoid blocking the GUI
     ros_thread = threading.Thread(target=window.client.exec_event_loop)
     ros_thread.start()
-    app.exec()
-    rclpy.shutdown()
+
+    sys.exit(app.exec_())
 
 if __name__ == '__main__':
     main()

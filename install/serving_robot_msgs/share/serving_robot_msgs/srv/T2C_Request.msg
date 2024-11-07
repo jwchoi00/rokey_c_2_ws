@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/serving_robot_msgs/rosidl_cmake/srv/T2C_Request.msg

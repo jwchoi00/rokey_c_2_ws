@@ -1,0 +1,24 @@
+[0.020s] Invoking command in '/home/g1/rokey_c2_ws/build/table_order_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c2_ws/build/table_order_interface -- -j8 -l8
+[0.067s] [  9%] Built target table_order_interface__rosidl_generator_c
+[0.070s] [ 12%] Built target table_order_interface__cpp
+[0.082s] [ 12%] Built target ament_cmake_python_symlink_table_order_interface
+[0.097s] [ 22%] Built target table_order_interface__rosidl_typesupport_c
+[0.099s] [ 32%] Built target table_order_interface__rosidl_typesupport_introspection_c
+[0.106s] [ 41%] Built target table_order_interface__rosidl_typesupport_introspection_cpp
+[0.106s] [ 61%] Built target table_order_interface__rosidl_typesupport_fastrtps_cpp
+[0.106s] [ 61%] Built target table_order_interface__rosidl_typesupport_fastrtps_c
+[0.108s] [ 70%] Built target table_order_interface__rosidl_typesupport_cpp
+[0.128s] [ 70%] Built target table_order_interface
+[0.147s] [ 74%] Built target table_order_interface__py
+[0.167s] [ 80%] Built target table_order_interface__rosidl_generator_py
+[0.193s] [ 87%] Built target table_order_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.196s] [ 93%] Built target table_order_interface__rosidl_typesupport_c__pyext
+[0.197s] [100%] Built target table_order_interface__rosidl_typesupport_introspection_c__pyext
+[0.453s] running egg_info
+[0.454s] writing table_order_interface.egg-info/PKG-INFO
+[0.454s] writing dependency_links to table_order_interface.egg-info/dependency_links.txt
+[0.454s] writing top-level names to table_order_interface.egg-info/top_level.txt
+[0.458s] reading manifest file 'table_order_interface.egg-info/SOURCES.txt'
+[0.458s] writing manifest file 'table_order_interface.egg-info/SOURCES.txt'
+[0.485s] [100%] Built target ament_cmake_python_build_table_order_interface_egg
+[0.496s] Invoked command in '/home/g1/rokey_c2_ws/build/table_order_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c2_ws/build/table_order_interface -- -j8 -l8

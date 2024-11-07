@@ -1,0 +1,260 @@
+[0.019s] Invoking command in '/home/g1/rokey_c2_ws/build/serving_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/g1/rokey_c2_ws/src/serving_robot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/rokey_c2_ws/install/serving_robot_msgs
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.117s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.185s] -- Detecting C compiler ABI info - done
+[0.194s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.194s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.288s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.288s] -- Detecting CXX compile features
+[0.289s] -- Detecting CXX compile features - done
+[0.294s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.496s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.559s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.600s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.636s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.642s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.652s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.665s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.682s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.703s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.173s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.646s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.816s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.819s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.846s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.846s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.846s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.847s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.868s] -- Found PythonExtra: .so  
+[1.922s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.948s] -- Added test 'lint_cmake' to check CMake code style
+[1.949s] -- Added test 'xmllint' to check XML markup files
+[1.953s] -- Configuring done
+[2.001s] -- Generating done
+[2.003s] -- Build files have been written to: /home/g1/rokey_c2_ws/build/serving_robot_msgs
+[2.019s] Invoked command in '/home/g1/rokey_c2_ws/build/serving_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/g1/rokey_c2_ws/src/serving_robot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/rokey_c2_ws/install/serving_robot_msgs
+[2.021s] Invoking command in '/home/g1/rokey_c2_ws/build/serving_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c2_ws/build/serving_robot_msgs -- -j8 -l8
+[2.063s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.077s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.083s] [  4%] Built target ament_cmake_python_symlink_serving_robot_msgs
+[2.624s] running egg_info
+[2.625s] creating serving_robot_msgs.egg-info
+[2.625s] writing serving_robot_msgs.egg-info/PKG-INFO
+[2.627s] writing dependency_links to serving_robot_msgs.egg-info/dependency_links.txt
+[2.627s] writing top-level names to serving_robot_msgs.egg-info/top_level.txt
+[2.627s] writing manifest file 'serving_robot_msgs.egg-info/SOURCES.txt'
+[2.634s] reading manifest file 'serving_robot_msgs.egg-info/SOURCES.txt'
+[2.634s] writing manifest file 'serving_robot_msgs.egg-info/SOURCES.txt'
+[2.701s] [  4%] Built target ament_cmake_python_build_serving_robot_msgs_egg
+[3.321s] [  4%] Built target serving_robot_msgs__cpp
+[3.357s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.361s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.364s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.407s] [ 12%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/serving_robot_msgs/msg/detail/robot_state__functions.c.o[0m
+[3.407s] [ 14%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__functions.c.o[0m
+[3.407s] [ 17%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/serving_robot_msgs/srv/detail/t2_c__functions.c.o[0m
+[3.730s] [ 19%] [32m[1mLinking C shared library libserving_robot_msgs__rosidl_generator_c.so[0m
+[3.849s] [ 19%] Built target serving_robot_msgs__rosidl_generator_c
+[3.882s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.897s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.907s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.715s] [ 27%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serving_robot_msgs/action/c2_r__type_support.cpp.o[0m
+[4.722s] [ 29%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serving_robot_msgs/msg/robot_state__type_support.cpp.o[0m
+[4.743s] [ 31%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serving_robot_msgs/srv/t2_c__type_support.cpp.o[0m
+[5.377s] [ 34%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serving_robot_msgs/msg/detail/robot_state__type_support.cpp.o[0m
+[5.591s] [ 36%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serving_robot_msgs/srv/detail/t2_c__type_support.cpp.o[0m
+[5.704s] [ 38%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serving_robot_msgs/action/detail/c2_r__type_support.cpp.o[0m
+[5.705s] [ 40%] [32m[1mLinking CXX shared library libserving_robot_msgs__rosidl_typesupport_cpp.so[0m
+[5.775s] [ 42%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/detail/dds_fastrtps/robot_state__type_support.cpp.o[0m
+[5.776s] [ 44%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o[0m
+[5.779s] [ 46%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serving_robot_msgs/msg/robot_state__type_support.cpp.o[0m
+[5.866s] [ 46%] Built target serving_robot_msgs__rosidl_typesupport_cpp
+[5.879s] [ 48%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o[0m
+[5.882s] [ 51%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serving_robot_msgs/srv/t2_c__type_support.cpp.o[0m
+[5.902s] [ 53%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/srv/detail/dds_fastrtps/t2_c__type_support.cpp.o[0m
+[5.986s] [ 55%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serving_robot_msgs/action/c2_r__type_support.cpp.o[0m
+[6.040s] [ 57%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o[0m
+[6.139s] [ 59%] [32m[1mLinking CXX shared library libserving_robot_msgs__rosidl_typesupport_c.so[0m
+[6.198s] [ 61%] [32m[1mLinking C shared library libserving_robot_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.258s] [ 63%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/robot_state__type_support_c.cpp.o[0m
+[6.315s] [ 63%] Built target serving_robot_msgs__rosidl_typesupport_introspection_c
+[6.334s] [ 63%] Built target serving_robot_msgs__rosidl_typesupport_c
+[6.342s] [ 65%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serving_robot_msgs/srv/detail/t2_c__type_support_c.cpp.o[0m
+[6.363s] [ 68%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/action/detail/dds_fastrtps/c2_r__type_support.cpp.o[0m
+[6.454s] [ 70%] [32mBuilding CXX object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serving_robot_msgs/action/detail/c2_r__type_support_c.cpp.o[0m
+[7.399s] [ 72%] [32m[1mLinking CXX shared library libserving_robot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.427s] [ 74%] [32m[1mLinking CXX shared library libserving_robot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.508s] [ 74%] Built target serving_robot_msgs__rosidl_typesupport_introspection_cpp
+[7.521s] [ 74%] Built target serving_robot_msgs__rosidl_typesupport_fastrtps_c
+[7.628s] [ 76%] [32m[1mLinking CXX shared library libserving_robot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.701s] [ 76%] Built target serving_robot_msgs__rosidl_typesupport_fastrtps_cpp
+[7.719s] [ 76%] Built target serving_robot_msgs
+[7.738s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.721s] [ 78%] Built target serving_robot_msgs__py
+[8.739s] [ 82%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/serving_robot_msgs/srv/_t2_c_s.c.o[0m
+[8.739s] [ 82%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/serving_robot_msgs/msg/_robot_state_s.c.o[0m
+[8.739s] [ 85%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/serving_robot_msgs/action/_c2_r_s.c.o[0m
+[8.864s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/serving_robot_msgs/libserving_robot_msgs__rosidl_generator_py.so[0m
+[8.900s] [ 87%] Built target serving_robot_msgs__rosidl_generator_py
+[8.919s] [ 93%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.919s] [ 93%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.919s] [ 93%] [32mBuilding C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.042s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.065s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.072s] [100%] [32m[1mLinking C shared library rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.082s] [100%] Built target serving_robot_msgs__rosidl_typesupport_c__pyext
+[9.108s] [100%] Built target serving_robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[9.119s] [100%] Built target serving_robot_msgs__rosidl_typesupport_introspection_c__pyext
+[9.133s] Invoked command in '/home/g1/rokey_c2_ws/build/serving_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c2_ws/build/serving_robot_msgs -- -j8 -l8
+[9.234s] Invoking command in '/home/g1/rokey_c2_ws/build/serving_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c2_ws/build/serving_robot_msgs
+[9.241s] -- Install configuration: ""
+[9.242s] -- Execute custom install script
+[9.242s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/ament_index/resource_index/rosidl_interfaces/serving_robot_msgs
+[9.250s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/c2_r.h
+[9.258s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__functions.h
+[9.266s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__struct.h
+[9.273s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__type_support.h
+[9.281s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__functions.h
+[9.289s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__struct.h
+[9.297s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__type_support.h
+[9.305s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/robot_state.h
+[9.314s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.323s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__functions.h
+[9.332s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__struct.h
+[9.341s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__type_support.h
+[9.350s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/t2_c.h
+[9.359s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/library_path.sh
+[9.367s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/library_path.dsv
+[9.375s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__rosidl_typesupport_fastrtps_c.h
+[9.383s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_fastrtps_c.h
+[9.390s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.398s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__rosidl_typesupport_fastrtps_c.h
+[9.407s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/c2_r.hpp
+[9.414s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__builder.hpp
+[9.422s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__struct.hpp
+[9.430s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__traits.hpp
+[9.438s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__builder.hpp
+[9.447s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__struct.hpp
+[9.454s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__traits.hpp
+[9.462s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/robot_state.hpp
+[9.470s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__builder.hpp
+[9.477s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__struct.hpp
+[9.485s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__traits.hpp
+[9.492s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/t2_c.hpp
+[9.500s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__rosidl_typesupport_fastrtps_cpp.hpp
+[9.508s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_fastrtps_cpp.hpp
+[9.516s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.524s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__rosidl_typesupport_fastrtps_cpp.hpp
+[9.532s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__rosidl_typesupport_introspection_c.h
+[9.540s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_introspection_c.h
+[9.548s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.556s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__rosidl_typesupport_introspection_c.h
+[9.563s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/action/detail/c2_r__rosidl_typesupport_introspection_cpp.hpp
+[9.571s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_introspection_cpp.hpp
+[9.579s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/include/serving_robot_msgs/serving_robot_msgs/srv/detail/t2_c__rosidl_typesupport_introspection_cpp.hpp
+[9.587s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/pythonpath.sh
+[9.595s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/pythonpath.dsv
+[9.603s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[9.611s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.618s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.626s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[9.635s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/__init__.py
+[9.643s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c
+[9.651s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.658s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.666s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/action/__init__.py
+[9.674s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/action/_c2_r.py
+[9.681s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/action/_c2_r_s.c
+[9.689s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/libserving_robot_msgs__rosidl_generator_py.so
+[9.697s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/msg/__init__.py
+[9.705s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/msg/_robot_state.py
+[9.713s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/msg/_robot_state_s.c
+[9.720s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.728s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.736s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.744s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/srv/__init__.py
+[9.752s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/srv/_t2_c.py
+[9.759s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/srv/_t2_c_s.c
+[9.768s] -- Up-to-date symlink: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.768s] -- Up-to-date symlink: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.769s] -- Up-to-date symlink: /home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.769s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/msg/RobotState.idl
+[9.777s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/srv/T2C.idl
+[9.785s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/action/C2R.idl
+[9.793s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/msg/RobotState.msg
+[9.801s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/srv/T2C.srv
+[9.809s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/srv/T2C_Request.msg
+[9.817s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/srv/T2C_Response.msg
+[9.824s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/action/C2R.action
+[9.832s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/ament_index/resource_index/package_run_dependencies/serving_robot_msgs
+[9.840s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/ament_index/resource_index/parent_prefix_path/serving_robot_msgs
+[9.848s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/ament_prefix_path.sh
+[9.856s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/ament_prefix_path.dsv
+[9.864s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/path.sh
+[9.871s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/environment/path.dsv
+[9.879s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/local_setup.bash
+[9.887s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/local_setup.sh
+[9.895s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/local_setup.zsh
+[9.902s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/local_setup.dsv
+[9.911s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.dsv
+[9.919s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/ament_index/resource_index/packages/serving_robot_msgs
+[9.927s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/rosidl_cmake-extras.cmake
+[9.936s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.945s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.954s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.962s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.970s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.978s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.986s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgsConfig.cmake
+[9.994s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgsConfig-version.cmake
+[10.001s] -- Symlinking: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.xml
+[10.009s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_generator_c.so
+[10.009s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_generator_c.so" to ""
+[10.009s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_fastrtps_c.so
+[10.010s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.010s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.010s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.010s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_introspection_c.so
+[10.010s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.010s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_c.so
+[10.011s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_c.so" to ""
+[10.011s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_introspection_cpp.so
+[10.011s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.011s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_cpp.so
+[10.012s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_typesupport_cpp.so" to ""
+[10.055s] Listing '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/__init__.py'...
+[10.055s] Listing '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/action'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/action/__init__.py'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/action/_c2_r.py'...
+[10.055s] Listing '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/msg'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/msg/__init__.py'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/msg/_robot_state.py'...
+[10.055s] Listing '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/srv'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/srv/__init__.py'...
+[10.055s] Compiling '/home/g1/rokey_c2_ws/install/serving_robot_msgs/local/lib/python3.10/dist-packages/serving_robot_msgs/srv/_t2_c.py'...
+[10.059s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_generator_py.so
+[10.059s] -- Set runtime path of "/home/g1/rokey_c2_ws/install/serving_robot_msgs/lib/libserving_robot_msgs__rosidl_generator_py.so" to ""
+[10.059s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_generator_cExport.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_generator_cppExport.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.060s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_cExport.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_cppExport.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/serving_robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_generator_pyExport.cmake
+[10.061s] -- Installing: /home/g1/rokey_c2_ws/install/serving_robot_msgs/share/serving_robot_msgs/cmake/export_serving_robot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.063s] Invoked command in '/home/g1/rokey_c2_ws/build/serving_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c2_ws/install/serving_robot:/home/g1/rokey_c2_ws/install/table_order:/home/g1/rokey_c2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c2_ws/build/serving_robot_msgs

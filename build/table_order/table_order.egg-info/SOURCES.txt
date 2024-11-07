@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+resource/table_order
+table_order/ImageInsert.py
+table_order/OrderTable.py
+table_order/OrderTableCopy.py
+table_order/__init__.py
+table_order/response_test.py
+table_order/test_table_server.py
+table_order.egg-info/PKG-INFO
+table_order.egg-info/SOURCES.txt
+table_order.egg-info/dependency_links.txt
+table_order.egg-info/entry_points.txt
+table_order.egg-info/requires.txt
+table_order.egg-info/top_level.txt
+table_order.egg-info/zip-safe

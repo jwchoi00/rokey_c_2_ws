@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing database.egg-info/PKG-INFO
+writing dependency_links to database.egg-info/dependency_links.txt
+writing entry points to database.egg-info/entry_points.txt
+writing requirements to database.egg-info/requires.txt
+writing top-level names to database.egg-info/top_level.txt
+reading manifest file 'database.egg-info/SOURCES.txt'
+writing manifest file 'database.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/g1/rokey_c2_ws/install/database/lib/python3.10/site-packages/database.egg-link (link to .)
+Installing database_server script to /home/g1/rokey_c2_ws/install/database/lib/database
+Installing test_database_server script to /home/g1/rokey_c2_ws/install/database/lib/database
+
+Installed /home/g1/rokey_c2_ws/build/database
+running symlink_data

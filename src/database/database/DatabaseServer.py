@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from mysql.connector import connect, Error
 from table_order_interface.srv import SetOrder  # 추가된 서비스 임포트
+from serving_robot_msgs.msg import TotalPrice2C
 from datetime import datetime
 import threading
 
@@ -11,7 +12,7 @@ class OrderSaver(Node):
         self.connection = self.create_connection()
         # 주문 서비스 설정
         self.srv = self.create_service(SetOrder, 'SetOrder', self.handle_order)
-
+        self.publisher = self.create_publisher(TotalPrice2C,'total_price',10)
         # 총 매출 서비스 설정
         #self.sales_srv = self.create_service(GetTotalSales, 'get_total_sales', self.handle_get_total_sales)
 
@@ -41,7 +42,7 @@ class OrderSaver(Node):
         self.get_logger().info(f"주문 접수됨: 테이블 {table_number}, 총 가격 {total_price}")
         self.get_logger().info(f"주문 항목: {list(zip(items, quantities))}")  # 메뉴 항목과 수량 출력
         threading.Thread(target=self.process_order, args=(table_number, items, quantities, total_price, response)).start()
-        response.success =True
+        response.succeed =True
         return response
 
     def process_order(self, table_number, items, quantities, total_price, response):
@@ -52,10 +53,7 @@ class OrderSaver(Node):
             for item, quantity in zip(items, quantities):
                 # 가격은 각 항목의 가격 * 수량으로 처리해야 할 수 있습니다.
                 self.save_item_to_db(order_id, item, quantity)  # 여기에 'total_price'를 항목 가격에 맞게 처리
-            response.success = True
-        else:
-            response.success = False
-
+            self.publish_total_price(datetime.now().strftime('%Y-%m-%d'))
     def save_order_to_db(self, table_number, total_price):
         """주문 정보를 MySQL 데이터베이스에 저장하는 메서드"""
         try:
@@ -88,12 +86,14 @@ class OrderSaver(Node):
         finally:
             cursor.close()
 
-    """
-    def handle_get_total_sales(self, request, response):
-        #특정 날짜의 총 매출을 가져오는 메서드
-        total_sales = self.get_total_sales_from_db(request.date)
-        response.total_sales = float(total_sales)
-        return response
+    def publish_total_price(self, date):
+        """Publish the order status to a topic"""
+        total_sales = self.get_total_sales_from_db(date)
+        msg = TotalPrice2C()
+        msg.price = int(total_sales)
+        self.publisher.publish(msg)
+        self.get_logger().info(f"Published total sales for: {msg.price}")
+
 
     def get_total_sales_from_db(self, date):
         #특정 날짜의 총 매출을 MySQL에서 조회하는 메서드
@@ -108,11 +108,12 @@ class OrderSaver(Node):
             return 0.0
         finally:
             cursor.close()
-    """
+
 
 def main(args=None):
     rclpy.init(args=args)
     order_saver = OrderSaver()
+    
     rclpy.spin(order_saver)
     order_saver.destroy_node()
     rclpy.shutdown()

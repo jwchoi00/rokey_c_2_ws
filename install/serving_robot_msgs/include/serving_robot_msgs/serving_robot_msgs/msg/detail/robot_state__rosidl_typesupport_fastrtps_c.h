@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_fastrtps_c.h

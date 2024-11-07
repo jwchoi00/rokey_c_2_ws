@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/RobotState.msg"
+  "msg/TotalPrice2C.msg"
 )
 set(srv_files
   "srv/T2C.srv"

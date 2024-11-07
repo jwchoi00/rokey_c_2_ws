@@ -1,0 +1,1 @@
+/home/g1/rokey_c2_ws/build/serving_robot_msgs/ament_cmake_python/serving_robot_msgs/serving_robot_msgs.egg-info/top_level.txt

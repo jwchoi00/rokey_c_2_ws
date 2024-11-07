@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import QWidget,QApplication
 from serving_robot_msgs.srv import T2C # table to controller
 from serving_robot_msgs.action import C2R # controller to robot
 from serving_robot_msgs.msg import RobotState
+from serving_robot_msgs.msg import TotalPrice2C
 from rclpy.node import Node
 from PyQt5.QtCore import pyqtSignal
 from rclpy.action import ActionClient
@@ -17,15 +18,19 @@ class Rosnode(Node):
     def __init__(self,gui):
         super().__init__('controller')
         self.gui=gui
-        self.oder_server=self.create_service(T2C,'/test',self.callback)
+        self.oder_server=self.create_service(T2C,'T2C',self.callback)
         self.goal_client=ActionClient(self,C2R,'/table_num')
         self.robot_state_sub=self.create_subscription(RobotState,'/state',self.ch_robot_state,10)
-
+        self.total_price_from_db = self.create_subscription(TotalPrice2C,'total_price',self.total_price_from_db_callback,10)
         self.tatal_data=''
 
     def ch_robot_state(self,msg):
         a = msg.state
         self.gui.btn_update_signal.emit(a)
+
+    def total_price_from_db_callback(self, msg):
+        self.total_pirce = msg.price
+        print(self.total_pirce)
 
     def callback(self,req,res):
         self.table_number = req.table_number

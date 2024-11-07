@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from table_order_interface/srv/SetOrder.srv
+// generated code does not contain a copyright notice
+
+
+module table_order_interface {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request" "\n"
+      "날짜는 db에서 생성하여 입력")
+    struct SetOrder_Request {
+      @verbatim (language="comment", text=
+        "테이블 번호")
+      int32 table_number;
+
+      @verbatim (language="comment", text=
+        "주문 메뉴")
+      sequence<string> menu;
+
+      @verbatim (language="comment", text=
+        "주문한 메뉴의 갯수")
+      sequence<int32> menu_number;
+
+      @verbatim (language="comment", text=
+        "총 주문 가격")
+      int32 price;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct SetOrder_Response {
+      boolean succeed;
+    };
+  };
+};
