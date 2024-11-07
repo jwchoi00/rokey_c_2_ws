@@ -1,1 +1,0 @@
-/home/g1/rokey_c2_ws/src/table_order/setup.py

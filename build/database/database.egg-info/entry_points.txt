@@ -1,4 +1,0 @@
-[console_scripts]
-database_server = database.DatabaseServer:main
-test_database_server = database.TestTableServer:main
-
