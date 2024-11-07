@@ -1,0 +1,18 @@
+[0.896s] Invoking command in '/home/g1/rokey_c2_ws/build/table_order': LD_LIBRARY_PATH=/home/g1/rokey_c2_ws/install/table_order_interface/lib:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/g1/rokey_c2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c2_ws/install/table_order/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c2_ws/build/table_order/build --no-deps symlink_data
+[1.252s] running develop
+[1.487s] running egg_info
+[1.487s] writing table_order.egg-info/PKG-INFO
+[1.487s] writing dependency_links to table_order.egg-info/dependency_links.txt
+[1.488s] writing entry points to table_order.egg-info/entry_points.txt
+[1.488s] writing requirements to table_order.egg-info/requires.txt
+[1.488s] writing top-level names to table_order.egg-info/top_level.txt
+[1.489s] reading manifest file 'table_order.egg-info/SOURCES.txt'
+[1.490s] writing manifest file 'table_order.egg-info/SOURCES.txt'
+[1.491s] running build_ext
+[1.491s] Creating /home/g1/rokey_c2_ws/install/table_order/lib/python3.10/site-packages/table-order.egg-link (link to .)
+[1.492s] Installing response_test script to /home/g1/rokey_c2_ws/install/table_order/lib/table_order
+[1.492s] Installing table_order script to /home/g1/rokey_c2_ws/install/table_order/lib/table_order
+[1.492s] 
+[1.492s] Installed /home/g1/rokey_c2_ws/build/table_order
+[1.492s] running symlink_data
+[1.518s] Invoked command in '/home/g1/rokey_c2_ws/build/table_order' returned '0': LD_LIBRARY_PATH=/home/g1/rokey_c2_ws/install/table_order_interface/lib:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/g1/rokey_c2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c2_ws/install/table_order/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c2_ws/build/table_order/build --no-deps symlink_data
