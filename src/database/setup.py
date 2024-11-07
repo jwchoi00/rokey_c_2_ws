@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'database_server = database.database_server:main',
-            'test_database_server = database.test_table_server:main'
+            'database_server = database.DatabaseServer:main',
+            'test_database_server = database.TestTableServer:main'
         ],
     },
 )

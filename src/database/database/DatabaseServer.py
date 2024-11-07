@@ -3,6 +3,7 @@ from rclpy.node import Node
 from mysql.connector import connect, Error
 from table_order_interface.srv import SetOrder  # 추가된 서비스 임포트
 from datetime import datetime
+import threading
 
 class OrderSaver(Node):
     def __init__(self):
@@ -18,7 +19,7 @@ class OrderSaver(Node):
         """MySQL 데이터베이스와 연결을 생성하는 메서드"""
         try:
             connection = connect(
-                host='192.168.0.40 ',  # MySQL 서버 IP
+                host='192.168.123.45 ',  # MySQL 서버 IP
                 user='jwchoi0017',    # MySQL 사용자
                 password='1234',      # MySQL 비밀번호
                 database='orders_db'  # 데이터베이스 이름
@@ -39,7 +40,11 @@ class OrderSaver(Node):
 
         self.get_logger().info(f"주문 접수됨: 테이블 {table_number}, 총 가격 {total_price}")
         self.get_logger().info(f"주문 항목: {list(zip(items, quantities))}")  # 메뉴 항목과 수량 출력
+        threading.Thread(target=self.process_order, args=(table_number, items, quantities, total_price, response)).start()
+        response.success =True
+        return response
 
+    def process_order(self, table_number, items, quantities, total_price, response):
         # 주문 정보를 DB에 저장
         order_id = self.save_order_to_db(table_number, total_price)
         if order_id:
@@ -47,11 +52,9 @@ class OrderSaver(Node):
             for item, quantity in zip(items, quantities):
                 # 가격은 각 항목의 가격 * 수량으로 처리해야 할 수 있습니다.
                 self.save_item_to_db(order_id, item, quantity)  # 여기에 'total_price'를 항목 가격에 맞게 처리
-
             response.success = True
         else:
             response.success = False
-        return response
 
     def save_order_to_db(self, table_number, total_price):
         """주문 정보를 MySQL 데이터베이스에 저장하는 메서드"""
@@ -64,7 +67,7 @@ class OrderSaver(Node):
 
             # 2. 새로 저장된 주문의 ID 가져오기
             order_id = cursor.lastrowid
-            self.get_logger().info(f"주문이 저장되었습니다: {table_number}, 총 가격 {total_price}")
+            #self.get_logger().info(f"주문이 저장되었습니다: {table_number}, 총 가격 {total_price}")
             return order_id
         except Error as e:
             self.get_logger().error(f"주문 저장 오류: {e}")
@@ -79,7 +82,7 @@ class OrderSaver(Node):
             query = "INSERT INTO order_items (order_id, menu_item, quantity) VALUES (%s, %s, %s)"
             cursor.execute(query, (order_id, menu_item, quantity))
             self.connection.commit()
-            self.get_logger().info(f"항목 저장됨: 주문 ID {order_id}, 메뉴 {menu_item}, 수량 {quantity}")
+            #self.get_logger().info(f"항목 저장됨: 주문 ID {order_id}, 메뉴 {menu_item}, 수량 {quantity}")
         except Error as e:
             self.get_logger().error(f"항목 저장 오류: {e}")
         finally:
@@ -106,7 +109,7 @@ class OrderSaver(Node):
         finally:
             cursor.close()
     """
-    
+
 def main(args=None):
     rclpy.init(args=args)
     order_saver = OrderSaver()

@@ -3,6 +3,7 @@ import rclpy
 from rclpy.node import Node
 from PyQt5.QtWidgets import QApplication, QWidget, QSpinBox, QPushButton, QVBoxLayout, QLabel,QHBoxLayout,QMessageBox
 from table_order_interface.srv import SetOrder
+import threading #GUI와 ROS 이벤트 루트 동시 처리를 위해 추가
 
 class tableOrderClient(Node):
     def __init__(self):
@@ -35,15 +36,21 @@ class tableOrderClient(Node):
 
         future = self.client.call_async(request)
         future.add_done_callback(self.callback)
+
     def callback(self, future):
         try:
             response = future.result()
             if response.success:
-                print(f"Successfully sent {response.succress}")
+                print("Successfully sent")
             else:
                 print("Failed to send table order")
         except Exception as e:
             print(f"Service call failed : {e}")
+
+    def exec_event_loop(self):
+        while rclpy.ok():
+            QApplication.processEvents()  # PyQt5 event processing
+            rclpy.spin_once(self)  # Process ROS2 node events
 
 class MainWindow(QWidget):
     def __init__(self):
@@ -158,20 +165,14 @@ class MainWindow(QWidget):
             if prideChickenNumber > 0:
                 listOrderMenu.append('후라이드')
                 listOrderNumber.append(prideChickenNumber)
-            else:
-                pass
 
             if sourcedChickenNumber > 0:
                 listOrderMenu.append('양념')
                 listOrderNumber.append(sourcedChickenNumber)
-            else:
-                pass
 
             if soiSourcedChickenNumber > 0:
                 listOrderMenu.append('간장')
                 listOrderNumber.append(soiSourcedChickenNumber)
-            else:
-                pass
             
             #보내는 값을 확인하는 print
             print(f"{tableNumber} / {listOrderMenu} / {listOrderNumber} / {totalPrice}")
@@ -180,7 +181,7 @@ class MainWindow(QWidget):
 
             # 관제에 값을 보내는 부분
             #print(f"Seding table order : {tableNumber}, {prideChickenNumber}, {sourcedChickenNumber}, {soiSourcedChickenNumber}")
-            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
+            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice) #G1 server로 전송할 데이터 변경함
 
         else :
             msg = QMessageBox()
@@ -191,14 +192,18 @@ class MainWindow(QWidget):
 
     def exec_event_loop(self):
         while rclpy.ok():  # ROS2 이벤트 루프
-            rclpy.spin_once(self.client)  # ROS2 노드의 이벤트 처리
             QApplication.processEvents()  # PyQt5 이벤트 처리
+            rclpy.spin_once(self.client)  # ROS2 노드의 이벤트 처리
+
 
 def main():
     rclpy.init()
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
+    #이벤트 루프 스래드 처리
+    ros_thread = threading.Thread(target=window.client.exec_event_loop)
+    ros_thread.start()
     app.exec()
     rclpy.shutdown()
 

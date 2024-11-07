@@ -20,6 +20,7 @@ setup(
     entry_points={
         'console_scripts': [
             'table_order = table_order.OrderTable:main',
+            'response_test = table_order.response_test:main',
         ],
     },
 )
