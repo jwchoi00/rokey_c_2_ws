@@ -1,1 +1,0 @@
-/home/g1/rokey_c2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/action/_c2_r_s.c

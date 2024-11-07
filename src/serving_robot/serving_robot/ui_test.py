@@ -8,7 +8,11 @@ from PyQt5.QtWidgets import QWidget,QApplication
 from serving_robot_msgs.srv import T2C # table to controller
 from serving_robot_msgs.action import C2R # controller to robot
 from serving_robot_msgs.msg import RobotState
+#새로 추가한 부분#
+#TotalPriceC2,msg
+#int32 price
 from serving_robot_msgs.msg import TotalPrice2C
+#새로 추가한 부분#
 from rclpy.node import Node
 from PyQt5.QtCore import pyqtSignal
 from rclpy.action import ActionClient
@@ -21,17 +25,22 @@ class Rosnode(Node):
         self.oder_server=self.create_service(T2C,'T2C',self.callback)
         self.goal_client=ActionClient(self,C2R,'/table_num')
         self.robot_state_sub=self.create_subscription(RobotState,'/state',self.ch_robot_state,10)
-        self.total_price_from_db = self.create_subscription(TotalPrice2C,'total_price',self.total_price_from_db_callback,10)
+        #새로 추가한 부분
+        #database에서 부터 subscribe 받는 부분
+        self.total_price_sub = self.create_subscription(TotalPrice2C,'total_price',self.total_price_sub_callback,10)
+        #새로 추가한 부분
         self.tatal_data=''
 
     def ch_robot_state(self,msg):
         a = msg.state
         self.gui.btn_update_signal.emit(a)
 
-    def total_price_from_db_callback(self, msg):
+    #새로 추가한 부분
+    #subscribe callback 
+    def total_price_sub_callback(self, msg):
         self.total_pirce = msg.price
         print(self.total_pirce)
-
+    #새로 추가한 부분
     def callback(self,req,res):
         self.table_number = req.table_number
         self.menu = req.menu

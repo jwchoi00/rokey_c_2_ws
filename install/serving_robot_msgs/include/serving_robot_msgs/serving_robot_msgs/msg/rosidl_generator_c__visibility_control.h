@@ -1,1 +1,0 @@
-/home/g1/rokey_c2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h

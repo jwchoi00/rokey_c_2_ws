@@ -1,4 +1,0 @@
-source;share/serving_robot_msgs/local_setup.bash
-source;share/serving_robot_msgs/local_setup.dsv
-source;share/serving_robot_msgs/local_setup.sh
-source;share/serving_robot_msgs/local_setup.zsh

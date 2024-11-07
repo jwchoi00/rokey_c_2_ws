@@ -8,12 +8,13 @@ from table_order_interface.srv import SetOrder
 from serving_robot_msgs.srv import T2C
 import threading  # GUI와 ROS 이벤트 루트 동시 처리를 위해 추가
 
-class tableOrderClient(Node):
+class CombineClient(Node):
     def __init__(self):
-        super().__init__('tableOrderClient')
-        self.client = self.create_client(SetOrder, 'SetOrder')
+        super().__init__('CombineClient')
+        self.client_set_order = self.create_client(SetOrder, 'SetOrder')
+        self.client_t2c = self.create_client(T2C, 'T2C')
 
-        while not self.client.wait_for_service(timeout_sec=1.0):
+        while not self.client_set_order.wait_for_service(timeout_sec=1.0) and not self.client_t2c.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('database not available, waiting...')
 
     def sendTableOrderClient(self, tableNumber, menu, menuNumber, totalPrice):
@@ -23,10 +24,10 @@ class tableOrderClient(Node):
         request.menu_number = list(menuNumber)
         request.price = totalPrice
 
-        future = self.client.call_async(request)
-        future.add_done_callback(self.callback)
+        future = self.client_set_order.call_async(request)
+        future.add_done_callback(self.callback_set_order)
 
-    def callback(self, future):
+    def callback_set_order(self, future):
         try:
             response = future.result()
             if response.succeed:
@@ -36,28 +37,20 @@ class tableOrderClient(Node):
         except Exception as e:
             print(f"Service call failed: {e}")
 
-    def exec_event_loop(self):
-        while rclpy.ok():
-            QApplication.processEvents()  # PyQt5 event processing
-            rclpy.spin_once(self)  # Process ROS2 node events
+#    def exec_event_loop(self):
+#        while rclpy.ok():
+#            #QApplication.processEvents()  # PyQt5 event processing
+#            rclpy.spin_once(self)  # Process ROS2 node events
 
-
-class T2CClient(Node):
-    def __init__(self):
-        super().__init__('T2CClient')
-        self.client = self.create_client(T2C, 'T2C')
-        while not self.client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('T2C service not available, waiting...')
     def sendTableInfo(self, tableNumber, menu, menuNumber, totalPrice):
         request = T2C.Request()
         request.table_number = tableNumber
         request.menu = menu
         request.menu_number = menuNumber
         request.price = totalPrice
-        future = self.client.call_async(request)
-        future.add_done_callback(self.callback)
-
-    def callback(self, future):
+        future = self.client_t2c.call_async(request)
+        future.add_done_callback(self.callback_t2c)
+    def callback_t2c(self, future):
         try:
             response = future.result()
             print(f"Response from controller: {response.succeed}")
@@ -68,13 +61,19 @@ class T2CClient(Node):
         except Exception as e:
             print(f"Service call failed: {e}")
 
+    def exec_event_loop(self):
+        while rclpy.ok():
+            #QApplication.processEvents()  # PyQt5 event processing
+            rclpy.spin_once(self)  # Process ROS2 node events
+
 
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.totalPriceInt = 0
-        self.client = tableOrderClient()
-        self.T2CClient = T2CClient()
+        #self.client = tableOrderClient()
+        #self.T2CClient = T2CClient()
+        self.client = CombineClient()
 
         # 이미지 추가
         self.pixmap1 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/pride_chicken.jpeg')
@@ -204,12 +203,13 @@ class MainWindow(QWidget):
             print(f"{tableNumber} / {listOrderMenu} / {listOrderNumber} / {totalPrice}")
 
             self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
-            self.T2CClient.sendTableInfo(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
+            self.client.sendTableInfo(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
         else:
             QMessageBox.warning(self, "주문 오류", "주문 금액이 0원입니다. 메뉴를 추가해주세요.")
 
     def closeEvent(self, event):
-        rclpy.shutdown()  # Close ROS before exiting
+        rclpy.shutdown()
+        event.accept()
 
 
 def main():
@@ -218,10 +218,11 @@ def main():
     window = MainWindow()
     window.show()
 
-    # Run ROS event loop in a separate thread to avoid blocking the GUI
-    ros_thread = threading.Thread(target=window.client.exec_event_loop)
-    ros_thread.start()
+    ros_thread1 = threading.Thread(target=window.client.exec_event_loop)
+    ros_thread1.start()
 
+    #ros_thread2 = threading.Thread(target=window.T2CClient.exec_event_loop)
+    #ros_thread2.start()
     sys.exit(app.exec_())
 
 if __name__ == '__main__':

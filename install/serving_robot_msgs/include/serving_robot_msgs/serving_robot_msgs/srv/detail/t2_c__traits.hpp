@@ -1,1 +1,0 @@
-/home/g1/rokey_c2_ws/build/serving_robot_msgs/rosidl_generator_cpp/serving_robot_msgs/srv/detail/t2_c__traits.hpp
