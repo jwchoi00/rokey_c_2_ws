@@ -1,7 +1,9 @@
 import sys
 import rclpy
 from rclpy.node import Node
-from PyQt5.QtWidgets import QApplication, QWidget, QSpinBox, QPushButton, QVBoxLayout, QLabel,QHBoxLayout,QMessageBox
+from PyQt5.QtWidgets import QFrame, QApplication, QWidget, QSpinBox, QPushButton, QVBoxLayout, QLabel,QHBoxLayout,QMessageBox
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtCore import Qt
 from table_order_interface.srv import SetOrder
 import threading #GUI와 ROS 이벤트 루트 동시 처리를 위해 추가
 
@@ -57,7 +59,21 @@ class MainWindow(QWidget):
         super().__init__()
         self.totalPriceInt = 0
         self.client = tableOrderClient()
+        ########이미지 추가
+        self.pixmap1 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/pride_chicken.jpeg')
+        self.pixmap1 = self.pixmap1.scaled(200, 150, Qt.IgnoreAspectRatio)
+        self.pixmap2 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/yangnum_chicken.jpeg')
+        self.pixmap2 = self.pixmap2.scaled(200, 150, Qt.IgnoreAspectRatio)
+        self.pixmap3 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/soi_chicken.jpeg')
+        self.pixmap3 = self.pixmap3.scaled(200, 150, Qt.IgnoreAspectRatio)
 
+        self.prideChickenImg = QLabel()
+        self.prideChickenImg.setPixmap(self.pixmap1)
+        self.sourcedChickenImg = QLabel()
+        self.sourcedChickenImg.setPixmap(self.pixmap2)
+        self.soiSourcedChickenImg = QLabel()
+        self.soiSourcedChickenImg.setPixmap(self.pixmap3)
+        ######이미지 추가
         self.setWindowTitle("테이블 오더")
         self.setGeometry(800, 400, 400, 300)
 
@@ -75,6 +91,7 @@ class MainWindow(QWidget):
 
 
         self.prideChickenLayout = QHBoxLayout()
+        self.prideChickenLayout.addWidget(self.prideChickenImg) #이미지 추가
         self.prideChickenLabel = QLabel("후라이드 치킨 (20,000)")
         self.prideChickenLayout.addWidget(self.prideChickenLabel)
         self.prideChickenNumberBox = QSpinBox(self)
@@ -84,6 +101,7 @@ class MainWindow(QWidget):
         self.layout.addLayout(self.prideChickenLayout)
 
         self.sourcedChickenLayout = QHBoxLayout()
+        self.sourcedChickenLayout.addWidget(self.sourcedChickenImg) #이미지 추가
         self.sourcedChickenLabel = QLabel("양념 치킨 (21,000)")
         self.sourcedChickenLayout.addWidget(self.sourcedChickenLabel)
         self.sourcedChickenNumberBox = QSpinBox(self)
@@ -94,6 +112,7 @@ class MainWindow(QWidget):
 
 
         self.soiSourcedChickenLayout = QHBoxLayout()
+        self.soiSourcedChickenLayout.addWidget(self.soiSourcedChickenImg) #이미지 추가
         self.soiSourcedChickenLabel = QLabel("간장 치킨 (21,000)")
         self.soiSourcedChickenLayout.addWidget(self.soiSourcedChickenLabel)
         self.soiSourcedChickenNumberBox = QSpinBox(self)
@@ -108,6 +127,14 @@ class MainWindow(QWidget):
         self.totalPrice = QLabel("")
         self.totalPrice.setNum(self.totalPriceInt)
         self.totalPriceLayout.addWidget(self.totalPrice)
+        frame = QFrame()
+        frame.setFrameShape(QFrame.StyledPanel)  # You can choose other shapes like QFrame.Box
+        frame.setFrameShadow(QFrame.Raised)  # Set shadow style for the frame (optional)
+
+        frame.setLayout(self.totalPriceLayout)  # Set the totalPriceLayout as the layout for the frame
+
+        # Add the frame to the main layout
+        self.layout.addWidget(frame)
         self.layout.addLayout(self.totalPriceLayout)
 
         self.bottomLayout = QHBoxLayout()
@@ -173,11 +200,11 @@ class MainWindow(QWidget):
             if soiSourcedChickenNumber > 0:
                 listOrderMenu.append('간장')
                 listOrderNumber.append(soiSourcedChickenNumber)
-            
+
             #보내는 값을 확인하는 print
             print(f"{tableNumber} / {listOrderMenu} / {listOrderNumber} / {totalPrice}")
 
-            # DB에 값을 보내는 부분 
+            # DB에 값을 보내는 부분
 
             # 관제에 값을 보내는 부분
             #print(f"Seding table order : {tableNumber}, {prideChickenNumber}, {sourcedChickenNumber}, {soiSourcedChickenNumber}")
