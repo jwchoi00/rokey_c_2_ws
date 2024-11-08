@@ -29,8 +29,8 @@ class Rosnode(Node):
         self.robot_state_sub=self.create_subscription(RobotState,'/state',self.ch_robot_state,10)
 
         #새로 추가한 부분
-        self.tatal_data=''
-        self.total_price=111
+        self.tatal_data_dict = {} #테이블 별 매뉴 기록
+        self.total_price=0
 
     def ch_robot_state(self,msg):
         a = msg.state
@@ -43,7 +43,7 @@ class Rosnode(Node):
         #print(self.total_price)
         #2024-11-8 변경 부분
         #gui와 연결하는 menu_update_signal.emit을 가장 마지막 정보 수신 단계인 subscribe로 이동
-        self.gui.menu_update_signal.emit(self.tatal_data,self.price,self.total_price)
+        self.gui.menu_update_signal.emit(self.table_number,self.tatal_data,self.price,self.total_price)
     #새로 추가한 부분
 
     def callback(self,req,res):
@@ -52,8 +52,17 @@ class Rosnode(Node):
         self.menu_number = req.menu_number
         self.price = req.price
         self.get_logger().info(str(self.table_number))
+        #변경 부분
+        #table_number를 받아서 각 테이블 별로 주문 내역을 기록하여 gui에 표시
+        if self.table_number in self.tatal_data_dict:
+            self.tatal_data = self.tatal_data_dict[self.table_number]  # Get existing order for this table
+        else:
+            self.tatal_data = ''  # No previous orders, initialize with an empty string
+        #변경 부분
         for i in range(len(self.menu)):
             self.tatal_data+=(self.menu[i]+' '+str(self.menu_number[i])+'\n')
+
+        self.tatal_data_dict[self.table_number] = self.tatal_data
 
         res.succeed = True
         self.gui.robot_move_state = True
@@ -66,7 +75,6 @@ class Rosnode(Node):
                 self.get_logger().info('Robot goal server is not avaliable')
                 return False
             wait_count += 1
-        
         goal_num = C2R.Goal()
         goal_num.table_num = 12 #### 12를 DB에서 전달 받은 번호로 변경
         self.send_goal_future=self.goal_client.send_goal_async(
@@ -74,7 +82,7 @@ class Rosnode(Node):
             )
         self.send_goal_future.add_done_callback(self.change_robot_state)
         return True
-    
+
     def test(self,feedback):
         pass
 
@@ -95,7 +103,7 @@ class Rosnode(Node):
             self.get_logger().info("fail...")
 
 class Mainwindow(QWidget):
-    menu_update_signal=pyqtSignal(str,int,int)
+    menu_update_signal=pyqtSignal(int,str,int,int) #맨 앞에 table 넘버도 받을 수 있게
     btn_update_signal=pyqtSignal(bool)
     def __init__(self):
         super().__init__()
@@ -105,17 +113,33 @@ class Mainwindow(QWidget):
         self.menu_update_signal.connect(self.display)
         self.btn_update_signal.connect(self.btn)
         self.robot_move_state = True
-
+        self.table_widgets = {
+            1: (self.ui_setup.textBrowser_table_1, self.ui_setup.label_price_1),
+            2: (self.ui_setup.textBrowser_table_2, self.ui_setup.label_price_2),
+            3: (self.ui_setup.textBrowser_table_3, self.ui_setup.label_price_3),
+            4: (self.ui_setup.textBrowser_table_4, self.ui_setup.label_price_4),
+            5: (self.ui_setup.textBrowser_table_5, self.ui_setup.label_price_5),
+            6: (self.ui_setup.textBrowser_table_6, self.ui_setup.label_price_6),
+            7: (self.ui_setup.textBrowser_table_7, self.ui_setup.label_price_7),
+            8: (self.ui_setup.textBrowser_table_8, self.ui_setup.label_price_8),
+            9: (self.ui_setup.textBrowser_table_9, self.ui_setup.label_price_9),
+        } #테이블 번호에 따른 mapping 데이터
         rclpy.init()
         self.node = Rosnode(self)
         self.thread = threading.Thread(target=rclpy.spin, args=(self.node, ))
         self.thread.start()
     
-    def display(self,msg,price,total):
+    def display(self,table_number,msg,price,total):
+        text_browser, label_price = self.table_widgets.get(table_number, (None, None))
+        if text_browser and label_price:
+            text_browser.setText(msg)
+            label_price.setText(str(price))
+        self.ui_setup.label_revenue_val.setText(str(total))
+        """
         self.ui_setup.textBrowser_table_2.setText(msg)
         self.ui_setup.label_price_2.setText(str(price))
         self.ui_setup.label_revenue_val.setText(str(total))
-    
+        """
     def btn(self,state):
         if state:
             self.ui_setup.btn_send_food.setEnabled(True)

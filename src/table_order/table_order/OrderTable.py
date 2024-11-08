@@ -50,6 +50,7 @@ class CombineClient(Node):
         request.price = totalPrice
         future = self.client_t2c.call_async(request)
         future.add_done_callback(self.callback_t2c)
+
     def callback_t2c(self, future):
         try:
             response = future.result()
@@ -71,8 +72,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.totalPriceInt = 0
-        #self.client = tableOrderClient()
-        #self.T2CClient = T2CClient()
+        self.TotalPriceForRequest = {}
         self.client = CombineClient()
 
         # 이미지 추가
@@ -178,7 +178,6 @@ class MainWindow(QWidget):
     def sendTableOrder(self):
         if self.totalPriceInt > 0:
             tableNumber = self.tableNumberBox.value()
-
             listOrderMenu = []
             listOrderNumber = []
 
@@ -186,8 +185,13 @@ class MainWindow(QWidget):
             sourcedChickenNumber = self.sourcedChickenNumberBox.value()
             soiSourcedChickenNumber = self.soiSourcedChickenNumberBox.value()
 
-            totalPrice = self.totalPriceInt
+            if tableNumber not in self.TotalPriceForRequest:
+                self.TotalPriceForRequest[tableNumber] = 0
 
+            # Add the current total price to the table number's existing value
+            self.TotalPriceForRequest[tableNumber] += self.totalPriceInt
+            totalPrice = self.totalPriceInt #메뉴판 GUI에 현재 담은 장바구니의 총 가격 저장
+            print(self.TotalPriceForRequest)
             if prideChickenNumber > 0:
                 listOrderMenu.append('후라이드')
                 listOrderNumber.append(prideChickenNumber)
@@ -202,8 +206,8 @@ class MainWindow(QWidget):
 
             print(f"{tableNumber} / {listOrderMenu} / {listOrderNumber} / {totalPrice}")
 
-            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
-            self.client.sendTableInfo(tableNumber, listOrderMenu, listOrderNumber, totalPrice)
+            self.client.sendTableOrderClient(tableNumber, listOrderMenu, listOrderNumber, totalPrice) #DB로 데이터 전송하는 친구
+            self.client.sendTableInfo(tableNumber, listOrderMenu, listOrderNumber, self.TotalPriceForRequest[tableNumber]) #관제로 데이터 보내는 친구
         else:
             QMessageBox.warning(self, "주문 오류", "주문 금액이 0원입니다. 메뉴를 추가해주세요.")
 
@@ -217,12 +221,8 @@ def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-
     ros_thread1 = threading.Thread(target=window.client.exec_event_loop)
     ros_thread1.start()
-
-    #ros_thread2 = threading.Thread(target=window.T2CClient.exec_event_loop)
-    #ros_thread2.start()
     sys.exit(app.exec_())
 
 if __name__ == '__main__':
