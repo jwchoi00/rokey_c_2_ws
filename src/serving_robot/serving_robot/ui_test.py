@@ -5,6 +5,7 @@ import rclpy
 import threading
 from serving_robot.Ui import Ui_Form
 from PyQt5.QtWidgets import QWidget,QApplication
+from PyQt5.QtCore import QTimer #주문 테이블 점멸을 위한 타이머
 from serving_robot_msgs.srv import T2C # table to controller
 from serving_robot_msgs.action import C2R # controller to robot
 from serving_robot_msgs.msg import RobotState
@@ -103,7 +104,7 @@ class Rosnode(Node):
             self.get_logger().info("fail...")
 
 class Mainwindow(QWidget):
-    menu_update_signal=pyqtSignal(int,str,int,int) #맨 앞에 table 넘버도 받을 수 있게
+    menu_update_signal=pyqtSignal(int,str,int,int) # table number, message, price, total
     btn_update_signal=pyqtSignal(bool)
     def __init__(self):
         super().__init__()
@@ -128,22 +129,48 @@ class Mainwindow(QWidget):
         self.node = Rosnode(self)
         self.thread = threading.Thread(target=rclpy.spin, args=(self.node, ))
         self.thread.start()
-    
+        #변경 부분
+        #점멸 시간 초기화
+        self.blink_timer = None
+        #변경 부분
     def display(self,table_number,msg,price,total):
         text_browser, label_price = self.table_widgets.get(table_number, (None, None))
         if text_browser and label_price:
             text_browser.setText(msg)
             label_price.setText(str(price))
+            #변경 사항
+            #점멸 시작
+            self.start_blinking(text_browser)
+            #변경 사항
         self.ui_setup.label_revenue_val.setText(str(total))
-        """
-        self.ui_setup.textBrowser_table_2.setText(msg)
-        self.ui_setup.label_price_2.setText(str(price))
-        self.ui_setup.label_revenue_val.setText(str(total))
-        """
+
     def btn(self,state):
         if state:
             self.ui_setup.btn_send_food.setEnabled(True)
-    
+
+    def start_blinking(self, text_browser):
+        # 점멸 효과 시작
+        if self.blink_timer is not None and self.blink_timer.isActive():
+            self.blink_timer.stop()
+        blink_count = 0
+
+        def toggle_color():
+            nonlocal blink_count
+            if blink_count < 6:  # 3회 점멸
+                if blink_count % 2 == 0:
+                    text_browser.setStyleSheet("background-color: red;")
+                else:
+                    text_browser.setStyleSheet("")
+                blink_count += 1
+            else:
+                # 3회 점멸 후 정지
+                text_browser.setStyleSheet("")  # 색갈 되돌리기
+
+        # 500ms로 점멸 시간 설정
+        self.blink_timer = QTimer(self)
+        self.blink_timer.timeout.connect(toggle_color)
+        self.blink_timer.start(500)  # 500ms마다 점멸
+
     def send_table_num(self):
         ## 한번 누르면 비활성화 할 것이라 상태를 확인할 필요 없음.
         self.node.send_goal()
