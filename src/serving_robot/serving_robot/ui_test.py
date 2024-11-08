@@ -24,23 +24,28 @@ class Rosnode(Node):
         self.gui=gui
         self.oder_server=self.create_service(T2C,'T2C',self.callback)
         self.goal_client=ActionClient(self,C2R,'/table_num')
-        self.robot_state_sub=self.create_subscription(RobotState,'/state',self.ch_robot_state,10)
-        #새로 추가한 부분
         #database에서 부터 subscribe 받는 부분
         self.total_price_sub = self.create_subscription(TotalPrice2C,'total_price',self.total_price_sub_callback,10)
+        self.robot_state_sub=self.create_subscription(RobotState,'/state',self.ch_robot_state,10)
+
         #새로 추가한 부분
         self.tatal_data=''
+        self.total_price=111
 
     def ch_robot_state(self,msg):
         a = msg.state
         self.gui.btn_update_signal.emit(a)
 
     #새로 추가한 부분
-    #subscribe callback 
+    #subscribe callback
     def total_price_sub_callback(self, msg):
-        self.total_pirce = msg.price
-        print(self.total_pirce)
+        self.total_price = msg.price
+        #print(self.total_price)
+        #2024-11-8 변경 부분
+        #gui와 연결하는 menu_update_signal.emit을 가장 마지막 정보 수신 단계인 subscribe로 이동
+        self.gui.menu_update_signal.emit(self.tatal_data,self.price,self.total_price)
     #새로 추가한 부분
+
     def callback(self,req,res):
         self.table_number = req.table_number
         self.menu = req.menu
@@ -49,7 +54,7 @@ class Rosnode(Node):
         self.get_logger().info(str(self.table_number))
         for i in range(len(self.menu)):
             self.tatal_data+=(self.menu[i]+' '+str(self.menu_number[i])+'\n')
-        self.gui.menu_update_signal.emit(self.tatal_data,self.price)
+
         res.succeed = True
         self.gui.robot_move_state = True
         return res
@@ -90,7 +95,7 @@ class Rosnode(Node):
             self.get_logger().info("fail...")
 
 class Mainwindow(QWidget):
-    menu_update_signal=pyqtSignal(str,int)
+    menu_update_signal=pyqtSignal(str,int,int)
     btn_update_signal=pyqtSignal(bool)
     def __init__(self):
         super().__init__()
@@ -106,9 +111,10 @@ class Mainwindow(QWidget):
         self.thread = threading.Thread(target=rclpy.spin, args=(self.node, ))
         self.thread.start()
     
-    def display(self,msg,price):
+    def display(self,msg,price,total):
         self.ui_setup.textBrowser_table_2.setText(msg)
         self.ui_setup.label_price_2.setText(str(price))
+        self.ui_setup.label_revenue_val.setText(str(total))
     
     def btn(self,state):
         if state:

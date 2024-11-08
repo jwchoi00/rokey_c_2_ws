@@ -436,7 +436,7 @@ class Ui_Form(object):
         self.label_price_9.setText(_translate("Form", "0"))
         self.label_table9_won.setText(_translate("Form", "원"))
         self.btn_send_food.setText(_translate("Form", "보내기"))
-        self.label_revenue_val.setText(_translate("Form", "TextLabel"))
+        self.label_revenue_val.setText(_translate("Form", "0"))
         self.label_revenue.setText(_translate("Form", "일 매출 :"))
         self.label_revenue_val_won.setText(_translate("Form", "원"))
 

@@ -20,7 +20,7 @@ class OrderSaver(Node):
         """MySQL 데이터베이스와 연결을 생성하는 메서드"""
         try:
             connection = connect(
-                host='192.168.0.40',  # MySQL 서버 IP
+                host='192.168.123.45',  # MySQL 서버 IP
                 user='jwchoi0017',    # MySQL 사용자
                 password='1234',      # MySQL 비밀번호
                 database='orders_db'  # 데이터베이스 이름
@@ -47,13 +47,15 @@ class OrderSaver(Node):
 
     def process_order(self, table_number, items, quantities, total_price, response):
         # 주문 정보를 DB에 저장
+        self.publish_total_price(datetime.now().strftime('%Y-%m-%d'))
         order_id = self.save_order_to_db(table_number, total_price)
         if order_id:
             # 메뉴 항목과 수량을 DB에 저장
             for item, quantity in zip(items, quantities):
                 # 가격은 각 항목의 가격 * 수량으로 처리해야 할 수 있습니다.
                 self.save_item_to_db(order_id, item, quantity)  # 여기에 'total_price'를 항목 가격에 맞게 처리
-            self.publish_total_price(datetime.now().strftime('%Y-%m-%d'))
+
+
     def save_order_to_db(self, table_number, total_price):
         """주문 정보를 MySQL 데이터베이스에 저장하는 메서드"""
         try:
@@ -113,7 +115,6 @@ class OrderSaver(Node):
 def main(args=None):
     rclpy.init(args=args)
     order_saver = OrderSaver()
-    
     rclpy.spin(order_saver)
     order_saver.destroy_node()
     rclpy.shutdown()
