@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'test.ui'
+# Form implementation generated from reading ui file 'controller.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -391,6 +391,9 @@ class Ui_Form(object):
         self.label_revenue_val_won.setFont(font)
         self.label_revenue_val_won.setStyleSheet("color:red")
         self.label_revenue_val_won.setObjectName("label_revenue_val_won")
+        self.textEdit_set_table_num = QtWidgets.QTextEdit(Form)
+        self.textEdit_set_table_num.setGeometry(QtCore.QRect(160, 670, 81, 31))
+        self.textEdit_set_table_num.setObjectName("textEdit_set_table_num")
 
         self.retranslateUi(Form)
         self.btn_send_food.clicked.connect(Form.send_table_num) # type: ignore

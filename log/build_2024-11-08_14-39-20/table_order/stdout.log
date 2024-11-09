@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/table_order/table_order.egg-info
+writing ../../build/table_order/table_order.egg-info/PKG-INFO
+writing dependency_links to ../../build/table_order/table_order.egg-info/dependency_links.txt
+writing entry points to ../../build/table_order/table_order.egg-info/entry_points.txt
+writing requirements to ../../build/table_order/table_order.egg-info/requires.txt
+writing top-level names to ../../build/table_order/table_order.egg-info/top_level.txt
+writing manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+reading manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+writing manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/aaa/rokey_c_2_ws/build/table_order/build
+creating /home/aaa/rokey_c_2_ws/build/table_order/build/lib
+creating /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/OrderTableCopy.py -> /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/ImageInsert.py -> /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/__init__.py -> /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/test_table_server.py -> /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/response_test.py -> /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/OrderTable.py -> /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order
+running install
+running install_lib
+creating /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order/OrderTableCopy.py -> /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order/ImageInsert.py -> /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order/__init__.py -> /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order/test_table_server.py -> /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order/response_test.py -> /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/aaa/rokey_c_2_ws/build/table_order/build/lib/table_order/OrderTable.py -> /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+byte-compiling /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/OrderTableCopy.py to OrderTableCopy.cpython-310.pyc
+byte-compiling /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/ImageInsert.py to ImageInsert.cpython-310.pyc
+byte-compiling /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/test_table_server.py to test_table_server.cpython-310.pyc
+byte-compiling /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/response_test.py to response_test.cpython-310.pyc
+byte-compiling /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/OrderTable.py to OrderTable.cpython-310.pyc
+running install_data
+creating /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index
+creating /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index/resource_index
+creating /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index/resource_index/packages
+copying resource/table_order -> /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index/resource_index/packages
+copying package.xml -> /home/aaa/rokey_c_2_ws/install/table_order/share/table_order
+running install_egg_info
+Copying ../../build/table_order/table_order.egg-info to /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order-0.0.0-py3.10.egg-info
+running install_scripts
+Installing response_test script to /home/aaa/rokey_c_2_ws/install/table_order/lib/table_order
+Installing table_order script to /home/aaa/rokey_c_2_ws/install/table_order/lib/table_order
+Installing table_order_copy script to /home/aaa/rokey_c_2_ws/install/table_order/lib/table_order
+writing list of installed files to '/home/aaa/rokey_c_2_ws/build/table_order/install.log'

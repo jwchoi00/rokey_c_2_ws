@@ -1,0 +1,5 @@
+[console_scripts]
+action_test = serving_robot.action_server_test:main
+robot = serving_robot.robot_control:main
+serving_robot = serving_robot.ui_test:main
+

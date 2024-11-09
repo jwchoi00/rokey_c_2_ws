@@ -661,7 +661,7 @@
     <string notr="true">color:red</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>0</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -714,6 +714,16 @@
    </property>
    <property name="text">
     <string>원</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_set_table_num">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>670</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
    </property>
   </widget>
  </widget>

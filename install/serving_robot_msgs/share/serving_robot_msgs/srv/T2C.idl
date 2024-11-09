@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from serving_robot_msgs/srv/T2C.srv
+// generated code does not contain a copyright notice
+
+
+module serving_robot_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct T2C_Request {
+      int32 table_number;
+
+      sequence<string> menu;
+
+      sequence<int32> menu_number;
+
+      int32 price;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct T2C_Response {
+      boolean succeed;
+    };
+  };
+};
