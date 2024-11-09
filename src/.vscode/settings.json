@@ -1,0 +1,15 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages",
+        "/home/psb/rokey_c_2_ws/install/jiwon/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages",
+        "/home/psb/rokey_c_2_ws/install/jiwon/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/psb/rokey_c_2_ws/src/table_order_interface"
+}

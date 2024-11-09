@@ -1,0 +1,4 @@
+source;share/c2_turtle_interface/local_setup.bash
+source;share/c2_turtle_interface/local_setup.dsv
+source;share/c2_turtle_interface/local_setup.sh
+source;share/c2_turtle_interface/local_setup.zsh

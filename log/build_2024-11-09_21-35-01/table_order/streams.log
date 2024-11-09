@@ -1,0 +1,23 @@
+[2.216s] Invoking command in '/home/psb/rokey_c_2_ws/src/table_order': AMENT_PREFIX_PATH=/home/psb/rokey_c_2_ws/install/table_order_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/psb/rokey_c_2_ws/install/table_order_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/psb/rokey_c_2_ws/install/table_order_interface/lib:/home/psb/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/psb/rokey_c_2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages:/home/psb/rokey_c_2_ws/install/table_order_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/table_order build --build-base /home/psb/rokey_c_2_ws/build/table_order/build install --record /home/psb/rokey_c_2_ws/build/table_order/install.log --single-version-externally-managed install_data
+[2.840s] running egg_info
+[2.841s] writing ../../build/table_order/table_order.egg-info/PKG-INFO
+[2.842s] writing dependency_links to ../../build/table_order/table_order.egg-info/dependency_links.txt
+[2.842s] writing entry points to ../../build/table_order/table_order.egg-info/entry_points.txt
+[2.843s] writing requirements to ../../build/table_order/table_order.egg-info/requires.txt
+[2.843s] writing top-level names to ../../build/table_order/table_order.egg-info/top_level.txt
+[2.847s] reading manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+[2.849s] writing manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+[2.849s] running build
+[2.850s] running build_py
+[2.851s] running install
+[2.851s] running install_lib
+[2.854s] running install_data
+[2.855s] running install_egg_info
+[2.859s] removing '/home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order-0.0.0-py3.10.egg-info' (and everything under it)
+[2.860s] Copying ../../build/table_order/table_order.egg-info to /home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order-0.0.0-py3.10.egg-info
+[2.862s] running install_scripts
+[2.904s] Installing response_test script to /home/psb/rokey_c_2_ws/install/table_order/lib/table_order
+[2.904s] Installing table_order script to /home/psb/rokey_c_2_ws/install/table_order/lib/table_order
+[2.904s] Installing table_order_copy script to /home/psb/rokey_c_2_ws/install/table_order/lib/table_order
+[2.905s] writing list of installed files to '/home/psb/rokey_c_2_ws/build/table_order/install.log'
+[2.948s] Invoked command in '/home/psb/rokey_c_2_ws/src/table_order' returned '0': AMENT_PREFIX_PATH=/home/psb/rokey_c_2_ws/install/table_order_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/psb/rokey_c_2_ws/install/table_order_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/psb/rokey_c_2_ws/install/table_order_interface/lib:/home/psb/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/psb/rokey_c_2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages:/home/psb/rokey_c_2_ws/install/table_order_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/table_order build --build-base /home/psb/rokey_c_2_ws/build/table_order/build install --record /home/psb/rokey_c_2_ws/build/table_order/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+[console_scripts]
+order_client = c2_turtle_order_package.order_client:main
+order_saver = c2_turtle_order_package.order_saver:main
+total_sales_client = c2_turtle_order_package.total_sales_client:main
+

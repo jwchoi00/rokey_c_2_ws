@@ -1,0 +1,33 @@
+[2.152s] Invoking command in '/home/psb/rokey_c_2_ws/src/turtlebot3_gui': PYTHONPATH=/home/psb/rokey_c_2_ws/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_gui build --build-base /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build install --record /home/psb/rokey_c_2_ws/build/turtlebot3_gui/install.log --single-version-externally-managed install_data
+[2.770s] running egg_info
+[2.772s] writing ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/PKG-INFO
+[2.772s] writing dependency_links to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/dependency_links.txt
+[2.773s] writing entry points to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/entry_points.txt
+[2.774s] writing requirements to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/requires.txt
+[2.774s] writing top-level names to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/top_level.txt
+[2.779s] reading manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+[2.782s] writing manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+[2.783s] running build
+[2.783s] running build_py
+[2.785s] copying turtlebot3_gui/turtlebot3_gui.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+[2.786s] running install
+[2.786s] running install_lib
+[2.788s] copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/turtlebot3_gui.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+[2.790s] byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_gui.py to turtlebot3_gui.cpython-310.pyc
+[2.795s] running install_data
+[2.795s] running install_egg_info
+[2.806s] removing '/home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui-0.0.0-py3.10.egg-info' (and everything under it)
+[2.806s] Copying ../../build/turtlebot3_gui/turtlebot3_gui.egg-info to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui-0.0.0-py3.10.egg-info
+[2.807s] running install_scripts
+[2.861s] Installing nav_client script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.862s] Installing nav_server script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.863s] Installing pub_topic script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.864s] Installing send_goal script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.864s] Installing service_client script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.864s] Installing service_server script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.864s] Installing sub_topic script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.864s] Installing turtlebot3_gui script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.865s] Installing turtlebot3_move script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.865s] Installing turtlebot3_point script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.865s] writing list of installed files to '/home/psb/rokey_c_2_ws/build/turtlebot3_gui/install.log'
+[2.977s] Invoked command in '/home/psb/rokey_c_2_ws/src/turtlebot3_gui' returned '0': PYTHONPATH=/home/psb/rokey_c_2_ws/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_gui build --build-base /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build install --record /home/psb/rokey_c_2_ws/build/turtlebot3_gui/install.log --single-version-externally-managed install_data

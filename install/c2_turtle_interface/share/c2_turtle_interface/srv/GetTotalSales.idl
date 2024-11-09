@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from c2_turtle_interface/srv/GetTotalSales.srv
+// generated code does not contain a copyright notice
+
+
+module c2_turtle_interface {
+  module srv {
+    struct GetTotalSales_Request {
+      @verbatim (language="comment", text=
+        "요청할 날짜 (YYYY-MM-DD 형식)")
+      string date;
+    };
+    struct GetTotalSales_Response {
+      @verbatim (language="comment", text=
+        "해당 날짜의 총 매출")
+      double total_sales;
+    };
+  };
+};

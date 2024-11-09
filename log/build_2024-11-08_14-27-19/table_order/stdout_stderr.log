@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/table_order/table_order.egg-info/PKG-INFO
+writing dependency_links to ../../build/table_order/table_order.egg-info/dependency_links.txt
+writing entry points to ../../build/table_order/table_order.egg-info/entry_points.txt
+writing requirements to ../../build/table_order/table_order.egg-info/requires.txt
+writing top-level names to ../../build/table_order/table_order.egg-info/top_level.txt
+reading manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+writing manifest file '../../build/table_order/table_order.egg-info/SOURCES.txt'
+running build
+running build_py
+copying table_order/OrderTableCopy.py -> /home/psb/rokey_c_2_ws/build/table_order/build/lib/table_order
+copying table_order/OrderTable.py -> /home/psb/rokey_c_2_ws/build/table_order/build/lib/table_order
+running install
+running install_lib
+copying /home/psb/rokey_c_2_ws/build/table_order/build/lib/table_order/OrderTableCopy.py -> /home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+copying /home/psb/rokey_c_2_ws/build/table_order/build/lib/table_order/OrderTable.py -> /home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order
+byte-compiling /home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/OrderTableCopy.py to OrderTableCopy.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order/OrderTable.py to OrderTable.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/table_order/table_order.egg-info to /home/psb/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table_order-0.0.0-py3.10.egg-info
+running install_scripts
+Installing response_test script to /home/psb/rokey_c_2_ws/install/table_order/lib/table_order
+Installing table_order script to /home/psb/rokey_c_2_ws/install/table_order/lib/table_order
+Installing table_order_copy script to /home/psb/rokey_c_2_ws/install/table_order/lib/table_order
+writing list of installed files to '/home/psb/rokey_c_2_ws/build/table_order/install.log'

@@ -1,0 +1,80 @@
+running egg_info
+creating ../../build/turtlebot3_gui/turtlebot3_gui.egg-info
+writing ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3_gui/turtlebot3_gui.egg-info/top_level.txt
+writing manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot3_gui/turtlebot3_gui.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build
+creating /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib
+creating /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/turtlebot3_gui.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/service_server.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/__init__.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/ex1.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/nav_server.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/turtlebot3_point.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/pub_topic.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/turtlebot3_move.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/service_client.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/sub_topic.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/send_goal.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/nav_client.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/ex2.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+copying turtlebot3_gui/turtlebot3_gui_backup.py -> /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui
+running install
+running install_lib
+creating /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/turtlebot3_gui.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/service_server.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/__init__.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/ex1.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/nav_server.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/turtlebot3_point.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/pub_topic.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/turtlebot3_move.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/service_client.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/sub_topic.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/send_goal.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/nav_client.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/ex2.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+copying /home/psb/rokey_c_2_ws/build/turtlebot3_gui/build/lib/turtlebot3_gui/turtlebot3_gui_backup.py -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_gui.py to turtlebot3_gui.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/service_server.py to service_server.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/ex1.py to ex1.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/nav_server.py to nav_server.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_point.py to turtlebot3_point.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/pub_topic.py to pub_topic.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_move.py to turtlebot3_move.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/service_client.py to service_client.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/sub_topic.py to sub_topic.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/send_goal.py to send_goal.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/nav_client.py to nav_client.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/ex2.py to ex2.cpython-310.pyc
+byte-compiling /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_gui_backup.py to turtlebot3_gui_backup.cpython-310.pyc
+running install_data
+creating /home/psb/rokey_c_2_ws/install/turtlebot3_gui/share/ament_index
+creating /home/psb/rokey_c_2_ws/install/turtlebot3_gui/share/ament_index/resource_index
+creating /home/psb/rokey_c_2_ws/install/turtlebot3_gui/share/ament_index/resource_index/packages
+copying resource/turtlebot3_gui -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/share/ament_index/resource_index/packages
+copying package.xml -> /home/psb/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui
+running install_egg_info
+Copying ../../build/turtlebot3_gui/turtlebot3_gui.egg-info to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui-0.0.0-py3.10.egg-info
+running install_scripts
+Installing nav_client script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing nav_server script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing pub_topic script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing send_goal script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing service_client script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing service_server script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing sub_topic script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing turtlebot3_gui script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing turtlebot3_move script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+Installing turtlebot3_point script to /home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+writing list of installed files to '/home/psb/rokey_c_2_ws/build/turtlebot3_gui/install.log'

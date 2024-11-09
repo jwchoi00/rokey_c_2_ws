@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/msg/detail/dds_fastrtps/order_item__type_support.cpp.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/msg/detail/dds_fastrtps/order_item__type_support.cpp.o.d"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/get_total_sales__type_support.cpp.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/get_total_sales__type_support.cpp.o.d"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/order__type_support.cpp.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/order__type_support.cpp.o.d"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/orderver2__type_support.cpp.o"
+  "CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/orderver2__type_support.cpp.o.d"
+  "libc2_turtle_interface__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libc2_turtle_interface__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/msg/detail/dds_fastrtps/order_item__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/msg/detail/order_item__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/get_total_sales__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/order__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/dds_fastrtps/orderver2__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/get_total_sales__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/order__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/c2_turtle_interface/srv/detail/orderver2__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/c2_turtle_interface__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

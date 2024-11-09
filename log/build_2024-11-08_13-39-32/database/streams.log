@@ -1,0 +1,41 @@
+[0.790s] Invoking command in '/home/psb/rokey_c_2_ws/src/database': PYTHONPATH=/home/psb/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/database build --build-base /home/psb/rokey_c_2_ws/build/database/build install --record /home/psb/rokey_c_2_ws/build/database/install.log --single-version-externally-managed install_data
+[1.074s] running egg_info
+[1.075s] creating ../../build/database/database.egg-info
+[1.075s] writing ../../build/database/database.egg-info/PKG-INFO
+[1.075s] writing dependency_links to ../../build/database/database.egg-info/dependency_links.txt
+[1.075s] writing entry points to ../../build/database/database.egg-info/entry_points.txt
+[1.076s] writing requirements to ../../build/database/database.egg-info/requires.txt
+[1.076s] writing top-level names to ../../build/database/database.egg-info/top_level.txt
+[1.076s] writing manifest file '../../build/database/database.egg-info/SOURCES.txt'
+[1.078s] reading manifest file '../../build/database/database.egg-info/SOURCES.txt'
+[1.078s] writing manifest file '../../build/database/database.egg-info/SOURCES.txt'
+[1.078s] running build
+[1.078s] running build_py
+[1.079s] creating /home/psb/rokey_c_2_ws/build/database/build
+[1.079s] creating /home/psb/rokey_c_2_ws/build/database/build/lib
+[1.079s] creating /home/psb/rokey_c_2_ws/build/database/build/lib/database
+[1.079s] copying database/DatabaseServer.py -> /home/psb/rokey_c_2_ws/build/database/build/lib/database
+[1.079s] copying database/__init__.py -> /home/psb/rokey_c_2_ws/build/database/build/lib/database
+[1.079s] copying database/TestTableServer.py -> /home/psb/rokey_c_2_ws/build/database/build/lib/database
+[1.079s] running install
+[1.079s] running install_lib
+[1.080s] creating /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database
+[1.080s] copying /home/psb/rokey_c_2_ws/build/database/build/lib/database/DatabaseServer.py -> /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database
+[1.080s] copying /home/psb/rokey_c_2_ws/build/database/build/lib/database/__init__.py -> /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database
+[1.080s] copying /home/psb/rokey_c_2_ws/build/database/build/lib/database/TestTableServer.py -> /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database
+[1.081s] byte-compiling /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database/DatabaseServer.py to DatabaseServer.cpython-310.pyc
+[1.082s] byte-compiling /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database/__init__.py to __init__.cpython-310.pyc
+[1.082s] byte-compiling /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database/TestTableServer.py to TestTableServer.cpython-310.pyc
+[1.082s] running install_data
+[1.082s] creating /home/psb/rokey_c_2_ws/install/database/share/ament_index
+[1.082s] creating /home/psb/rokey_c_2_ws/install/database/share/ament_index/resource_index
+[1.082s] creating /home/psb/rokey_c_2_ws/install/database/share/ament_index/resource_index/packages
+[1.082s] copying resource/database -> /home/psb/rokey_c_2_ws/install/database/share/ament_index/resource_index/packages
+[1.082s] copying package.xml -> /home/psb/rokey_c_2_ws/install/database/share/database
+[1.082s] running install_egg_info
+[1.084s] Copying ../../build/database/database.egg-info to /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database-0.0.0-py3.10.egg-info
+[1.085s] running install_scripts
+[1.106s] Installing database_server script to /home/psb/rokey_c_2_ws/install/database/lib/database
+[1.107s] Installing test_database_server script to /home/psb/rokey_c_2_ws/install/database/lib/database
+[1.107s] writing list of installed files to '/home/psb/rokey_c_2_ws/build/database/install.log'
+[1.135s] Invoked command in '/home/psb/rokey_c_2_ws/src/database' returned '0': PYTHONPATH=/home/psb/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/database build --build-base /home/psb/rokey_c_2_ws/build/database/build install --record /home/psb/rokey_c_2_ws/build/database/install.log --single-version-externally-managed install_data

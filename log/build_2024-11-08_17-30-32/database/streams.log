@@ -1,0 +1,22 @@
+[1.501s] Invoking command in '/home/psb/rokey_c_2_ws/src/database': PYTHONPATH=/home/psb/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/database build --build-base /home/psb/rokey_c_2_ws/build/database/build install --record /home/psb/rokey_c_2_ws/build/database/install.log --single-version-externally-managed install_data
+[1.790s] running egg_info
+[1.791s] writing ../../build/database/database.egg-info/PKG-INFO
+[1.792s] writing dependency_links to ../../build/database/database.egg-info/dependency_links.txt
+[1.792s] writing entry points to ../../build/database/database.egg-info/entry_points.txt
+[1.792s] writing requirements to ../../build/database/database.egg-info/requires.txt
+[1.792s] writing top-level names to ../../build/database/database.egg-info/top_level.txt
+[1.794s] reading manifest file '../../build/database/database.egg-info/SOURCES.txt'
+[1.795s] writing manifest file '../../build/database/database.egg-info/SOURCES.txt'
+[1.795s] running build
+[1.795s] running build_py
+[1.795s] running install
+[1.796s] running install_lib
+[1.797s] running install_data
+[1.797s] running install_egg_info
+[1.800s] removing '/home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database-0.0.0-py3.10.egg-info' (and everything under it)
+[1.800s] Copying ../../build/database/database.egg-info to /home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database-0.0.0-py3.10.egg-info
+[1.800s] running install_scripts
+[1.825s] Installing database_server script to /home/psb/rokey_c_2_ws/install/database/lib/database
+[1.825s] Installing test_database_server script to /home/psb/rokey_c_2_ws/install/database/lib/database
+[1.825s] writing list of installed files to '/home/psb/rokey_c_2_ws/build/database/install.log'
+[1.859s] Invoked command in '/home/psb/rokey_c_2_ws/src/database' returned '0': PYTHONPATH=/home/psb/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/psb/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/database build --build-base /home/psb/rokey_c_2_ws/build/database/build install --record /home/psb/rokey_c_2_ws/build/database/install.log --single-version-externally-managed install_data

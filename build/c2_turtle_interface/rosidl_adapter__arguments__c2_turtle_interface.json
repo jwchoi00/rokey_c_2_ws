@@ -1,0 +1,9 @@
+{
+  "package_name": "c2_turtle_interface",
+  "non_idl_tuples": [
+    "/home/psb/rokey_c_2_ws/src/c2_turtle_interface:srv/Order.srv",
+    "/home/psb/rokey_c_2_ws/src/c2_turtle_interface:srv/Orderver2.srv",
+    "/home/psb/rokey_c_2_ws/src/c2_turtle_interface:srv/GetTotalSales.srv",
+    "/home/psb/rokey_c_2_ws/src/c2_turtle_interface:msg/OrderItem.msg"
+  ]
+}
