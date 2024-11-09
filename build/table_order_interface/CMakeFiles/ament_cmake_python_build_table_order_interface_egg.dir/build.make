@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/table_order_interface
+CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/table_order_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/table_order_interface
+CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/table_order_interface
 
 # Utility rule file for ament_cmake_python_build_table_order_interface_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/compil
 include CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_table_order_interface_egg:
-	cd /home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface && /usr/bin/python3 setup.py egg_info
+	cd /home/g1/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_table_order_interface_egg: CMakeFiles/ament_cmake_python_build_table_order_interface_egg
 ament_cmake_python_build_table_order_interface_egg: CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/depend:
-	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface/CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface/CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_table_order_interface_egg.dir/depend
 

@@ -1,3 +1,6 @@
+#변경 부분 2024-11-09 상대 경로 추가
+import os
+#변경 마무리
 import sys
 import rclpy
 from rclpy.node import Node
@@ -74,13 +77,16 @@ class MainWindow(QWidget):
         self.totalPriceInt = 0
         self.TotalPriceForRequest = {}
         self.client = CombineClient()
-
+        resource_dir = os.path.join(os.getenv('HOME'), 'rokey_c_2_ws', 'src', 'table_order', 'resource')
+        # Load images using relative paths
+        #self.pixmap1 = QPixmap(os.path.join(resource_dir, 'pride_chicken.jpeg'))
+        #print("Pixmap1 path:", os.path.join(resource_dir, 'pride_chicken.jpeg'))  # Debugging output
         # 이미지 추가
-        self.pixmap1 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/pride_chicken.jpeg')
+        self.pixmap1 = QPixmap(os.path.join(resource_dir, 'pride_chicken.jpeg'))
         self.pixmap1 = self.pixmap1.scaled(200, 150, Qt.IgnoreAspectRatio)
-        self.pixmap2 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/yangnum_chicken.jpeg')
+        self.pixmap2 = QPixmap(os.path.join(resource_dir, 'yangnum_chicken.jpeg'))
         self.pixmap2 = self.pixmap2.scaled(200, 150, Qt.IgnoreAspectRatio)
-        self.pixmap3 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/soi_chicken.jpeg')
+        self.pixmap3 = QPixmap(os.path.join(resource_dir, 'soi_chicken.jpeg'))
         self.pixmap3 = self.pixmap3.scaled(200, 150, Qt.IgnoreAspectRatio)
 
         self.prideChickenImg = QLabel()

@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'table-order==0.0.0','console_scripts','table_order'
+# EASY-INSTALL-ENTRY-SCRIPT: 'table-order','console_scripts','table_order'
 import re
 import sys
 
 # for compatibility with easy_install; see #2198
-__requires__ = 'table-order==0.0.0'
+__requires__ = 'table-order'
 
 try:
     from importlib.metadata import distribution
@@ -30,4 +30,4 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(load_entry_point('table-order==0.0.0', 'console_scripts', 'table_order')())
+    sys.exit(load_entry_point('table-order', 'console_scripts', 'table_order')())

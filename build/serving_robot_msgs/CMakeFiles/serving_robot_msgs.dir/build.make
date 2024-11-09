@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
 
 # Utility rule file for serving_robot_msgs.
 
@@ -66,12 +66,12 @@ include CMakeFiles/serving_robot_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/serving_robot_msgs.dir/progress.make
 
-CMakeFiles/serving_robot_msgs: /home/aaa/rokey_c_2_ws/src/serving_robot_msgs/msg/RobotState.msg
-CMakeFiles/serving_robot_msgs: /home/aaa/rokey_c_2_ws/src/serving_robot_msgs/msg/TotalPrice2C.msg
-CMakeFiles/serving_robot_msgs: /home/aaa/rokey_c_2_ws/src/serving_robot_msgs/srv/T2C.srv
+CMakeFiles/serving_robot_msgs: /home/g1/rokey_c_2_ws/src/serving_robot_msgs/msg/RobotState.msg
+CMakeFiles/serving_robot_msgs: /home/g1/rokey_c_2_ws/src/serving_robot_msgs/msg/TotalPrice2C.msg
+CMakeFiles/serving_robot_msgs: /home/g1/rokey_c_2_ws/src/serving_robot_msgs/srv/T2C.srv
 CMakeFiles/serving_robot_msgs: rosidl_cmake/srv/T2C_Request.msg
 CMakeFiles/serving_robot_msgs: rosidl_cmake/srv/T2C_Response.msg
-CMakeFiles/serving_robot_msgs: /home/aaa/rokey_c_2_ws/src/serving_robot_msgs/action/C2R.action
+CMakeFiles/serving_robot_msgs: /home/g1/rokey_c_2_ws/src/serving_robot_msgs/action/C2R.action
 CMakeFiles/serving_robot_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/serving_robot_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/serving_robot_msgs: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
@@ -92,6 +92,6 @@ CMakeFiles/serving_robot_msgs.dir/clean:
 .PHONY : CMakeFiles/serving_robot_msgs.dir/clean
 
 CMakeFiles/serving_robot_msgs.dir/depend:
-	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/serving_robot_msgs.dir/depend
 

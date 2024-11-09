@@ -1,1 +1,1 @@
-from table_order_interface.srv._set_order import SetOrder  # noqa: F401
+/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface/srv/__init__.py

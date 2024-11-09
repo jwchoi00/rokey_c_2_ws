@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
 
 # Utility rule file for serving_robot_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/serving_robot_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/serving_robot_msgs_uninstall.dir/progress.make
 
 CMakeFiles/serving_robot_msgs_uninstall:
-	/usr/bin/cmake -P /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/g1/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 serving_robot_msgs_uninstall: CMakeFiles/serving_robot_msgs_uninstall
 serving_robot_msgs_uninstall: CMakeFiles/serving_robot_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/serving_robot_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/serving_robot_msgs_uninstall.dir/clean
 
 CMakeFiles/serving_robot_msgs_uninstall.dir/depend:
-	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/serving_robot_msgs_uninstall.dir/depend
 

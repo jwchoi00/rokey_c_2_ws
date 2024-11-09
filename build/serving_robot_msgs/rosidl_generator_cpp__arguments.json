@@ -1,12 +1,12 @@
 {
   "package_name": "serving_robot_msgs",
-  "output_dir": "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_cpp/serving_robot_msgs",
+  "output_dir": "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_cpp/serving_robot_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:msg/RobotState.idl",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:msg/TotalPrice2C.idl",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:srv/T2C.idl",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:action/C2R.idl"
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:msg/RobotState.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:msg/TotalPrice2C.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:srv/T2C.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs:action/C2R.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -33,10 +33,10 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/msg/RobotState.idl",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/msg/TotalPrice2C.idl",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/srv/T2C.idl",
-    "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/action/C2R.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/msg/RobotState.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/msg/TotalPrice2C.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/srv/T2C.idl",
+    "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_adapter/serving_robot_msgs/action/C2R.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",

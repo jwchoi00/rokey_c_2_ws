@@ -1,8 +1,8 @@
-# Install script for directory: /home/aaa/rokey_c_2_ws/build/table_order_interface/table_order_interface__py
+# Install script for directory: /home/g1/rokey_c_2_ws/build/table_order_interface/table_order_interface__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aaa/rokey_c_2_ws/install/table_order_interface")
+  set(CMAKE_INSTALL_PREFIX "/home/g1/rokey_c_2_ws/install/table_order_interface")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

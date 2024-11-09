@@ -1,6 +1,1 @@
-setup.py
-table_order_interface/__init__.py
-table_order_interface.egg-info/PKG-INFO
-table_order_interface.egg-info/SOURCES.txt
-table_order_interface.egg-info/dependency_links.txt
-table_order_interface.egg-info/top_level.txt
+/home/g1/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface/table_order_interface.egg-info/SOURCES.txt

@@ -1,2 +1,1 @@
-from serving_robot_msgs.msg._robot_state import RobotState  # noqa: F401
-from serving_robot_msgs.msg._total_price2_c import TotalPrice2C  # noqa: F401
+/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/msg/__init__.py

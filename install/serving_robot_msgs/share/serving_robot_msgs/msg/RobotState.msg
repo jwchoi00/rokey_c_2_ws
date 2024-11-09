@@ -1,1 +1,1 @@
-bool state
+/home/g1/rokey_c_2_ws/src/serving_robot_msgs/msg/RobotState.msg

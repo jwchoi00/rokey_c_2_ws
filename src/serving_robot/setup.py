@@ -20,9 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'serving_robot = serving_robot.ui_test:main',
+            'KitchenGui = serving_robot.KitchenGui:main',
             'action_test = serving_robot.action_server_test:main',
-            'robot = serving_robot.robot_control:main'
+            'robot_control = serving_robot.robot_control:main'
         ],
     },
 )

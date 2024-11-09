@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/table_order_interface
+CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/table_order_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/table_order_interface
+CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/table_order_interface
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

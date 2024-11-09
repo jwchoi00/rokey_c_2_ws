@@ -1,5 +1,5 @@
 CMakeFiles/serving_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/serving_robot_msgs/msg/_total_price2_c_s.c.o: \
- /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/msg/_total_price2_c_s.c \
+ /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/msg/_total_price2_c_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,6 +207,6 @@ CMakeFiles/serving_robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/servi
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__struct.h \
- /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__functions.h \
- /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__struct.h \
+ /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__functions.h \
+ /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h

@@ -1,10 +1,1 @@
-action/C2R.action
-action/C2R.idl
-msg/RobotState.idl
-msg/RobotState.msg
-msg/TotalPrice2C.idl
-msg/TotalPrice2C.msg
-srv/T2C.idl
-srv/T2C.srv
-srv/T2C_Request.msg
-srv/T2C_Response.msg
+/home/g1/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/serving_robot_msgs

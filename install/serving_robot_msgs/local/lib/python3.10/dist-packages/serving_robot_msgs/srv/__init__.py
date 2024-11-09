@@ -1,1 +1,1 @@
-from serving_robot_msgs.srv._t2_c import T2C  # noqa: F401
+/home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/srv/__init__.py

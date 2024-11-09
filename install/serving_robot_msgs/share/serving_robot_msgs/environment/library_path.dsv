@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/g1/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_environment_hooks/library_path.dsv

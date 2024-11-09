@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
 
 # Utility rule file for serving_robot_msgs__py.
 
@@ -105,8 +105,8 @@ rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesuppo
 rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -170,10 +170,10 @@ serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/build: serving_robo
 .PHONY : serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/build
 
 serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/clean:
-	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/serving_robot_msgs__py.dir/cmake_clean.cmake
+	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/serving_robot_msgs__py.dir/cmake_clean.cmake
 .PHONY : serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/clean
 
 serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/depend:
-	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/depend
 

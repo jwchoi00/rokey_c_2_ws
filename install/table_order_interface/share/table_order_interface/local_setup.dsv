@@ -1,4 +1,1 @@
-source;share/table_order_interface/environment/ament_prefix_path.sh
-source;share/table_order_interface/environment/library_path.sh
-source;share/table_order_interface/environment/path.sh
-source;share/table_order_interface/environment/pythonpath.sh
+/home/g1/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.dsv

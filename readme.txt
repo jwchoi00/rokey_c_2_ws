@@ -41,10 +41,24 @@ DataBaseServer.py에서
             return None
 Mysql 서버 IP 번경 (host='찾은 IP 번호')
 
+------------------------------------------------------------------------------
+2024-11-09
+test_ui → kitchenGui로 파일 이름 변경
+setup.py도 같이 변경
+OrderTable에서 80~86번째 줄 변경 → resource이미지 상대경로로 가져오기
+
 실행 방법
 cd rokey_c2_ws
 colcon build --symlink-install
 source install/setup.bash
 
-ros2 run table_order tabel_order
-ros2 run database database_server
+ros2 run table_order tabel_order #table_order GUI 실행
+ros2 run database database_server #database_server 실행
+ros2 run serving_robot KitchenGui #KitchenGui 실행
+ros2 run serving_robot robot_control #robot_action_control 실행
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py #turtlebot3_gazebo실행
+ros2 launch turtlebot3_navigation2 navigation2.launch.py #turtlebot3_rviz2 nav2 실행
+
+rviz 접속후
+
+상단에 2D Pose Estimate를 클릭하고 드래그 하여 초기 위치 설정
