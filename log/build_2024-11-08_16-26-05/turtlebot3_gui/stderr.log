@@ -1,5 +1,0 @@
-  File "/home/psb/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3_gui/turtlebot3_gui.py", line 26
-    'C2R',
-    ^^^^^
-SyntaxError: invalid syntax
-

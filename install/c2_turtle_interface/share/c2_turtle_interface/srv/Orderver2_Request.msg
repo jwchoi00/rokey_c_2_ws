@@ -1,5 +1,0 @@
-# Order.srv
-int32 table_number
-string[] menu_name
-int32[] quantity
-int32 total_price

@@ -1,5 +1,0 @@
-[console_scripts]
-response_test = table_order.response_test:main
-table_order = table_order.OrderTable:main
-table_order_copy = table_order.OrderTableCopy:main
-

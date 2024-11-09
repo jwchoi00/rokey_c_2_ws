@@ -1,8 +1,0 @@
-setup.py
-table_order_interface/__init__.py
-table_order_interface.egg-info/PKG-INFO
-table_order_interface.egg-info/SOURCES.txt
-table_order_interface.egg-info/dependency_links.txt
-table_order_interface.egg-info/top_level.txt
-table_order_interface/srv/__init__.py
-table_order_interface/srv/_set_order.py
