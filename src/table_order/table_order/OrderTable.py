@@ -1,3 +1,4 @@
+import os
 import sys
 import rclpy
 from rclpy.node import Node
@@ -7,12 +8,17 @@ from PyQt5.QtCore import Qt
 from table_order_interface.srv import SetOrder
 from serving_robot_msgs.srv import T2C
 import threading  # GUI와 ROS 이벤트 루트 동시 처리를 위해 추가
-
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 class CombineClient(Node):
     def __init__(self):
         super().__init__('CombineClient')
+        qos_profile = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE, #ROS 2는 메시지가 지연되거나 재시도가 필요한 경우에도 메시지가 전달되도록 보장
+            history=HistoryPolicy.KEEP_LAST, #가장 최근의 메시지만(depth만큼) 저장
+            depth=10
+        )
         self.client_set_order = self.create_client(SetOrder, 'SetOrder')
-        self.client_t2c = self.create_client(T2C, 'T2C')
+        self.client_t2c = self.create_client(T2C, 'T2C', qos_profile=qos_profile)
 
         while not self.client_set_order.wait_for_service(timeout_sec=1.0) and not self.client_t2c.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('database not available, waiting...')
@@ -76,11 +82,12 @@ class MainWindow(QWidget):
         self.client = CombineClient()
 
         # 이미지 추가
-        self.pixmap1 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/pride_chicken.jpeg')
+        resource_dir = os.path.join(os.getenv('HOME'), 'rokey_c_2_ws', 'src', 'table_order', 'resource')
+        self.pixmap1 = QPixmap(os.path.join(resource_dir, 'pride_chicken.jpeg'))
         self.pixmap1 = self.pixmap1.scaled(200, 150, Qt.IgnoreAspectRatio)
-        self.pixmap2 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/yangnum_chicken.jpeg')
+        self.pixmap2 = QPixmap(os.path.join(resource_dir, 'yangnum_chicken.jpeg'))
         self.pixmap2 = self.pixmap2.scaled(200, 150, Qt.IgnoreAspectRatio)
-        self.pixmap3 = QPixmap('/home/g1/rokey_c2_ws/src/table_order/resource/soi_chicken.jpeg')
+        self.pixmap3 = QPixmap(os.path.join(resource_dir, 'soi_chicken.jpeg'))
         self.pixmap3 = self.pixmap3.scaled(200, 150, Qt.IgnoreAspectRatio)
 
         self.prideChickenImg = QLabel()
