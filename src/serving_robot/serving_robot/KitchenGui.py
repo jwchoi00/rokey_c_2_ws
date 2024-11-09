@@ -13,12 +13,18 @@ from rclpy.node import Node
 from PyQt5.QtCore import pyqtSignal,QTimer
 from rclpy.action import ActionClient
 from rclpy.action.client import GoalStatus
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 
 class Rosnode(Node):
     def __init__(self,gui):
         super().__init__('controller')
+        qos_profile = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE, #ROS 2는 메시지가 지연되거나 재시도가 필요한 경우에도 메시지가 전달되도록 보장
+            history=HistoryPolicy.KEEP_LAST, #가장 최근의 메시지만(depth만큼) 저장
+            depth=10
+        )
         self.gui=gui
-        self.oder_server=self.create_service(T2C,'T2C',self.callback)
+        self.oder_server=self.create_service(T2C,'T2C',self.callback, qos_profile=qos_profile)
         self.goal_client=ActionClient(self,C2R,'/table_num')
         self.total_price_sub = self.create_subscription(TotalPrice2C,'total_price',self.total_price_sub_callback,10)
         self.robot_state_sub=self.create_subscription(RobotState,'/state',self.ch_robot_state,10)
