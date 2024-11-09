@@ -46,5 +46,10 @@ cd rokey_c2_ws
 colcon build --symlink-install
 source install/setup.bash
 
-ros2 run table_order tabel_order
-ros2 run database database_server
+ros2 run table_order table_order 테이블 오더 실행
+ros2 run database database_server   디비 서버 실행
+ros2 run serving_robot serving_robot 관제 실행
+ros2 run turtlebot3_gui turtle3_gui         로봇 제어 gui 실행
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py    명령어로 가제보 실행
+ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=/home/psb/map.yaml    (각자 자기 map 파일의 경로를 설정해서 실행합니다) 네비게이션 맵 실행
+네비게이션 맵에 원점 설정 2D Pose Estimate 클릭후 원점클릭하여 방향을 설정
