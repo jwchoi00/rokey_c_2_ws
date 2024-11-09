@@ -28,8 +28,9 @@ class Rosnode(Node):
         self.total_price=0
 
     def ch_robot_state(self,msg):
-        a = msg.state
-        self.gui.btn_update_signal.emit(a)
+    # 보내기 버튼을 사용가능 한 상태인지 확인하기 위한 함수 
+        robot_state = msg.state
+        self.gui.btn_update_signal.emit(robot_state)
 
     def total_price_sub_callback(self, msg):
         self.total_price = msg.price
@@ -40,6 +41,7 @@ class Rosnode(Node):
     #새로 추가한 부분
 
     def callback(self,req,res):
+    # 테이블 오더와 데이터 베이스로 부터 정보를 받고  변수에 저장
         self.table_number = req.table_number
         self.menu = req.menu
         self.menu_number = req.menu_number
@@ -60,6 +62,7 @@ class Rosnode(Node):
         return res
 
     def send_goal(self):
+    # 로봇으로 테이블 번호를 보내주는 action send_goal 함수
         wait_cnt=1
         while not self.goal_client.wait_for_server(timeout_sec=0.1):
             if wait_cnt>5:
@@ -91,6 +94,7 @@ class Rosnode(Node):
             self.get_logger().info("[controller] fail...")
 
 class Mainwindow(QWidget):
+# GUI를 제어할 클래스
     #menu_update_signal=pyqtSignal(str,int,int)
     menu_update_signal=pyqtSignal(int,str,int,int)
     btn_update_signal=pyqtSignal(bool)
@@ -122,6 +126,7 @@ class Mainwindow(QWidget):
         self.blink_timer = None
     
     def display(self,table_number,msg,price,total):
+    # 주문이 들어왔을때 주문 내역 표시, 점멸 등 디스플레이를 업데이트 하는 함수
         text_browser, label_price = self.table_widgets.get(table_number, (None, None))
         if text_browser and label_price:
             text_browser.setText(msg)
@@ -135,6 +140,7 @@ class Mainwindow(QWidget):
         self.ui_setup.label_revenue_val.setText(str(total))
     
     def btn(self,state):
+    # 로봇이 주방에 있을 때 보내기 버튼을 활성화 시키는 함수
         if state:
             self.ui_setup.btn_send_food.setEnabled(True)
     def start_blinking(self, text_browser):
@@ -161,7 +167,7 @@ class Mainwindow(QWidget):
         self.blink_timer.start(500)  # 500ms마다 점멸
     
     def send_table_num(self):
-        ## 한번 누르면 비활성화 할 것이라 상태를 확인할 필요 없음.
+        ## 주방에서 선택한 테이블 번호를 로봇으로 보내는 함수
         self.set_table_num = self.ui_setup.textEdit_set_table_num.toPlainText()
         try:
             if int(self.set_table_num) <= 9:
