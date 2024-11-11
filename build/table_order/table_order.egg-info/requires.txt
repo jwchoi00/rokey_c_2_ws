@@ -1,0 +1,4 @@
+setuptools
+rclpy
+PyQt5
+table_order_interface

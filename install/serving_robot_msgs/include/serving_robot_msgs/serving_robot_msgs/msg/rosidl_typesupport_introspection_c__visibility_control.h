@@ -1,0 +1,1 @@
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

@@ -1,0 +1,19 @@
+[0.740s] Invoking command in '/home/aaa/rokey_c_2_ws/build/serving_robot': CMAKE_PREFIX_PATH=/home/aaa/rokey_c_2_ws/install/serving_robot_msgs:/home/aaa/rokey_c_2_ws/install/table_order_interface LD_LIBRARY_PATH=/home/aaa/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/aaa/rokey_c_2_ws/install/table_order_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/aaa/rokey_c_2_ws/build/serving_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaa/rokey_c_2_ws/install/serving_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aaa/rokey_c_2_ws/build/serving_robot/build --no-deps symlink_data
+[1.056s] running develop
+[1.258s] running egg_info
+[1.258s] writing serving_robot.egg-info/PKG-INFO
+[1.258s] writing dependency_links to serving_robot.egg-info/dependency_links.txt
+[1.258s] writing entry points to serving_robot.egg-info/entry_points.txt
+[1.259s] writing requirements to serving_robot.egg-info/requires.txt
+[1.259s] writing top-level names to serving_robot.egg-info/top_level.txt
+[1.262s] reading manifest file 'serving_robot.egg-info/SOURCES.txt'
+[1.262s] writing manifest file 'serving_robot.egg-info/SOURCES.txt'
+[1.264s] running build_ext
+[1.264s] Creating /home/aaa/rokey_c_2_ws/install/serving_robot/lib/python3.10/site-packages/serving-robot.egg-link (link to .)
+[1.264s] Installing KitchenGui script to /home/aaa/rokey_c_2_ws/install/serving_robot/lib/serving_robot
+[1.264s] Installing action_test script to /home/aaa/rokey_c_2_ws/install/serving_robot/lib/serving_robot
+[1.264s] Installing robot_control script to /home/aaa/rokey_c_2_ws/install/serving_robot/lib/serving_robot
+[1.264s] 
+[1.265s] Installed /home/aaa/rokey_c_2_ws/build/serving_robot
+[1.265s] running symlink_data
+[1.296s] Invoked command in '/home/aaa/rokey_c_2_ws/build/serving_robot' returned '0': CMAKE_PREFIX_PATH=/home/aaa/rokey_c_2_ws/install/serving_robot_msgs:/home/aaa/rokey_c_2_ws/install/table_order_interface LD_LIBRARY_PATH=/home/aaa/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/aaa/rokey_c_2_ws/install/table_order_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/aaa/rokey_c_2_ws/build/serving_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaa/rokey_c_2_ws/install/serving_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aaa/rokey_c_2_ws/build/serving_robot/build --no-deps symlink_data
