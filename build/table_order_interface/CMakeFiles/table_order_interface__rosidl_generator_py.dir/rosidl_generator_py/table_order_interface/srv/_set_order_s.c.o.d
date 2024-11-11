@@ -1,5 +1,9 @@
 CMakeFiles/table_order_interface__rosidl_generator_py.dir/rosidl_generator_py/table_order_interface/srv/_set_order_s.c.o: \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface/srv/_set_order_s.c \
+=======
+ /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface/srv/_set_order_s.c \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,10 +211,18 @@ CMakeFiles/table_order_interface__rosidl_generator_py.dir/rosidl_generator_py/ta
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/srv/detail/set_order__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/srv/detail/set_order__functions.h \
  /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/msg/rosidl_generator_c__visibility_control.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/srv/detail/set_order__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/srv/detail/set_order__functions.h \
+ /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/msg/rosidl_generator_c__visibility_control.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

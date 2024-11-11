@@ -23,7 +23,11 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
+<<<<<<< HEAD
     set(ARG_DESTINATION "/home/g1/rokey_c_2_ws/install/table_order_interface/${ARG_DESTINATION}")
+=======
+    set(ARG_DESTINATION "/home/aaa/rokey_c_2_ws/install/table_order_interface/${ARG_DESTINATION}")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +127,11 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
+<<<<<<< HEAD
     set(ARG_DESTINATION "/home/g1/rokey_c_2_ws/install/table_order_interface/${ARG_DESTINATION}")
+=======
+    set(ARG_DESTINATION "/home/aaa/rokey_c_2_ws/install/table_order_interface/${ARG_DESTINATION}")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +189,11 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
+<<<<<<< HEAD
     set(ARG_DESTINATION "/home/g1/rokey_c_2_ws/install/table_order_interface/${ARG_DESTINATION}")
+=======
+    set(ARG_DESTINATION "/home/aaa/rokey_c_2_ws/install/table_order_interface/${ARG_DESTINATION}")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +263,11 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
+<<<<<<< HEAD
       set(destination "/home/g1/rokey_c_2_ws/install/table_order_interface/${destination}")
+=======
+      set(destination "/home/aaa/rokey_c_2_ws/install/table_order_interface/${destination}")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,6 +326,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+<<<<<<< HEAD
 # install(FILES "/home/g1/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/table_order_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 ament_cmake_symlink_install_files("/home/g1/rokey_c_2_ws/src/table_order_interface" FILES "/home/g1/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/table_order_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
@@ -432,3 +449,127 @@ ament_cmake_symlink_install_files("/home/g1/rokey_c_2_ws/src/table_order_interfa
 
 # install(FILES "/home/g1/rokey_c_2_ws/src/table_order_interface/package.xml" "DESTINATION" "share/table_order_interface")
 ament_cmake_symlink_install_files("/home/g1/rokey_c_2_ws/src/table_order_interface" FILES "/home/g1/rokey_c_2_ws/src/table_order_interface/package.xml" "DESTINATION" "share/table_order_interface")
+=======
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/table_order_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/table_order_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.h")
+
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/table_order_interface/environment")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/table_order_interface/environment")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_fastrtps_c/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_fastrtps_c/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN_EXCLUDE" "*.cpp")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_cpp/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_cpp/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.hpp")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_fastrtps_cpp/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_fastrtps_cpp/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN_EXCLUDE" "*.cpp")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_introspection_c/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_introspection_c/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.h")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_introspection_cpp/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_introspection_cpp/table_order_interface/" "DESTINATION" "include/table_order_interface/table_order_interface" "PATTERN" "*.hpp")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/table_order_interface/environment")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/table_order_interface/environment")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface/table_order_interface.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface/table_order_interface.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface-0.0.0-py3.10.egg-info")
+
+# install(DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface/" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/aaa/rokey_c_2_ws/src/table_order_interface" DIRECTORY "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface/" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install("TARGETS" "table_order_interface__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface")
+include("/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "table_order_interface__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface")
+include("/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "table_order_interface__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/table_order_interface")
+include("/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface/srv/SetOrder.idl" "DESTINATION" "share/table_order_interface/srv")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface/srv/SetOrder.idl" "DESTINATION" "share/table_order_interface/srv")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/src/table_order_interface/srv/SetOrder.srv" "DESTINATION" "share/table_order_interface/srv")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/src/table_order_interface/srv/SetOrder.srv" "DESTINATION" "share/table_order_interface/srv")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/srv/SetOrder_Request.msg" "DESTINATION" "share/table_order_interface/srv")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/srv/SetOrder_Request.msg" "DESTINATION" "share/table_order_interface/srv")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/srv/SetOrder_Response.msg" "DESTINATION" "share/table_order_interface/srv")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/srv/SetOrder_Response.msg" "DESTINATION" "share/table_order_interface/srv")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/table_order_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/table_order_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/table_order_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/table_order_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/table_order_interface/environment")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/table_order_interface/environment")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/table_order_interface/environment")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/table_order_interface/environment")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/table_order_interface/environment")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/table_order_interface")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/table_order_interface")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/table_order_interface")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/table_order_interface")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/table_order_interface")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/table_order_interface")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/table_order_interface")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/table_order_interface")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/table_order_interface")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/table_order_interface")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/packages/table_order_interface" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_index/share/ament_index/resource_index/packages/table_order_interface" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_core/table_order_interfaceConfig.cmake" "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_core/table_order_interfaceConfig-version.cmake" "DESTINATION" "share/table_order_interface/cmake")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_core/table_order_interfaceConfig.cmake" "/home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_core/table_order_interfaceConfig-version.cmake" "DESTINATION" "share/table_order_interface/cmake")
+
+# install(FILES "/home/aaa/rokey_c_2_ws/src/table_order_interface/package.xml" "DESTINATION" "share/table_order_interface")
+ament_cmake_symlink_install_files("/home/aaa/rokey_c_2_ws/src/table_order_interface" FILES "/home/aaa/rokey_c_2_ws/src/table_order_interface/package.xml" "DESTINATION" "share/table_order_interface")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd

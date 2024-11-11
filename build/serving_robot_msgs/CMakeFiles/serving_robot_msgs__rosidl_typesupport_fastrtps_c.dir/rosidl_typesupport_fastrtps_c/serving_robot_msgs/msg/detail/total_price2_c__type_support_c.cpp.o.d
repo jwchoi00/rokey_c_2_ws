@@ -1,12 +1,22 @@
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/total_price2_c__type_support_c.cpp.o: \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/total_price2_c__type_support_c.cpp \
  /usr/include/stdc-predef.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/total_price2_c__rosidl_typesupport_fastrtps_c.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/total_price2_c__type_support_c.cpp \
+ /usr/include/stdc-predef.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/detail/total_price2_c__rosidl_typesupport_fastrtps_c.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_c/serving_robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -182,7 +192,14 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupp
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/malloc.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__struct.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__struct.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/detail/total_price2_c__functions.h \
+ /usr/include/c++/11/stdlib.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd

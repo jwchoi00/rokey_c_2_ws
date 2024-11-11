@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/table_order_interface
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/table_order_interface
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/table_order_interface
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/table_order_interface
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +149,24 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_progress_start /home/g1/rokey_c_2_ws/build/table_order_interface/CMakeFiles /home/g1/rokey_c_2_ws/build/table_order_interface/table_order_interface__py//CMakeFiles/progress.marks
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/g1/rokey_c_2_ws/build/table_order_interface/CMakeFiles 0
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_progress_start /home/aaa/rokey_c_2_ws/build/table_order_interface/CMakeFiles /home/aaa/rokey_c_2_ws/build/table_order_interface/table_order_interface__py//CMakeFiles/progress.marks
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaa/rokey_c_2_ws/build/table_order_interface/CMakeFiles 0
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/clean
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/clean
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +175,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/preinstall
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/preinstall
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/preinstall
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/preinstall
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : depend
 
 # Convenience name for target.
 table_order_interface__py/CMakeFiles/table_order_interface__py.dir/rule:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/CMakeFiles/table_order_interface__py.dir/rule
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 table_order_interface__py/CMakeFiles/table_order_interface__py.dir/rule
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : table_order_interface__py/CMakeFiles/table_order_interface__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +215,11 @@ table_order_interface__py: table_order_interface__py/CMakeFiles/table_order_inte
 
 # fast build rule for target.
 table_order_interface__py/fast:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f table_order_interface__py/CMakeFiles/table_order_interface__py.dir/build.make table_order_interface__py/CMakeFiles/table_order_interface__py.dir/build
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(MAKE) $(MAKESILENT) -f table_order_interface__py/CMakeFiles/table_order_interface__py.dir/build.make table_order_interface__py/CMakeFiles/table_order_interface__py.dir/build
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : table_order_interface__py/fast
 
 # Help Target
@@ -210,6 +247,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : cmake_check_build_system
 

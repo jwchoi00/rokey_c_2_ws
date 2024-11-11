@@ -4,7 +4,11 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_FASTRTPS_C_BUILDING_DLL_table_order_interface -DROS_PACKAGE_NAME=\"table_order_interface\"
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_fastrtps_c -I/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/builtin_interfaces
+=======
+CXX_INCLUDES = -I/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_fastrtps_c -I/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/builtin_interfaces
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -std=gnu++14
 

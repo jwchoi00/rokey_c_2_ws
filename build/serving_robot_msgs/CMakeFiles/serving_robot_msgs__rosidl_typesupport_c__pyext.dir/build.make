@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Include any dependencies generated for this target.
 include CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/depend.make
@@ -72,6 +79,7 @@ include CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/flags.mak
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/flags.make
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o -c /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c
 
@@ -82,6 +90,18 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.o -c /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c > CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.i
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serving_robot_msgs/_serving_robot_msgs_s.ep.rosidl_typesupport_c.c.s
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Object files for target serving_robot_msgs__rosidl_typesupport_c__pyext
 serving_robot_msgs__rosidl_typesupport_c__pyext_OBJECTS = \
@@ -132,7 +152,11 @@ rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_
 rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so: CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/serving_robot_msgs/serving_robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -144,6 +168,10 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/clean:
 .PHONY : CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/clean
 
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/depend:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir/depend
 

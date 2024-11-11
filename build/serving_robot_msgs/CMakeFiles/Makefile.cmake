@@ -20,12 +20,21 @@ set(CMAKE_MAKEFILE_DEPENDS
   "rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
   "rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
   "serving_robot_msgs__py/CMakeLists.txt"
+<<<<<<< HEAD
   "/home/g1/rokey_c_2_ws/src/serving_robot_msgs/CMakeLists.txt"
   "/home/g1/rokey_c_2_ws/src/serving_robot_msgs/action/C2R.action"
   "/home/g1/rokey_c_2_ws/src/serving_robot_msgs/msg/RobotState.msg"
   "/home/g1/rokey_c_2_ws/src/serving_robot_msgs/msg/TotalPrice2C.msg"
   "/home/g1/rokey_c_2_ws/src/serving_robot_msgs/package.xml"
   "/home/g1/rokey_c_2_ws/src/serving_robot_msgs/srv/T2C.srv"
+=======
+  "/home/aaa/rokey_c_2_ws/src/serving_robot_msgs/CMakeLists.txt"
+  "/home/aaa/rokey_c_2_ws/src/serving_robot_msgs/action/C2R.action"
+  "/home/aaa/rokey_c_2_ws/src/serving_robot_msgs/msg/RobotState.msg"
+  "/home/aaa/rokey_c_2_ws/src/serving_robot_msgs/msg/TotalPrice2C.msg"
+  "/home/aaa/rokey_c_2_ws/src/serving_robot_msgs/package.xml"
+  "/home/aaa/rokey_c_2_ws/src/serving_robot_msgs/srv/T2C.srv"
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   "/opt/ros/humble/lib/cmake/fastcdr/fastcdr-config-version.cmake"
   "/opt/ros/humble/lib/cmake/fastcdr/fastcdr-config.cmake"
   "/opt/ros/humble/lib/cmake/fastcdr/fastcdr-dynamic-targets-none.cmake"

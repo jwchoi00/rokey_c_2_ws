@@ -4,7 +4,11 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"table_order_interface\" -Dtable_order_interface__rosidl_generator_py_EXPORTS
 
+<<<<<<< HEAD
 C_INCLUDES = -I/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c -I/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+=======
+C_INCLUDES = -I/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c -I/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 C_FLAGS = -fPIC -Wall -Wextra
 

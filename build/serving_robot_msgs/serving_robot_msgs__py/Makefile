@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +149,24 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py//CMakeFiles/progress.marks
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles 0
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py//CMakeFiles/progress.marks
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles 0
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/clean
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/clean
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +175,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/preinstall
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/preinstall
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/preinstall
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/preinstall
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : depend
 
 # Convenience name for target.
 serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/rule:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/rule
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/rule
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +215,11 @@ serving_robot_msgs__py: serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py
 
 # fast build rule for target.
 serving_robot_msgs__py/fast:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/build.make serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/build
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(MAKE) $(MAKESILENT) -f serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/build.make serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir/build
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : serving_robot_msgs__py/fast
 
 # Help Target
@@ -210,6 +247,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : cmake_check_build_system
 

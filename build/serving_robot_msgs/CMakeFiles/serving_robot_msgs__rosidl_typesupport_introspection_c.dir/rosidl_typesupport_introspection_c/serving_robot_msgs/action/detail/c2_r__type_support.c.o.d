@@ -1,4 +1,5 @@
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o: \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -7,6 +8,16 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c \
+ /usr/include/stdc-predef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__rosidl_typesupport_introspection_c.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -29,7 +40,11 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__functions.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__functions.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -56,8 +71,13 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__struct.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__struct.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h \
@@ -66,8 +86,13 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/c2_r.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__type_support.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/c2_r.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__type_support.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \

@@ -2,7 +2,11 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
+<<<<<<< HEAD
 : ${AMENT_CURRENT_PREFIX:="/home/g1/rokey_c_2_ws/install/table_order_interface"}
+=======
+: ${AMENT_CURRENT_PREFIX:="/home/aaa/rokey_c_2_ws/install/table_order_interface"}
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

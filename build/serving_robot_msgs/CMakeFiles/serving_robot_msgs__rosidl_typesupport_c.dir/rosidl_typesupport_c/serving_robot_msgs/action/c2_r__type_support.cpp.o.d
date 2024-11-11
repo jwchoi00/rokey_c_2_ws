@@ -1,5 +1,9 @@
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serving_robot_msgs/action/c2_r__type_support.cpp.o: \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_c/serving_robot_msgs/action/c2_r__type_support.cpp \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_c/serving_robot_msgs/action/c2_r__type_support.cpp \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/stdc-predef.h /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -15,7 +19,11 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ser
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__struct.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__struct.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -27,8 +35,13 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ser
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__type_support.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__type_support.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/msg/rosidl_generator_c__visibility_control.h \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_typesupport_c/rosidl_typesupport_c/identifier.h \
@@ -77,5 +90,10 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ser
  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.h \
  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__functions.h \
  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/c2_r.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__functions.h
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/c2_r.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_c/serving_robot_msgs/action/detail/c2_r__functions.h
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd

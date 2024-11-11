@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface:srv/SetOrder.idl
+=======
+/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface:srv/SetOrder.idl
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd

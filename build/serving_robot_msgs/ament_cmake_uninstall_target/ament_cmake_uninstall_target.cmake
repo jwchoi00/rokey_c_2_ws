@@ -2,7 +2,11 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
+<<<<<<< HEAD
   set(install_space "/home/g1/rokey_c_2_ws/install/serving_robot_msgs")
+=======
+  set(install_space "/home/aaa/rokey_c_2_ws/install/serving_robot_msgs")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +33,11 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
+<<<<<<< HEAD
 set(install_manifest "/home/g1/rokey_c_2_ws/build/serving_robot_msgs/install_manifest.txt")
+=======
+set(install_manifest "/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/install_manifest.txt")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -57,4 +65,8 @@ message(STATUS "Execute custom uninstall script")
 # begin of custom uninstall code
 
 # uninstall files installed using the symlink install functions
+<<<<<<< HEAD
 include("/home/g1/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
+=======
+include("/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd

@@ -1,9 +1,16 @@
 {
   "package_name": "table_order_interface",
+<<<<<<< HEAD
   "output_dir": "/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface:srv/SetOrder.idl"
+=======
+  "output_dir": "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_c/table_order_interface",
+  "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface:srv/SetOrder.idl"
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -23,7 +30,11 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+<<<<<<< HEAD
     "/home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface/srv/SetOrder.idl",
+=======
+    "/home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_adapter/table_order_interface/srv/SetOrder.idl",
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
   ]

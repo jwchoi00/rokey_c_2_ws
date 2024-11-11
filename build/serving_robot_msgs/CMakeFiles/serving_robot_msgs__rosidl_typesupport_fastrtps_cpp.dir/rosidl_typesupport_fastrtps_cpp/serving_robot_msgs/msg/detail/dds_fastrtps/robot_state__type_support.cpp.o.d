@@ -1,4 +1,5 @@
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/detail/dds_fastrtps/robot_state__type_support.cpp.o: \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/detail/dds_fastrtps/robot_state__type_support.cpp \
  /usr/include/stdc-predef.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_fastrtps_cpp.hpp \
@@ -7,6 +8,16 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesu
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h \
  /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_cpp/serving_robot_msgs/msg/detail/robot_state__struct.hpp \
+=======
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/detail/dds_fastrtps/robot_state__type_support.cpp \
+ /usr/include/stdc-predef.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_fastrtps_cpp.hpp \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_fastrtps_cpp/serving_robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h \
+ /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_generator_cpp/serving_robot_msgs/msg/detail/robot_state__struct.hpp \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

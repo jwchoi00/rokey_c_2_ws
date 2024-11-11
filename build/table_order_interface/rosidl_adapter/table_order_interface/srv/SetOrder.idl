@@ -28,8 +28,11 @@ module table_order_interface {
     @verbatim (language="comment", text=
       "Response")
     struct SetOrder_Response {
+<<<<<<< HEAD
       @verbatim (language="comment", text=
         "주문 승인 여부")
+=======
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
       boolean succeed;
     };
   };

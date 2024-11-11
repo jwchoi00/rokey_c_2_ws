@@ -1,6 +1,10 @@
 package.xml
 setup.cfg
 setup.py
+<<<<<<< HEAD
+=======
+launch/serving_robot.launch.py
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 resource/serving_robot
 serving_robot/KitchenGui.py
 serving_robot/Ui.py

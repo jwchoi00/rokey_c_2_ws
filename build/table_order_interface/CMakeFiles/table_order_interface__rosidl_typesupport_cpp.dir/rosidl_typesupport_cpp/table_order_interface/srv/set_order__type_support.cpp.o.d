@@ -1,5 +1,9 @@
 CMakeFiles/table_order_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/table_order_interface/srv/set_order__type_support.cpp.o: \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_cpp/table_order_interface/srv/set_order__type_support.cpp \
+=======
+ /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_typesupport_cpp/table_order_interface/srv/set_order__type_support.cpp \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/stdc-predef.h /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -15,7 +19,11 @@ CMakeFiles/table_order_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+<<<<<<< HEAD
  /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_cpp/table_order_interface/srv/detail/set_order__struct.hpp \
+=======
+ /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_cpp/table_order_interface/srv/detail/set_order__struct.hpp \
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \

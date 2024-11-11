@@ -1,0 +1,26 @@
+[0.865s] Invoking command in '/home/aaa/rokey_c_2_ws/build/table_order': LD_LIBRARY_PATH=/home/aaa/rokey_c_2_ws/install/table_order_interface/lib:/home/aaa/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/aaa/serving_robot_ws/install/turtlebot3_msgs/lib:/home/aaa/serving_robot_ws/install/serving_robot_msgs/lib:/home/aaa/serving_robot_ws/install/nav_interfaces/lib:/home/aaa/serving_robot_ws/install/calculator_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/aaa/rokey_c_2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aaa/rokey_c_2_ws/build/table_order/build --no-deps symlink_data
+[1.219s] running develop
+[1.439s] running egg_info
+[1.439s] creating table_order.egg-info
+[1.439s] writing table_order.egg-info/PKG-INFO
+[1.439s] writing dependency_links to table_order.egg-info/dependency_links.txt
+[1.439s] writing entry points to table_order.egg-info/entry_points.txt
+[1.439s] writing requirements to table_order.egg-info/requires.txt
+[1.439s] writing top-level names to table_order.egg-info/top_level.txt
+[1.439s] writing manifest file 'table_order.egg-info/SOURCES.txt'
+[1.440s] reading manifest file 'table_order.egg-info/SOURCES.txt'
+[1.441s] writing manifest file 'table_order.egg-info/SOURCES.txt'
+[1.443s] running build_ext
+[1.443s] Creating /home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages/table-order.egg-link (link to .)
+[1.443s] Installing response_test script to /home/aaa/rokey_c_2_ws/install/table_order/lib/table_order
+[1.443s] Installing table_order script to /home/aaa/rokey_c_2_ws/install/table_order/lib/table_order
+[1.444s] Installing table_order_copy script to /home/aaa/rokey_c_2_ws/install/table_order/lib/table_order
+[1.444s] 
+[1.444s] Installed /home/aaa/rokey_c_2_ws/build/table_order
+[1.444s] running symlink_data
+[1.444s] creating /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index
+[1.444s] creating /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index/resource_index
+[1.445s] creating /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index/resource_index/packages
+[1.445s] symbolically linking /home/aaa/rokey_c_2_ws/build/table_order/resource/table_order -> /home/aaa/rokey_c_2_ws/install/table_order/share/ament_index/resource_index/packages
+[1.445s] symbolically linking /home/aaa/rokey_c_2_ws/build/table_order/package.xml -> /home/aaa/rokey_c_2_ws/install/table_order/share/table_order
+[1.479s] Invoked command in '/home/aaa/rokey_c_2_ws/build/table_order' returned '0': LD_LIBRARY_PATH=/home/aaa/rokey_c_2_ws/install/table_order_interface/lib:/home/aaa/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/aaa/serving_robot_ws/install/turtlebot3_msgs/lib:/home/aaa/serving_robot_ws/install/serving_robot_msgs/lib:/home/aaa/serving_robot_ws/install/nav_interfaces/lib:/home/aaa/serving_robot_ws/install/calculator_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/aaa/rokey_c_2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaa/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aaa/rokey_c_2_ws/build/table_order/build --no-deps symlink_data

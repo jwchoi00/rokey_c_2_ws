@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/uninstall.dir
 /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs_uninstall.dir
 /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs.dir
@@ -30,3 +31,37 @@
 /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/install.dir
 /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/install/local.dir
 /home/g1/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/install/strip.dir
+=======
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/uninstall.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs_uninstall.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_generator_c.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__cpp.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_cpp.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_c.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_cpp.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_cpp.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/ament_cmake_python_symlink_serving_robot_msgs.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/ament_cmake_python_build_serving_robot_msgs_egg.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_generator_py.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c__pyext.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_c__pyext.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/test.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/edit_cache.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/rebuild_cache.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/list_install_components.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/install.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/install/local.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/install/strip.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/serving_robot_msgs__py.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/test.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/edit_cache.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/rebuild_cache.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/list_install_components.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/install.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/install/local.dir
+/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/serving_robot_msgs__py/CMakeFiles/install/strip.dir
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd

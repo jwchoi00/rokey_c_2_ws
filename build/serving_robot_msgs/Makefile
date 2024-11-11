@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +149,15 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles /home/g1/rokey_c_2_ws/build/serving_robot_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles /home/aaa/rokey_c_2_ws/build/serving_robot_msgs//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles 0
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : all
 
 # The main clean target

@@ -53,7 +53,10 @@ typedef struct table_order_interface__srv__SetOrder_Request__Sequence
 /// Struct defined in srv/SetOrder in the package table_order_interface.
 typedef struct table_order_interface__srv__SetOrder_Response
 {
+<<<<<<< HEAD
   /// 주문 승인 여부
+=======
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
   bool succeed;
 } table_order_interface__srv__SetOrder_Response;
 

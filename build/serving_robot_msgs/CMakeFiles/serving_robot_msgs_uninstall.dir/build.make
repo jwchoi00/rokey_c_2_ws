@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Utility rule file for serving_robot_msgs_uninstall.
 
@@ -67,7 +74,11 @@ include CMakeFiles/serving_robot_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/serving_robot_msgs_uninstall.dir/progress.make
 
 CMakeFiles/serving_robot_msgs_uninstall:
+<<<<<<< HEAD
 	/usr/bin/cmake -P /home/g1/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+=======
+	/usr/bin/cmake -P /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 serving_robot_msgs_uninstall: CMakeFiles/serving_robot_msgs_uninstall
 serving_robot_msgs_uninstall: CMakeFiles/serving_robot_msgs_uninstall.dir/build.make
@@ -82,6 +93,10 @@ CMakeFiles/serving_robot_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/serving_robot_msgs_uninstall.dir/clean
 
 CMakeFiles/serving_robot_msgs_uninstall.dir/depend:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : CMakeFiles/serving_robot_msgs_uninstall.dir/depend
 

@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/table_order_interface
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/table_order_interface
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/table_order_interface
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/table_order_interface
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Utility rule file for ament_cmake_python_symlink_table_order_interface.
 
@@ -67,7 +74,11 @@ include CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/compiler
 include CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_table_order_interface:
+<<<<<<< HEAD
 	/usr/bin/cmake -E create_symlink /home/g1/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface/table_order_interface
+=======
+	/usr/bin/cmake -E create_symlink /home/aaa/rokey_c_2_ws/build/table_order_interface/rosidl_generator_py/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface/ament_cmake_python/table_order_interface/table_order_interface
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 ament_cmake_python_symlink_table_order_interface: CMakeFiles/ament_cmake_python_symlink_table_order_interface
 ament_cmake_python_symlink_table_order_interface: CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/build.make
@@ -82,6 +93,10 @@ CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/depend:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface/CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface/CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : CMakeFiles/ament_cmake_python_symlink_table_order_interface.dir/depend
 

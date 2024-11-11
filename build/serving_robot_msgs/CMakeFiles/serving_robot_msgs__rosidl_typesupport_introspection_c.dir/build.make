@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/serving_robot_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/serving_robot_msgs
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/serving_robot_msgs
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Include any dependencies generated for this target.
 include CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/depend.make
@@ -88,8 +95,13 @@ rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__ro
 rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c__arguments.json
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c__arguments.json
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__rosidl_typesupport_introspection_c.h
@@ -115,6 +127,7 @@ rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_s
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o: rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o -c /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c
 
@@ -125,10 +138,23 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.o -c /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c > CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.i
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/robot_state__type_support.c.s
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o: rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o -c /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c
 
@@ -139,10 +165,23 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.o -c /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c > CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.i
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c.s
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o: rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o -c /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c
 
@@ -153,10 +192,23 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.o -c /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c > CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.i
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c.s
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o: rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o -c /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c
 
@@ -167,6 +219,18 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typ
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/g1/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o -MF CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o.d -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.o -c /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c > CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.i
+
+CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c -o CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serving_robot_msgs/action/detail/c2_r__type_support.c.s
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Object files for target serving_robot_msgs__rosidl_typesupport_introspection_c
 serving_robot_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
@@ -194,7 +258,11 @@ libserving_robot_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/li
 libserving_robot_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libserving_robot_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libserving_robot_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libserving_robot_msgs__rosidl_typesupport_introspection_c.so"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libserving_robot_msgs__rosidl_typesupport_introspection_c.so"
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -213,6 +281,10 @@ CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/depend: ro
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/serving_robot_msgs/msg/detail/total_price2_c__type_support.c
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__rosidl_typesupport_introspection_c.h
 CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/serving_robot_msgs/srv/detail/t2_c__type_support.c
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/src/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs /home/g1/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/aaa/rokey_c_2_ws/build/serving_robot_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/src/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs /home/aaa/rokey_c_2_ws/build/serving_robot_msgs/CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : CMakeFiles/serving_robot_msgs__rosidl_typesupport_introspection_c.dir/depend
 

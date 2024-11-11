@@ -1,7 +1,11 @@
 # generated from
 # ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in
 
+<<<<<<< HEAD
 set(install_manifest "/home/g1/rokey_c_2_ws/build/table_order_interface/symlink_install_manifest.txt")
+=======
+set(install_manifest "/home/aaa/rokey_c_2_ws/build/table_order_interface/symlink_install_manifest.txt")
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find symlink install manifest: ${install_manifest}")
 endif()

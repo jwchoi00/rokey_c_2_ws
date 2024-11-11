@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/g1/rokey_c_2_ws/src/table_order_interface
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/g1/rokey_c_2_ws/build/table_order_interface
+=======
+CMAKE_SOURCE_DIR = /home/aaa/rokey_c_2_ws/src/table_order_interface
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/aaa/rokey_c_2_ws/build/table_order_interface
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 
 # Utility rule file for table_order_interface.
 
@@ -66,7 +73,11 @@ include CMakeFiles/table_order_interface.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/table_order_interface.dir/progress.make
 
+<<<<<<< HEAD
 CMakeFiles/table_order_interface: /home/g1/rokey_c_2_ws/src/table_order_interface/srv/SetOrder.srv
+=======
+CMakeFiles/table_order_interface: /home/aaa/rokey_c_2_ws/src/table_order_interface/srv/SetOrder.srv
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 CMakeFiles/table_order_interface: rosidl_cmake/srv/SetOrder_Request.msg
 CMakeFiles/table_order_interface: rosidl_cmake/srv/SetOrder_Response.msg
 CMakeFiles/table_order_interface: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
@@ -85,6 +96,10 @@ CMakeFiles/table_order_interface.dir/clean:
 .PHONY : CMakeFiles/table_order_interface.dir/clean
 
 CMakeFiles/table_order_interface.dir/depend:
+<<<<<<< HEAD
 	cd /home/g1/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/src/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface /home/g1/rokey_c_2_ws/build/table_order_interface/CMakeFiles/table_order_interface.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/aaa/rokey_c_2_ws/build/table_order_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/src/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface /home/aaa/rokey_c_2_ws/build/table_order_interface/CMakeFiles/table_order_interface.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 73d8adfddb3cb7c4b8f369d8192a45e57d8effdd
 .PHONY : CMakeFiles/table_order_interface.dir/depend
 
