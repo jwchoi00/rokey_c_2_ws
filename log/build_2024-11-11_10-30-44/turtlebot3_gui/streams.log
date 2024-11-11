@@ -1,0 +1,26 @@
+[2.163s] Invoking command in '/home/g1/rokey_c_2_ws/build/turtlebot3_gui': PYTHONPATH=/home/g1/rokey_c_2_ws/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/turtlebot3_gui/build --no-deps symlink_data
+[2.559s] running develop
+[2.805s] running egg_info
+[2.805s] writing turtlebot3_gui.egg-info/PKG-INFO
+[2.806s] writing dependency_links to turtlebot3_gui.egg-info/dependency_links.txt
+[2.806s] writing entry points to turtlebot3_gui.egg-info/entry_points.txt
+[2.806s] writing requirements to turtlebot3_gui.egg-info/requires.txt
+[2.806s] writing top-level names to turtlebot3_gui.egg-info/top_level.txt
+[2.808s] reading manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'
+[2.808s] writing manifest file 'turtlebot3_gui.egg-info/SOURCES.txt'
+[2.810s] running build_ext
+[2.810s] Creating /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages/turtlebot3-gui.egg-link (link to .)
+[2.811s] Installing nav_client script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.811s] Installing nav_server script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.811s] Installing pub_topic script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.811s] Installing send_goal script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.811s] Installing service_client script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.811s] Installing service_server script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.812s] Installing sub_topic script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.812s] Installing turtlebot3_gui script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.812s] Installing turtlebot3_move script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.812s] Installing turtlebot3_point script to /home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/turtlebot3_gui
+[2.812s] 
+[2.812s] Installed /home/g1/rokey_c_2_ws/build/turtlebot3_gui
+[2.812s] running symlink_data
+[2.847s] Invoked command in '/home/g1/rokey_c_2_ws/build/turtlebot3_gui' returned '0': PYTHONPATH=/home/g1/rokey_c_2_ws/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/turtlebot3_gui/build --no-deps symlink_data

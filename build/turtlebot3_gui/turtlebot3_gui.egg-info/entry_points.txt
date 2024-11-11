@@ -1,0 +1,12 @@
+[console_scripts]
+nav_client = turtlebot3_gui.nav_client:main
+nav_server = turtlebot3_gui.nav_server:main
+pub_topic = turtlebot3_gui.pub_topic:main
+send_goal = turtlebot3_gui.send_goal:main
+service_client = turtlebot3_gui.service_client:main
+service_server = turtlebot3_gui.service_server:main
+sub_topic = turtlebot3_gui.sub_topic:main
+turtlebot3_gui = turtlebot3_gui.turtlebot3_gui:main
+turtlebot3_move = turtlebot3_gui.turtlebot3_move:main
+turtlebot3_point = turtlebot3_gui.turtlebot3_point:main
+

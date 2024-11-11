@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'serving_robot = serving_robot.ui_test:main', #관제
+            'control_center = serving_robot.ControlCenter:main', #관제
             'action_test = serving_robot.action_server_test:main', #로봇 테스트용
             'robot = serving_robot.robot_control:main' #로봇 GUI 깡통
         ],

@@ -11,7 +11,7 @@ from serving_robot_msgs.action import C2R
 
 class ROS2Thread(QThread):
     log_signal = pyqtSignal(str)
-    arrived_signal = pyqtSignal()  # Signal to indicate arrival at the table
+    arrived_signal = pyqtSignal()
 
     def __init__(self, x, y, node):
         super().__init__()
@@ -21,46 +21,39 @@ class ROS2Thread(QThread):
         self._action_client = ActionClient(self.node, NavigateToPose, '/navigate_to_pose')
 
     def run(self):
-        # Wait for the action server to be ready
         self._action_client.wait_for_server()
         self.log_signal.emit("Connected to navigation server.")
 
-        # Send goal to target location
         self.node.send_goal(self.x, self.y)
         self.log_signal.emit(f"Navigating to target location: ({self.x}, {self.y})")
-
-        # Simulate travel time
         time.sleep(5)
 
-        # Notify arrival at the target location
         self.arrived_signal.emit()
         self.log_signal.emit("Arrived at the target location. Waiting for food pickup...")
 
 class SendGoal(Node):
     def __init__(self, positions, gui):
         super().__init__('send_goal_node')
-        self.positions = positions  # Dictionary of table and kitchen positions
+        self.positions = positions
         self._action_client = ActionClient(self, NavigateToPose, '/navigate_to_pose')
-        self.gui = gui  # GUI 객체를 저장
-        self.table_number_clicked_signal = pyqtSignal(int)  #
-
+        self.gui = gui
+        self.table_number_clicked_signal = pyqtSignal(int)
         self.table_number_action_server = ActionServer (
             self,
             C2R,
             '/table_number',
             self.table_number_excute_callback
         )
-
         self.initial_pose = None
-        self.set_initial_pose()  # Set initial pose to kitchen position
+        self.set_initial_pose()
 
-    
+
     def table_number_excute_callback(self, goal_handle):
         self.get_logger().info('Executing action, goal received.')
         table_num = goal_handle.request.table_num
 
         print(table_num)
-        self.gui.table_number_clicked_signal.emit(table_num)  # GUI로 테이블 번호 전달
+        self.gui.table_number_clicked_signal.emit(table_num)
 
         #피드백메세지가 없기떄문에 주석
         #feedback_msg = C2R.Feedback()
@@ -192,57 +185,14 @@ def main(args=None):
         'table9': (0.94, -0.22)
     }
 
-    # Create ROS 2 node
-    #ros_node = SendGoal(positions)
-
-    #spin_thread = SpinThread(ros_node)
-    #spin_thread.start()
-
-    # Set up the PyQt5 application
-    #app = QApplication(sys.argv)
-    #spin_thread = SpinThread(ros_node)
-    #spin_thread.start()
-    #gui = GUI(ros_node)
-    #gui.show()
-
-    '''
     app = QApplication(sys.argv)
     gui = GUI(None)
-    ros_node = SendGoal(positions, gui) 
+    ros_node = SendGoal(positions, gui)
+    gui.ros_node = ros_node
     spin_thread = SpinThread(ros_node)
     spin_thread.start()
-
-
     gui.show()
-    '''
-    '''
-    ros_node = SendGoal(positions)
-    spin_thread = SpinThread(ros_node)
-    spin_thread.start()
-    app = QApplication(sys.argv)
-    gui = GUI(ros_node)
-    gui.show()
-    '''
-
-
-    # Create the GUI
-    app = QApplication(sys.argv)
-    gui = GUI(None)  # Create GUI without SendGoal for now
-    ros_node = SendGoal(positions, gui)  # Pass the GUI object to SendGoal
-
-    # Set the GUI object in the SendGoal class
-    gui.ros_node = ros_node  # Set the ros_node inside GUI to SendGoal
-
-    spin_thread = SpinThread(ros_node)
-    spin_thread.start()
-
-    # Set up the PyQt5 application
-    gui.show()
-    
-
-    # Start the PyQt5 event loop
     sys.exit(app.exec_())
-
     rclpy.shutdown()
 
 if __name__ == '__main__':

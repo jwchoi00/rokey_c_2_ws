@@ -1,0 +1,552 @@
+[0.108s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.108s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x78c51e258970>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78c51e2583a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78c51e2583a0>>)
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.328s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/g1/rokey_c_2_ws'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'ros'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extensions ['cmake', 'python']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'cmake'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'python'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extensions ['python_setup_py']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface) by extension 'python_setup_py'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extensions ['python_setup_py']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/c2_turtle_interface/srv) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/database) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/database' with type 'ros.ament_python' and name 'database'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_interfaces) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav_interfaces' with type 'ros.ament_cmake' and name 'nav_interfaces'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot) by extension 'ros'
+[0.354s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serving_robot' with type 'ros.ament_python' and name 'serving_robot'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/serving_robot_msgs) by extension 'ros'
+[0.355s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serving_robot_msgs' with type 'ros.ament_cmake' and name 'serving_robot_msgs'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extensions ['colcon_meta']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extension 'colcon_meta'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extensions ['ros']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order) by extension 'ros'
+[0.356s] DEBUG:colcon.colcon_core.package_identification:Package 'src/table_order' with type 'ros.ament_python' and name 'table_order'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/table_order_interface) by extension 'ros'
+[0.357s] DEBUG:colcon.colcon_core.package_identification:Package 'src/table_order_interface' with type 'ros.ament_cmake' and name 'table_order_interface'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gui) by extension 'ros'
+[0.358s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_gui' with type 'ros.ament_python' and name 'turtlebot3_gui'
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.378s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.378s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.380s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/g1/rokey_c_2_ws/install
+[0.381s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/g1/work/turtlebot3_ws/install
+[0.382s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/humble
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'cmake_target' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'database' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'database' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/database', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/database', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/database', 'symlink_install': True, 'test_result_base': None}
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'nav_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'nav_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/nav_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/nav_interfaces', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/nav_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'cmake_target' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'serving_robot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.430s] DEBUG:colcon.colcon_core.verb:Building package 'serving_robot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/serving_robot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/serving_robot_msgs', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/serving_robot_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'cmake_target' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'table_order_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.431s] DEBUG:colcon.colcon_core.verb:Building package 'table_order_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/table_order_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/table_order_interface', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/table_order_interface', 'symlink_install': True, 'test_result_base': None}
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'cmake_target' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'cmake_clean_cache' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'cmake_clean_first' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'cmake_force_configure' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'ament_cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'catkin_cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.431s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/turtlebot3_gui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/turtlebot3_gui', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/turtlebot3_gui', 'symlink_install': True, 'test_result_base': None}
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'cmake_args' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'cmake_target' from command line to 'None'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.431s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'serving_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.432s] DEBUG:colcon.colcon_core.verb:Building package 'serving_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/serving_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/serving_robot', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/serving_robot', 'symlink_install': True, 'test_result_base': None}
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'cmake_args' from command line to 'None'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'cmake_target' from command line to 'None'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'cmake_clean_cache' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'cmake_clean_first' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'cmake_force_configure' from command line to 'False'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'ament_cmake_args' from command line to 'None'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'catkin_cmake_args' from command line to 'None'
+[0.432s] Level 5:colcon.colcon_core.verb:set package 'table_order' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.432s] DEBUG:colcon.colcon_core.verb:Building package 'table_order' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/rokey_c_2_ws/build/table_order', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/rokey_c_2_ws/install/table_order', 'merge_install': False, 'path': '/home/g1/rokey_c_2_ws/src/table_order', 'symlink_install': True, 'test_result_base': None}
+[0.432s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.433s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.433s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/serving_robot_msgs' with build type 'ament_cmake'
+[0.434s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g1/rokey_c_2_ws/src/serving_robot_msgs'
+[0.436s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.441s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/table_order_interface' with build type 'ament_cmake'
+[0.441s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g1/rokey_c_2_ws/src/table_order_interface'
+[0.441s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.445s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/database' with build type 'ament_python'
+[0.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('database', 'ament_prefix_path')
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/database/share/database/hook/ament_prefix_path.ps1'
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/database/share/database/hook/ament_prefix_path.dsv'
+[0.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/database/share/database/hook/ament_prefix_path.sh'
+[0.448s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/nav_interfaces' with build type 'ament_cmake'
+[0.452s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g1/rokey_c_2_ws/src/nav_interfaces'
+[0.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/turtlebot3_gui' with build type 'ament_python'
+[0.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gui', 'ament_prefix_path')
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/hook/ament_prefix_path.ps1'
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/hook/ament_prefix_path.dsv'
+[0.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/hook/ament_prefix_path.sh'
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/serving_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c_2_ws/build/serving_robot_msgs -- -j8 -l8
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/table_order_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c_2_ws/build/table_order_interface -- -j8 -l8
+[0.894s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/rokey_c_2_ws/src/database'
+[0.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/nav_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c_2_ws/build/nav_interfaces -- -j8 -l8
+[1.279s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/rokey_c_2_ws/src/turtlebot3_gui'
+[1.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.280s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/serving_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c_2_ws/build/serving_robot_msgs -- -j8 -l8
+[1.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/table_order_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c_2_ws/build/table_order_interface -- -j8 -l8
+[1.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/table_order_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c_2_ws/build/table_order_interface
+[1.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/nav_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/g1/rokey_c_2_ws/build/nav_interfaces -- -j8 -l8
+[1.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/serving_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/nav_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c_2_ws/build/nav_interfaces
+[1.535s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(table_order_interface)
+[1.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/table_order_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c_2_ws/build/table_order_interface
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface' for CMake module files
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface' for CMake config files
+[1.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order_interface', 'cmake_prefix_path')
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/cmake_prefix_path.ps1'
+[1.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/cmake_prefix_path.dsv'
+[1.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/cmake_prefix_path.sh'
+[1.555s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/lib'
+[1.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order_interface', 'ld_library_path_lib')
+[1.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/ld_library_path_lib.ps1'
+[1.557s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/ld_library_path_lib.dsv'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/ld_library_path_lib.sh'
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/bin'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/lib/pkgconfig/table_order_interface.pc'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/lib/python3.10/site-packages'
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/bin'
+[1.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.ps1'
+[1.565s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.dsv'
+[1.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.sh'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.bash'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.zsh'
+[1.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/table_order_interface/share/colcon-core/packages/table_order_interface)
+[1.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serving_robot_msgs)
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs' for CMake module files
+[1.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/serving_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c_2_ws/build/serving_robot_msgs
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs' for CMake config files
+[1.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot_msgs', 'cmake_prefix_path')
+[1.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/cmake_prefix_path.ps1'
+[1.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/cmake_prefix_path.dsv'
+[1.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/cmake_prefix_path.sh'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib'
+[1.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot_msgs', 'ld_library_path_lib')
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/ld_library_path_lib.ps1'
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/ld_library_path_lib.dsv'
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/ld_library_path_lib.sh'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/bin'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib/pkgconfig/serving_robot_msgs.pc'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib/python3.10/site-packages'
+[1.606s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/bin'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.ps1'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.dsv'
+[1.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.sh'
+[1.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.bash'
+[1.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.zsh'
+[1.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/colcon-core/packages/serving_robot_msgs)
+[1.628s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav_interfaces)
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces' for CMake module files
+[1.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/nav_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/rokey_c_2_ws/install/turtlebot3_gui:/home/g1/rokey_c_2_ws/install/table_order:/home/g1/rokey_c_2_ws/install/serving_robot:/home/g1/rokey_c_2_ws/install/database:/home/g1/work/turtlebot3_ws/install/turtlebot3_teleop:/home/g1/work/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/g1/rokey_c_2_ws/build/nav_interfaces
+[1.630s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces' for CMake config files
+[1.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_interfaces', 'cmake_prefix_path')
+[1.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/cmake_prefix_path.ps1'
+[1.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/cmake_prefix_path.dsv'
+[1.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/cmake_prefix_path.sh'
+[1.634s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/lib'
+[1.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_interfaces', 'ld_library_path_lib')
+[1.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/ld_library_path_lib.ps1'
+[1.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/ld_library_path_lib.dsv'
+[1.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/ld_library_path_lib.sh'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/bin'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/lib/pkgconfig/nav_interfaces.pc'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/lib/python3.10/site-packages'
+[1.637s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/bin'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.ps1'
+[1.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.sh'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.bash'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.zsh'
+[1.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/nav_interfaces/share/colcon-core/packages/nav_interfaces)
+[1.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(table_order_interface)
+[1.652s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface' for CMake module files
+[1.653s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface' for CMake config files
+[1.654s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order_interface', 'cmake_prefix_path')
+[1.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/cmake_prefix_path.ps1'
+[1.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/cmake_prefix_path.dsv'
+[1.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/cmake_prefix_path.sh'
+[1.657s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/lib'
+[1.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order_interface', 'ld_library_path_lib')
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/ld_library_path_lib.ps1'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/ld_library_path_lib.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/hook/ld_library_path_lib.sh'
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/bin'
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/lib/pkgconfig/table_order_interface.pc'
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/lib/python3.10/site-packages'
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order_interface/bin'
+[1.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.ps1'
+[1.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.dsv'
+[1.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.sh'
+[1.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.bash'
+[1.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order_interface/share/table_order_interface/package.zsh'
+[1.665s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/table_order_interface/share/colcon-core/packages/table_order_interface)
+[1.666s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/table_order' with build type 'ament_python'
+[1.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order', 'ament_prefix_path')
+[1.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/hook/ament_prefix_path.ps1'
+[1.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/hook/ament_prefix_path.dsv'
+[1.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/hook/ament_prefix_path.sh'
+[1.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.087s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/rokey_c_2_ws/src/table_order'
+[2.088s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.088s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav_interfaces)
+[2.093s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces' for CMake module files
+[2.094s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces' for CMake config files
+[2.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_interfaces', 'cmake_prefix_path')
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/cmake_prefix_path.ps1'
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/cmake_prefix_path.dsv'
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/cmake_prefix_path.sh'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/lib'
+[2.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_interfaces', 'ld_library_path_lib')
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/ld_library_path_lib.ps1'
+[2.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/ld_library_path_lib.dsv'
+[2.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/hook/ld_library_path_lib.sh'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/bin'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/lib/pkgconfig/nav_interfaces.pc'
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/lib/python3.10/site-packages'
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/nav_interfaces/bin'
+[2.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.ps1'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.dsv'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.sh'
+[2.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.bash'
+[2.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/nav_interfaces/share/nav_interfaces/package.zsh'
+[2.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/nav_interfaces/share/colcon-core/packages/nav_interfaces)
+[2.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serving_robot_msgs)
+[2.100s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs' for CMake module files
+[2.101s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs' for CMake config files
+[2.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot_msgs', 'cmake_prefix_path')
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/cmake_prefix_path.ps1'
+[2.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/cmake_prefix_path.dsv'
+[2.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/cmake_prefix_path.sh'
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib'
+[2.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot_msgs', 'ld_library_path_lib')
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/ld_library_path_lib.ps1'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/ld_library_path_lib.dsv'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/hook/ld_library_path_lib.sh'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/bin'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib/pkgconfig/serving_robot_msgs.pc'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib/python3.10/site-packages'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/bin'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.ps1'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.dsv'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.sh'
+[2.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.bash'
+[2.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/serving_robot_msgs/package.zsh'
+[2.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/serving_robot_msgs/share/colcon-core/packages/serving_robot_msgs)
+[2.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/turtlebot3_gui': PYTHONPATH=/home/g1/rokey_c_2_ws/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/turtlebot3_gui/build --no-deps symlink_data
+[2.110s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/rokey_c_2_ws/src/serving_robot' with build type 'ament_python'
+[2.110s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot', 'ament_prefix_path')
+[2.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/hook/ament_prefix_path.ps1'
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/hook/ament_prefix_path.dsv'
+[2.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/database': PYTHONPATH=/home/g1/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/database/build --no-deps symlink_data
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/hook/ament_prefix_path.sh'
+[2.112s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.112s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.452s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/rokey_c_2_ws/src/serving_robot'
+[2.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/table_order': CMAKE_PREFIX_PATH=/home/g1/rokey_c_2_ws/install/table_order_interface:/home/g1/rokey_c_2_ws/install/nav_interfaces:/home/g1/rokey_c_2_ws/install/serving_robot_msgs:/home/g1/work/turtlebot3_ws/install/turtlebot3:/home/g1/work/turtlebot3_ws/install/turtlebot3_simulations:/home/g1/work/turtlebot3_ws/install/turtlebot3_bringup:/home/g1/work/turtlebot3_ws/install/turtlebot3_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_navigation2:/home/g1/work/turtlebot3_ws/install/turtlebot3_fake_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs:/home/g1/work/turtlebot3_ws/install/turtlebot3_gazebo:/home/g1/work/turtlebot3_ws/install/turtlebot3_description:/home/g1/work/turtlebot3_ws/install/turtlebot3_cartographer LD_LIBRARY_PATH=/home/g1/rokey_c_2_ws/install/table_order_interface/lib:/home/g1/rokey_c_2_ws/install/nav_interfaces/lib:/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/g1/rokey_c_2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/table_order/build --no-deps symlink_data
+[2.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('database', 'pythonpath_develop')
+[2.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/database/share/database/hook/pythonpath_develop.ps1'
+[2.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/database' returned '0': PYTHONPATH=/home/g1/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/database/build --no-deps symlink_data
+[2.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/build/database/share/database/hook/pythonpath_develop.dsv'
+[2.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/database/share/database/hook/pythonpath_develop.sh'
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database' for CMake module files
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database' for CMake config files
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database/lib'
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database/bin'
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database/lib/pkgconfig/database.pc'
+[2.738s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database/lib/python3.10/site-packages'
+[2.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('database', 'pythonpath')
+[2.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/database/share/database/hook/pythonpath.ps1'
+[2.738s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/database/share/database/hook/pythonpath.dsv'
+[2.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/database/share/database/hook/pythonpath.sh'
+[2.739s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/database/bin'
+[2.739s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(database)
+[2.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/database/share/database/package.ps1'
+[2.740s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/database/share/database/package.dsv'
+[2.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/database/share/database/package.sh'
+[2.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/database/share/database/package.bash'
+[2.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/database/share/database/package.zsh'
+[2.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/database/share/colcon-core/packages/database)
+[2.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gui', 'pythonpath_develop')
+[2.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/turtlebot3_gui/share/turtlebot3_gui/hook/pythonpath_develop.ps1'
+[2.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/turtlebot3_gui' returned '0': PYTHONPATH=/home/g1/rokey_c_2_ws/build/turtlebot3_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/turtlebot3_gui/build --no-deps symlink_data
+[2.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/build/turtlebot3_gui/share/turtlebot3_gui/hook/pythonpath_develop.dsv'
+[2.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/turtlebot3_gui/share/turtlebot3_gui/hook/pythonpath_develop.sh'
+[2.750s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui' for CMake module files
+[2.750s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui' for CMake config files
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib'
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/bin'
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/pkgconfig/turtlebot3_gui.pc'
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/lib/python3.10/site-packages'
+[2.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gui', 'pythonpath')
+[2.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/hook/pythonpath.ps1'
+[2.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/hook/pythonpath.dsv'
+[2.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/hook/pythonpath.sh'
+[2.753s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/bin'
+[2.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gui)
+[2.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/package.ps1'
+[2.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/package.dsv'
+[2.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/package.sh'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/package.bash'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/turtlebot3_gui/package.zsh'
+[2.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/turtlebot3_gui/share/colcon-core/packages/turtlebot3_gui)
+[2.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/rokey_c_2_ws/build/serving_robot': CMAKE_PREFIX_PATH=/home/g1/rokey_c_2_ws/install/serving_robot_msgs:/home/g1/rokey_c_2_ws/install/nav_interfaces:/home/g1/rokey_c_2_ws/install/table_order_interface:/home/g1/work/turtlebot3_ws/install/turtlebot3:/home/g1/work/turtlebot3_ws/install/turtlebot3_simulations:/home/g1/work/turtlebot3_ws/install/turtlebot3_bringup:/home/g1/work/turtlebot3_ws/install/turtlebot3_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_navigation2:/home/g1/work/turtlebot3_ws/install/turtlebot3_fake_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs:/home/g1/work/turtlebot3_ws/install/turtlebot3_gazebo:/home/g1/work/turtlebot3_ws/install/turtlebot3_description:/home/g1/work/turtlebot3_ws/install/turtlebot3_cartographer LD_LIBRARY_PATH=/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/g1/rokey_c_2_ws/install/nav_interfaces/lib:/home/g1/rokey_c_2_ws/install/table_order_interface/lib:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/g1/rokey_c_2_ws/build/serving_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/serving_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/serving_robot/build --no-deps symlink_data
+[3.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order', 'pythonpath_develop')
+[3.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/table_order/share/table_order/hook/pythonpath_develop.ps1'
+[3.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/table_order' returned '0': CMAKE_PREFIX_PATH=/home/g1/rokey_c_2_ws/install/table_order_interface:/home/g1/rokey_c_2_ws/install/nav_interfaces:/home/g1/rokey_c_2_ws/install/serving_robot_msgs:/home/g1/work/turtlebot3_ws/install/turtlebot3:/home/g1/work/turtlebot3_ws/install/turtlebot3_simulations:/home/g1/work/turtlebot3_ws/install/turtlebot3_bringup:/home/g1/work/turtlebot3_ws/install/turtlebot3_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_navigation2:/home/g1/work/turtlebot3_ws/install/turtlebot3_fake_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs:/home/g1/work/turtlebot3_ws/install/turtlebot3_gazebo:/home/g1/work/turtlebot3_ws/install/turtlebot3_description:/home/g1/work/turtlebot3_ws/install/turtlebot3_cartographer LD_LIBRARY_PATH=/home/g1/rokey_c_2_ws/install/table_order_interface/lib:/home/g1/rokey_c_2_ws/install/nav_interfaces/lib:/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/g1/rokey_c_2_ws/build/table_order/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/table_order/build --no-deps symlink_data
+[3.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/build/table_order/share/table_order/hook/pythonpath_develop.dsv'
+[3.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/table_order/share/table_order/hook/pythonpath_develop.sh'
+[3.165s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order' for CMake module files
+[3.165s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order' for CMake config files
+[3.166s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order/lib'
+[3.166s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order/bin'
+[3.166s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order/lib/pkgconfig/table_order.pc'
+[3.166s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order/lib/python3.10/site-packages'
+[3.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('table_order', 'pythonpath')
+[3.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/hook/pythonpath.ps1'
+[3.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/hook/pythonpath.dsv'
+[3.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/hook/pythonpath.sh'
+[3.168s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/table_order/bin'
+[3.168s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(table_order)
+[3.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/package.ps1'
+[3.169s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/package.dsv'
+[3.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/package.sh'
+[3.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/package.bash'
+[3.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/table_order/share/table_order/package.zsh'
+[3.170s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/table_order/share/colcon-core/packages/table_order)
+[3.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot', 'pythonpath_develop')
+[3.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/serving_robot/share/serving_robot/hook/pythonpath_develop.ps1'
+[3.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/rokey_c_2_ws/build/serving_robot' returned '0': CMAKE_PREFIX_PATH=/home/g1/rokey_c_2_ws/install/serving_robot_msgs:/home/g1/rokey_c_2_ws/install/nav_interfaces:/home/g1/rokey_c_2_ws/install/table_order_interface:/home/g1/work/turtlebot3_ws/install/turtlebot3:/home/g1/work/turtlebot3_ws/install/turtlebot3_simulations:/home/g1/work/turtlebot3_ws/install/turtlebot3_bringup:/home/g1/work/turtlebot3_ws/install/turtlebot3_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_navigation2:/home/g1/work/turtlebot3_ws/install/turtlebot3_fake_node:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs:/home/g1/work/turtlebot3_ws/install/turtlebot3_gazebo:/home/g1/work/turtlebot3_ws/install/turtlebot3_description:/home/g1/work/turtlebot3_ws/install/turtlebot3_cartographer LD_LIBRARY_PATH=/home/g1/rokey_c_2_ws/install/serving_robot_msgs/lib:/home/g1/rokey_c_2_ws/install/nav_interfaces/lib:/home/g1/rokey_c_2_ws/install/table_order_interface/lib:/home/g1/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/g1/rokey_c_2_ws/build/serving_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/serving_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/serving_robot/build --no-deps symlink_data
+[3.476s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/build/serving_robot/share/serving_robot/hook/pythonpath_develop.dsv'
+[3.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/build/serving_robot/share/serving_robot/hook/pythonpath_develop.sh'
+[3.477s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot' for CMake module files
+[3.477s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot' for CMake config files
+[3.477s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot/lib'
+[3.477s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot/bin'
+[3.477s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot/lib/pkgconfig/serving_robot.pc'
+[3.478s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot/lib/python3.10/site-packages'
+[3.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('serving_robot', 'pythonpath')
+[3.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/hook/pythonpath.ps1'
+[3.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/hook/pythonpath.dsv'
+[3.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/hook/pythonpath.sh'
+[3.479s] Level 1:colcon.colcon_core.environment:checking '/home/g1/rokey_c_2_ws/install/serving_robot/bin'
+[3.479s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serving_robot)
+[3.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/package.ps1'
+[3.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/package.dsv'
+[3.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/package.sh'
+[3.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/package.bash'
+[3.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/rokey_c_2_ws/install/serving_robot/share/serving_robot/package.zsh'
+[3.481s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/rokey_c_2_ws/install/serving_robot/share/colcon-core/packages/serving_robot)
+[3.482s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.482s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.482s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.482s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.487s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.487s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.487s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.497s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/rokey_c_2_ws/install/local_setup.ps1'
+[3.498s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g1/rokey_c_2_ws/install/_local_setup_util_ps1.py'
+[3.499s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/rokey_c_2_ws/install/setup.ps1'
+[3.501s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/rokey_c_2_ws/install/local_setup.sh'
+[3.502s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g1/rokey_c_2_ws/install/_local_setup_util_sh.py'
+[3.503s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/rokey_c_2_ws/install/setup.sh'
+[3.504s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/rokey_c_2_ws/install/local_setup.bash'
+[3.505s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/rokey_c_2_ws/install/setup.bash'
+[3.507s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/rokey_c_2_ws/install/local_setup.zsh'
+[3.507s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/rokey_c_2_ws/install/setup.zsh'

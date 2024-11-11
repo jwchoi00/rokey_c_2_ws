@@ -1,0 +1,1 @@
+/home/g1/rokey_c_2_ws/build/nav_interfaces/ament_cmake_core/nav_interfacesConfig-version.cmake

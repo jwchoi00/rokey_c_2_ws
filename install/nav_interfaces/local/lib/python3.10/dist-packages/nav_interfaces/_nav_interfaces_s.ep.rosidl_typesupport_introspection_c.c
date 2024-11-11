@@ -1,0 +1,1 @@
+/home/g1/rokey_c_2_ws/build/nav_interfaces/rosidl_generator_py/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_introspection_c.c
