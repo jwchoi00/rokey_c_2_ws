@@ -1,6 +1,7 @@
 package.xml
 setup.cfg
 setup.py
+launch/serving_robot.launch.py
 resource/serving_robot
 serving_robot/ControlCenter.py
 serving_robot/Ui.py
