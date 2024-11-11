@@ -1,0 +1,1 @@
+/home/g1/rokey_c_2_ws/src/serving_robot_msgs/msg/TotalPrice2C.msg

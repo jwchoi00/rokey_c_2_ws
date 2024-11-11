@@ -19,26 +19,27 @@ class RosNode(Node):
         self.table_pos = [[-2.0,-0.5],
                           [1.12,1.53],[1.12,0.44],[1.12,-0.62],
                           [0.0,1.53],[0.0,0.44],[0.0,-0.62],
-                          [-1.0,1.53],[-1.0,0.44],[-1.0,-0.62]                          
+                          [-1.0,1.53],[-1.0,0.44],[-1.0,-0.62]
                           ] # 0~9까지의 테이블 번호 0 = 주방
 
         self.cur_table_num = 0 # 받아온 테이블 번호 저장
+        self.logger='' # log 표시할 함수
 
         self.action_ser_table = ActionServer(self,C2R,'/table_num',self.table_callback)
         self.action_cli_send_goal = ActionClient(self,NavigateToPose,"navigate_to_pose")
         self.robot_state_pub = self.create_publisher(RobotState,'/state',10)
-    
+
     def table_callback(self,goal_handle):
         #관제에서 로봇으로 테이블 번호를 받아서 실행
         self.cur_table_num = goal_handle.request.table_num
         self.cur_pos_goal = self.table_pos[self.cur_table_num]
-        self.logger='' # log 표시할 함수
+        
         result=C2R.Result()
         result.done=True
         goal_handle.succeed()
         self.send_table_goal(self.cur_pos_goal[0],self.cur_pos_goal[1])
         return result
-    
+
     def send_table_goal(self,pos_x,pos_y):
     # 네비게이션을 실행하기 위해 필요한 함수
         wait_cnt=1
@@ -63,7 +64,7 @@ class RosNode(Node):
         self.send_goal_future=self.action_cli_send_goal.send_goal_async(goal_msg)
         self.send_goal_future.add_done_callback(self.get_action_goal)
         return True
-    
+
     def get_action_goal(self,future):
         goal_handle=future.result()
         if not goal_handle.accepted:
@@ -74,7 +75,7 @@ class RosNode(Node):
         self.get_logger().info(self.logger)
         self.result_future = goal_handle.get_result_async()
         self.result_future.add_done_callback(self.get_action_result)
-    
+
     def get_action_result(self,future):
         action_state=future.result().status
         if action_state == GoalStatus.STATUS_SUCCEEDED:

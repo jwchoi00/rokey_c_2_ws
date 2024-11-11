@@ -1,0 +1,18 @@
+[1.768s] Invoking command in '/home/g1/rokey_c_2_ws/build/database': PYTHONPATH=/home/g1/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/database/build --no-deps symlink_data
+[2.197s] running develop
+[2.550s] running egg_info
+[2.551s] writing database.egg-info/PKG-INFO
+[2.551s] writing dependency_links to database.egg-info/dependency_links.txt
+[2.551s] writing entry points to database.egg-info/entry_points.txt
+[2.552s] writing requirements to database.egg-info/requires.txt
+[2.552s] writing top-level names to database.egg-info/top_level.txt
+[2.554s] reading manifest file 'database.egg-info/SOURCES.txt'
+[2.554s] writing manifest file 'database.egg-info/SOURCES.txt'
+[2.557s] running build_ext
+[2.557s] Creating /home/g1/rokey_c_2_ws/install/database/lib/python3.10/site-packages/database.egg-link (link to .)
+[2.558s] Installing database_server script to /home/g1/rokey_c_2_ws/install/database/lib/database
+[2.560s] Installing test_database_server script to /home/g1/rokey_c_2_ws/install/database/lib/database
+[2.560s] 
+[2.560s] Installed /home/g1/rokey_c_2_ws/build/database
+[2.560s] running symlink_data
+[2.618s] Invoked command in '/home/g1/rokey_c_2_ws/build/database' returned '0': PYTHONPATH=/home/g1/rokey_c_2_ws/build/database/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/rokey_c_2_ws/install/database/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/g1/rokey_c_2_ws/build/database/build --no-deps symlink_data

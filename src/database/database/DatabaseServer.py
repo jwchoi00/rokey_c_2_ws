@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from mysql.connector import connect, Error
-from table_order_interface.srv import SetOrder  # 추가된 서비스 임포트
+from table_order_interface.srv import SetOrder
 from serving_robot_msgs.msg import TotalPrice2C
 from datetime import datetime
 import threading
@@ -10,17 +10,14 @@ class OrderSaver(Node):
     def __init__(self):
         super().__init__('order_saver')
         self.connection = self.create_connection()
-        # 주문 서비스 설정
         self.srv = self.create_service(SetOrder, 'SetOrder', self.handle_order)
         self.publisher = self.create_publisher(TotalPrice2C,'total_price',10)
-        # 총 매출 서비스 설정
-        #self.sales_srv = self.create_service(GetTotalSales, 'get_total_sales', self.handle_get_total_sales)
 
     def create_connection(self):
-        """MySQL 데이터베이스와 연결을 생성하는 메서드"""
+        #MySQL 데이터베이스와 연결을 생성하는 메서드
         try:
             connection = connect(
-                host='192.168.0.40',  # MySQL 서버 IP
+                host='192.168.123.7',  # MySQL 서버 IP
                 user='jwchoi0017',    # MySQL 사용자
                 password='1234',      # MySQL 비밀번호
                 database='orders_db'  # 데이터베이스 이름
@@ -33,7 +30,7 @@ class OrderSaver(Node):
             return None
 
     def handle_order(self, request, response):
-        """주문 요청을 처리하는 메서드"""
+        #주문 요청을 처리하는 메서드
         table_number = request.table_number
         items = request.menu
         quantities = request.menu_number
@@ -47,7 +44,6 @@ class OrderSaver(Node):
 
     def process_order(self, table_number, items, quantities, total_price, response):
         # 주문 정보를 DB에 저장
-        
         order_id = self.save_order_to_db(table_number, total_price)
         if order_id:
             # 메뉴 항목과 수량을 DB에 저장
@@ -90,7 +86,7 @@ class OrderSaver(Node):
             cursor.close()
 
     def publish_total_price(self, date):
-        """Publish the order status to a topic"""
+        """총 매출을 Control Center로 전송하는 메서드"""
         total_sales = self.get_total_sales_from_db(date)
         msg = TotalPrice2C()
         msg.price = int(total_sales)
