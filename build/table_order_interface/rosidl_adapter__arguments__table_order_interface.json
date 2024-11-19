@@ -1,6 +1,0 @@
-{
-  "package_name": "table_order_interface",
-  "non_idl_tuples": [
-    "/home/g1/rokey_c_2_ws/src/table_order_interface:srv/SetOrder.srv"
-  ]
-}

@@ -1,1 +1,0 @@
-/home/g1/rokey_c_2_ws/src/turtlebot3_gui/setup.py

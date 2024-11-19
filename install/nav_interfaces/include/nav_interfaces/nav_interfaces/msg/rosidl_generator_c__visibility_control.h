@@ -1,1 +1,0 @@
-/home/g1/rokey_c_2_ws/build/nav_interfaces/rosidl_generator_c/nav_interfaces/msg/rosidl_generator_c__visibility_control.h

@@ -1,1 +1,0 @@
-/home/g1/rokey_c_2_ws/build/serving_robot/launch/serving_robot.launch.py

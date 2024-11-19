@@ -90,7 +90,7 @@ class OrderSaver(Node):
             cursor.close()
 
     def publish_total_price(self, date):
-        """Publish the order status to a topic"""
+        """control center로 일 매출을 publish"""
         total_sales = self.get_total_sales_from_db(date)
         msg = TotalPrice2C()
         msg.price = int(total_sales)
